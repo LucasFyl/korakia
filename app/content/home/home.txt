@@ -1,0 +1,26 @@
+Title: Home
+
+----
+
+Baseline: Welcome to a romantic retreat unlike any other
+
+----
+
+Secondtitle: Expanding your horizons
+
+----
+
+Firsttext: 
+
+Lorem ipsum dolor sit amet, consectetur 
+adipisicing elit, sed do eiusmod tempor 
+incididunt ut -labore et doloreipsum dolor
+consectetur adipisicing elit.
+
+----
+
+Secondtext: Korakia Pensione offers a unique and relaxing getaway from day to day reality. Crafted after a Mediterranean-style pensione, Korakia blends the silhouette of Tangier with a whisper of the Mediterranean.
+
+----
+
+Firsttitle: Different types of rooms

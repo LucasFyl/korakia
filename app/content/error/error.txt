@@ -1,0 +1,8 @@
+Title: Error
+
+----
+
+Text: 
+
+Sorry, there was an error, the page couldn't be found.
+Please go back to the home page.

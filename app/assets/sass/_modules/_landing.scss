@@ -1,0 +1,36 @@
+.landing {
+  @include size(100vw 100vh);
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  img {
+    object-fit: cover;
+    position: $position;
+    z-index: 5;
+  }
+  .wrapper {
+    position: $position;
+    z-index: 9;
+    width: 100%;
+    top: 50%;
+    @include transform(translateY(-50%));
+
+    h1 {
+      @include font(4.5, 5);
+      color: white;
+      text-align: center;
+      font-style: italic;
+    }
+  }
+  .scrolldown {
+    width: 100%;
+    @include font(1.4, 10);
+    color: white;
+    text-align: center;
+    background: rgba(0,0,0,0.3);
+
+    position: $position;
+    bottom:0;
+    z-index: 9;
+  }
+}

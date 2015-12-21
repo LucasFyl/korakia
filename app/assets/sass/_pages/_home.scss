@@ -1,0 +1,136 @@
+#content.home {
+  .landing {
+    h1 {
+      @include span-columns(6);
+      @include shift(3);
+    }
+  }
+  .main {
+    section {
+      &:first-child {
+        padding-top: 15rem;
+        padding-bottom: 15rem;
+        overflow: auto;
+        p {
+          @include font(1.4, 1.9);
+          margin: 4rem 0;
+        }
+        .infos {
+          padding-top: 14.4rem;
+        }
+        .images {
+          padding-left: 5rem;
+          figure {
+            height: 30rem;
+            overflow: hidden;
+            position: relative;
+            margin-left: 0;
+
+
+            img {
+              min-width: 100%;
+              object-fit: cover;
+            }
+            a {
+              @include size(100%);
+              display: block;
+            }
+            figcaption {
+              position: absolute;
+              z-index: 99;
+              margin: 5%;
+              top: 0;left: 0;right: 0;bottom: 0;
+              background: rgba(0,0,0,0.6);
+              p {
+                @include font(2.3, 18);
+                color:white;
+                text-align: center;
+                text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+              }
+              opacity: 0;
+              @include transition(all 0.25s ease-out);
+            }
+            &:hover {
+              figcaption {
+                opacity: 1;
+              }
+            }
+            &.twelve {
+              img{@include transform(translateY(-35%));}
+              figcaption {
+                margin: 2.5%;
+              }
+
+              &:hover {
+                figcaption {
+                  margin-top:2.5%;
+                }
+              }
+            }
+          }
+        }
+      }
+      &:last-child {
+        > .six {
+          @include shift(3);
+          text-align: center;
+          h2 {
+            @include span-columns(6);
+            @include shift(3);
+            float: none;
+          }
+          p {
+            margin: 8rem 0;
+          }
+        }
+        figure {
+          margin: 0;
+          width: 50%;
+          overflow: hidden;
+          position: relative;
+          img {
+            min-width: 100%;
+            object-fit: cover;
+          }
+          figcaption {
+            height: 12rem;
+            position: absolute;
+            top:50%; margin-top: -6rem;
+            background-color: rgba(0,0,0,0.56);
+            a {
+              font-family: $title-font;
+              @include font(2.3, 8.5);
+              color: white;
+              text-decoration: none;
+              display:inline-block;
+              padding: 0 8rem;
+            }
+
+            span {
+              @include size(5rem);
+
+              background-color: $golden;
+              background-image: url('../images/asset-caret-left.svg');
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: 0.8rem 1.75rem;
+
+              position: absolute;
+              top: 50%; margin-top: -2.5rem;
+              right: -2.5rem;
+            }
+          }
+          &:last-child {
+            figcaption {
+              right: 0;
+              span {
+                background-image: url('../images/asset-caret-right.svg');
+                left: -2.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

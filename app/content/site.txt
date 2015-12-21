@@ -1,0 +1,17 @@
+Title: Korokia
+
+----
+
+Author: Lucas Fayolle
+
+----
+
+Description: ...
+
+----
+
+Keywords: 
+
+----
+
+Copyright: © 20015-(date: Year) (link: http://korokia.com text: Korokia)

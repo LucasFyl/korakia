@@ -1,0 +1,12 @@
+{
+  "name": "korokia",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "gsap": "~1.18.1",
+    "scrollmagic": "~2.0.5"
+  },
+  "devDependencies": {
+    "retina.js": "retinajs#~1.3.0"
+  }
+}
