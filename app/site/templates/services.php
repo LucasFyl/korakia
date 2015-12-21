@@ -16,10 +16,10 @@
       <?php $articles = $page->children()->visible() ?>
       <?php foreach($articles as $article): ?>
 			<article>
-				<div class="six">
+				<div class="six image">
 					<img src="<?php echo $article->images()->first()->url() ?>" alt="<?php echo $article->title() ?>" />
 				</div>
-				<div class="six">
+				<div class="six infos">
 					<h3><?php echo $article->title() ?></h3>
 					<?php echo $article->text()->kirbytext() ?>
 				</div>

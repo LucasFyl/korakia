@@ -1158,3 +1158,14 @@ footer div ul li a img {
   line-height: 2.5rem;
   color: white;
 }
+
+#content.services .main {
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+}
+#content.services .main article:nth-child(even) .image {
+  float: right;
+}
+#content.services .main article .infos {
+  padding: 7.5rem 7.5rem 0 7.5rem;
+}
