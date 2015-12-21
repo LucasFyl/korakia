@@ -9,8 +9,8 @@ role: admin
 firstname: Lucas
 lastname: Fayolle
 history:
+  - special-offers
   - services/other
   - services/candles
   - services/maroccan-tea
   - services/lunch
-  - services/massage

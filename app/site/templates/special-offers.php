@@ -19,11 +19,6 @@
 
       <section class="weddings">
         <h2><?php echo $page->weddingTitle() ?></h2>
-        <!--  TO DO MODAL -->
-        <div class="modal-outer">
-          <a href="#" class="modal-trigger play-icon"></a>
-          <img src="<?php echo $page->image('asset-weddings.jpg')->url() ?>" alt="<?php echo $page->weddingTitle() ?>" />
-        </div>
         <div class="row">
           <div class="six">
             <?php echo $page->weddingText1st()->kirbytext() ?>
@@ -32,10 +27,16 @@
             <?php echo $page->weddingText2nd()->kirbytext() ?>
           </div>
         </div>
+        <!--  TO DO MODAL -->
+        <div class="modal-outer">
+          <a href="#" class="modal-trigger play-icon"></a>
+          <img src="<?php echo $page->image('asset-weddings.jpg')->url() ?>" alt="<?php echo $page->weddingTitle() ?>" />
+        </div>
+
         <section class="engagements">
           <h2><?php echo $page->engagementsTitle() ?></h2>
           <?php echo $page->engagementsText()->kirbytext() ?>
-          <div class="row">
+          <div class="row assets">
             <div class="three">
               <img src="<?php echo $page->image('asset-engagements-1.jpg')->url() ?>" alt="<?php echo $page->engagementsTitle() ?>" />
             </div>
@@ -55,7 +56,7 @@
       <section class="events-retreat">
         <div class="six">
           <h2><?php echo $page->eventsTitle() ?></h2>
-          <?php echo $page->engagementsText()->eventsText() ?>
+          <?php echo $page->eventsText()->kirbytext() ?>
         </div>
 
         <div class="six">
@@ -84,7 +85,7 @@
         </div>
         <div class="six">
           <h2><?php echo $page->photosTitle() ?></h2>
-          <?php echo $page->engagementsText()->photosText() ?>
+          <?php echo $page->photosText()->kirbytext() ?>
         </div>
       </section>
     </div>

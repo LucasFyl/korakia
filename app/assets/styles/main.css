@@ -81,12 +81,12 @@ ul.no-bullet {
   display: none;
 }
 
-.fill-remainder {
+.fill-remainder, #content.special-offers section.events-retreat, #content.special-offers section.photoshoots {
   float: none;
   overflow: hidden;
 }
 
-.vertical-center {
+.vertical-center, #content.special-offers section.events-retreat > .six:first-child, #content.special-offers section.photoshoots > .six:nth-child(2) {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -776,6 +776,7 @@ small {
 .main {
   position: relative;
   z-index: 999;
+  padding-top: 9rem;
 }
 
 .btn {
@@ -942,8 +943,10 @@ footer div ul li a img {
 #content.home .landing h1:last-child {
   margin-right: 0;
 }
-#content.home .main section:first-child {
+#content.home .main {
   padding-top: 15rem;
+}
+#content.home .main section:first-child {
   padding-bottom: 15rem;
   overflow: auto;
 }
@@ -1076,7 +1079,6 @@ footer div ul li a img {
 }
 
 #content.about section.intro {
-  padding-top: 9rem;
   padding-bottom: 14rem;
 }
 #content.about section.intro h2 {
@@ -1160,12 +1162,74 @@ footer div ul li a img {
 }
 
 #content.services .main {
-  padding-top: 14rem;
-  padding-bottom: 14rem;
+  padding-bottom: 15rem;
 }
 #content.services .main article:nth-child(even) .image {
   float: right;
 }
 #content.services .main article .infos {
   padding: 7.5rem 7.5rem 0 7.5rem;
+}
+
+#content.special-offers section.weddings h2 {
+  margin-bottom: 4.5rem;
+}
+#content.special-offers section.weddings p {
+  margin: 0;
+}
+#content.special-offers section.weddings .modal-outer {
+  margin: 10rem auto;
+}
+#content.special-offers section.engagements h2, #content.special-offers section.engagements p {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%;
+  margin-left: 25.5894128995%;
+  text-align: center;
+  margin-bottom: 4.5rem;
+  float: none;
+}
+#content.special-offers section.engagements h2:last-child, #content.special-offers section.engagements p:last-child {
+  margin-right: 0;
+}
+#content.special-offers section.engagements .assets {
+  width: 100%;
+  overflow: auto;
+  padding: 10rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#content.special-offers section.events-retreat {
+  position: relative;
+  padding: 10rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#content.special-offers section.events-retreat > .six:first-child {
+  float: left;
+  position: absolute;
+  top: 50%;
+}
+#content.special-offers section.events-retreat > .six:first-child h2 {
+  margin-top: 0;
+  margin-bottom: 4.5rem;
+}
+#content.special-offers section.events-retreat > .six:nth-child(2) {
+  float: right;
+}
+#content.special-offers section.events-retreat > .six:nth-child(2) .row {
+  margin-bottom: 1.2rem;
+}
+#content.special-offers section.photoshoots {
+  width: 100%;
+  position: relative;
+  padding: 10rem 0;
+}
+#content.special-offers section.photoshoots > .six:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+#content.special-offers section.photoshoots > .six:nth-child(2) h2 {
+  margin-top: 0;
+  margin-bottom: 4.5rem;
 }
