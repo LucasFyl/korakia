@@ -1074,3 +1074,87 @@ footer div ul li a img {
   background-image: url("../images/asset-caret-right.svg");
   left: -2.5rem;
 }
+
+#content.about section.intro {
+  padding-top: 9rem;
+  padding-bottom: 14rem;
+}
+#content.about section.intro h2 {
+  text-align: center;
+  margin-bottom: 8.5rem;
+}
+#content.about section.history .banner {
+  height: 43rem;
+  overflow: hidden;
+  position: relative;
+}
+#content.about section.history .banner h2 {
+  color: white;
+  text-align: center;
+  font-size: 6.6rem;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#content.about section.history .banner img {
+  width: 100%;
+  object-fit: cover;
+}
+#content.about section.history .container {
+  padding-top: 10rem;
+}
+#content.about section.history .container:nth-child(2) .infos {
+  padding-left: 9.5rem;
+}
+#content.about section.history .container:last-child .infos {
+  padding-right: 9.5rem;
+}
+#content.about section.history .container h3 {
+  font-size: 36px;
+  line-height: 10px;
+  font-size: 3.6rem;
+  line-height: 1rem;
+  margin-bottom: 6rem;
+}
+#content.about section.history .container .btn {
+  margin-top: 3.5rem;
+}
+#content.about section.charities {
+  height: 43rem;
+  overflow: hidden;
+  margin-top: 20rem;
+}
+#content.about section.charities h2 {
+  color: white;
+  text-align: center;
+  font-size: 6.6rem;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+#content.about section.charities img {
+  width: 100%;
+  object-fit: cover;
+}
+#content.about section.charities .container {
+  position: relative;
+}
+#content.about section.charities .container div {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+#content.about section.charities .container div.title {
+  top: 18rem;
+  left: 0;
+}
+#content.about section.charities .container div.text {
+  top: 15rem;
+  right: 0;
+  font-size: 16.5px;
+  line-height: 25px;
+  font-size: 1.65rem;
+  line-height: 2.5rem;
+  color: white;
+}

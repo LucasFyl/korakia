@@ -14,8 +14,9 @@
         scroll down
       </div>
     </div>
+
     <div class="main">
-      <section class="container">
+      <section class="container intro">
         <h2><?php echo $page->introTitle() ?></h2>
         <div class="row">
           <div class="six">
@@ -26,38 +27,38 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="history-banner">
+      <section class="history">
+        <div class="banner">
           <h2><?php echo $page->historyTitle() ?></h2>
           <img src="<?php echo $page->image('asset-bg-banner.jpg')->url() ?>" alt="<?php echo $page->historyTitle() ?>" />
         </div>
         <div class="container">
-          <div class="five">
+          <div class="five image">
             <img src="<?php echo $page->image('asset-mediterranean.jpg')->url() ?>" alt="<?php echo $page->firstTitle() ?>" />
           </div>
-          <div class="seven">
+          <div class="seven infos">
             <h3><?php echo $page->firstTitle() ?></h3>
             <?php echo $page->firstText()->kirbytext() ?>
             <a href="<?php echo $pages->find('villas/mediterranean')->url() ?>" class="btn golden cta">Explore all our rooms</a>
           </div>
         </div>
         <div class="container">
-          <div class="seven">
+          <div class="seven infos">
             <h3><?php echo $page->secondTitle() ?></h3>
             <?php echo $page->secondText()->kirbytext() ?>
             <a href="<?php echo $pages->find('villas/moroccan')->url() ?>" class="btn golden cta">Explore all our rooms</a>
           </div>
-          <div class="five">
+          <div class="five image">
             <img src="<?php echo $page->image('asset-moroccan.jpg')->url() ?>" alt="<?php echo $page->secondTitle() ?>" />
           </div>
         </div>
       </section>
-      <section>
+      <section class="charities">
 				<div class="container">
-					<div class="five">
+					<div class="five title">
 	          <h2><?php echo $page->charitiesTitle() ?></h2>
 	        </div>
-	        <div class="seven">
+	        <div class="seven text">
 	          <?php echo $page->charitiesText() ?>
 	        </div>
 				</div>
