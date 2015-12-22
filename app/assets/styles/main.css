@@ -1423,3 +1423,21 @@ article.press::after {
 article.press:first-child {
   padding-top: 0;
 }
+article.press .infos {
+  padding-left: 5rem;
+}
+article.press h4 {
+  font-family: "Lato", helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 15px;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+article.press .date {
+  font-size: 1.4rem;
+  color: #293443;
+  font-weight: 200;
+  font-style: italic;
+}

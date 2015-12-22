@@ -17,10 +17,10 @@
 
       <?php foreach($articles as $article): ?>
       <article class="press">
-        <div class="five">
+        <div class="five image">
           <img src="<?php echo $article->images()->first()->url() ?>" alt="<?php echo $article->title() ?>" />
         </div>
-        <div class="seven">
+        <div class="seven infos">
           <h4><?php echo html($article->title()) ?></h4>
           <div class="date">
             <time datetime="<?php echo $article->date('c') ?>">
