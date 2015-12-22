@@ -29,8 +29,6 @@
           </div>
           <?php echo $article->text()->kirbytext() ?>
         </div>
-
-
       </article>
       <?php endforeach ?>
 

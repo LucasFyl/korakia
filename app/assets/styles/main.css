@@ -6,6 +6,92 @@ html {
   box-sizing: inherit;
 }
 
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
 /**
  * Base styles 		~	 	Grid options
  */
@@ -81,7 +167,7 @@ ul.no-bullet {
   display: none;
 }
 
-.fill-remainder, #content.special-offers section.events-retreat, #content.special-offers section.photoshoots {
+.fill-remainder, #content.special-offers section.events-retreat, #content.special-offers section.photoshoots, #content.villas article.room {
   float: none;
   overflow: hidden;
 }
@@ -652,6 +738,20 @@ th {
   font-style: normal;
 }
 @font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Medium.eot");
+  src: url("../fonts/Lato-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Medium.woff") format("woff"), url("../fonts/Lato-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-MediumItalic.eot");
+  src: url("../fonts/Lato-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-MediumItalic.woff") format("woff"), url("../fonts/Lato-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
   font-family: 'Playfair Display';
   src: url("../fonts/PlayfairDisplay-Regular.eot");
   src: url("../fonts/PlayfairDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay-Regular.woff") format("woff"), url("../fonts/PlayfairDisplay-Regular.ttf") format("truetype");
@@ -898,7 +998,7 @@ footer div ul li a img {
   z-index: 5;
   overflow: hidden;
 }
-.landing img {
+.landing > img {
   object-fit: cover;
   position: fixed;
   z-index: 5;
@@ -920,17 +1020,62 @@ footer div ul li a img {
   font-style: italic;
 }
 .landing .scrolldown {
-  width: 100%;
   font-size: 14px;
   line-height: 100px;
   font-size: 1.4rem;
   line-height: 10rem;
   color: white;
   text-align: center;
+  font-weight: 500;
+  font-style: italic;
+  width: 100%;
   background: rgba(0, 0, 0, 0.3);
   position: fixed;
   bottom: 0;
   z-index: 9;
+}
+
+.villas .landing .half {
+  min-height: 100vh;
+  width: 50%;
+  float: left;
+  display: block;
+  position: relative;
+  z-index: 8;
+}
+.villas .landing .half > a {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.villas .landing .half > a:hover img {
+  opacity: 1;
+}
+.villas .landing .half .wrapper {
+  width: 50%;
+}
+.villas .landing .half img {
+  width: 50%;
+  position: fixed;
+  z-index: 6;
+  top: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.villas .landing .half h2, .villas .landing .half p {
+  width: 100%;
+  text-align: center;
+}
+.villas .landing .half h2 {
+  font-size: 4.5rem;
+  color: white;
+  font-style: italic;
+  margin-bottom: 4rem;
+  list-height: 5rem;
+}
+.villas .landing .half p {
+  color: #d2bb71;
+  font-size: 1.6rem;
 }
 
 #content.home .landing h1 {
@@ -1232,4 +1377,49 @@ footer div ul li a img {
 #content.special-offers section.photoshoots > .six:nth-child(2) h2 {
   margin-top: 0;
   margin-bottom: 4.5rem;
+}
+
+#content.villas article.room {
+  margin-bottom: 5rem;
+}
+#content.villas article.room ul {
+  padding: 0 !important;
+}
+#content.villas article.room .infos {
+  padding-left: 5rem;
+  position: relative;
+}
+#content.villas article.room .infos .price-range {
+  position: absolute;
+  right: 3rem;
+  top: 2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+#content.villas article.room .infos h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 4.5rem;
+}
+#content.villas article.room .infos ul.slider-nav {
+  list-style: none;
+  margin: 5rem 0;
+}
+#content.villas article.room .infos ul.slider-nav li {
+  margin-right: 0.5rem;
+}
+#content.villas article.room .infos ul.slider-nav li:focus {
+  outline: none;
+}
+
+article.press {
+  padding: 7.5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+article.press::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+article.press:first-child {
+  padding-top: 0;
 }
