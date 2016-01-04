@@ -8,9 +8,12 @@
 			<div class="wrapper">
 				<h1> <?php echo $page->baselineL1() ?> <br/> <?php echo $page->baselineL2() ?></h1>
 
+				<div id="datepicker"></div>
 				<div class="date-picker">
 					<div class="checkin">
 						<!-- calendar -->
+						<p id="datepicker-date-selected"></p>
+						<p id="datepicker-day-of-week"></p>
 					</div>
 					<div class="checkout">
 						<!-- calendar -->

@@ -12,6 +12,7 @@
 
         <!--  import vendor scripts  -->
         <?= js('assets/scripts/vendor/jquery.min.js') ?>
+        <?= js('assets/scripts/vendor/jquery-ui.min.js') ?>
         <?= js('assets/scripts/vendor/TweenMax.min.js') ?>
         <?= js('assets/scripts/vendor/retina.js') ?>
         <?= js('assets/scripts/vendor/slick.min.js') ?>

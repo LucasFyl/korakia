@@ -19,8 +19,9 @@ function initPage(){
 
 	if ( $('#content.villas').length ) {
 		initSlickSliders();
+	} else if ( $('#content.home').length ) {
+		datePickerSetup();
 	}
-	// } else if ( $('#content.work').length ) {
 	// } else if ( $('#content.about').length ) {
 	// } else if ( $('#content.contact').length ) {
 	// }
@@ -47,29 +48,7 @@ function initSlickSliders() {
 		  focusOnSelect: true,
 			draggable: false
 		});
-
 	});
-	// $('.slider-for').each(function(){
-	// 	var _this = $(this);
-	// 	_this.slick({
-	// 	  slidesToShow: 1,
-	// 	  slidesToScroll: 1,
-	// 	  arrows: false,
-	// 	  fade: true,
-	// 	  asNavFor: '.slider-nav'
-	// 	});
-	// });
-	// $('.slider-nav').each(function(){
-	// 	var _this = $(this);
-	// 	_this.slick({
-	// 	  slidesToShow: 5,
-	// 	  slidesToScroll: 1,
-	// 	  asNavFor: '.slider-for',
-	// 	  dots: false,
-	// 	  centerMode: false,
-	// 	  focusOnSelect: true
-	// 	});
-	// });
 }
 function detectMobile(){
 	'use strict';
@@ -114,3 +93,40 @@ function landingAnimHome() {
 
 	// setTimeout(function(){landingTl.play();}, 200);
 }
+function datePickerSetup () {
+    'use strict';
+		//todays date
+		var dateToday = new Date();
+		var todayDate = dateToday.toLocaleDateString('en-US'); //returns 05-12-2014
+		var todayDateNumber = dateToday.getDate(); //returns 5 if 05-12-2014
+		$('#datepicker-date-selected').text(todayDateNumber);
+
+		var weekday = new Array(7);
+		weekday[0]=  'Sunday';
+		weekday[1] = 'Monday';
+		weekday[2] = 'Tuesday';
+		weekday[3] = 'Wednesday';
+		weekday[4] = 'Thursday';
+		weekday[5] = 'Friday';
+		weekday[6] = 'Saturday';
+
+		var todaysDay = weekday[dateToday.getDay()]; // returns Tuesday
+		$('#datepicker-day-of-week').text(todaysDay);
+
+		$('#datepicker').datepicker({
+			inline: true,
+			minDate: new Date(),
+			firstDay: 1,
+			dateFormat: 'dd-mm-yy',
+			onSelect: function(date) {
+				// work out selected date
+				var dateSelect = $(this).datepicker('getDate'); //used below
+
+    			var dayOfWeek = $.datepicker.formatDate('DD', dateSelect); //shows Monday
+    			$('#datepicker-day-of-week').text(dayOfWeek);
+
+    			var dateOfSelected = $.datepicker.formatDate('d', dateSelect); //shows 10 if 10/03/1994
+    			$('#datepicker-date-selected').text(dateOfSelected);
+		    }
+		});
+	}
