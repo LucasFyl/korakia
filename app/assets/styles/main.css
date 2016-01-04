@@ -999,6 +999,8 @@ footer div ul li a img {
   overflow: hidden;
 }
 .landing > img {
+  height: auto;
+  width: auto;
   object-fit: cover;
   position: fixed;
   z-index: 5;

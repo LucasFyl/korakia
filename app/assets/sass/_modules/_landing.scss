@@ -4,6 +4,7 @@
   z-index: 5;
   overflow: hidden;
   > img {
+    @include size(auto);
     object-fit: cover;
     position: $position;
     z-index: 5;
