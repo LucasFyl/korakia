@@ -1,0 +1,18 @@
+#content.services {
+  .main {
+    padding-bottom: 15rem;
+    article {
+      &:nth-child(even) {
+        .image {
+          float: right;
+        }
+      }
+      .infos {
+        padding: 7.5rem 7.5rem 0 7.5rem;
+        p {
+        }
+      }
+    }
+  }
+
+}

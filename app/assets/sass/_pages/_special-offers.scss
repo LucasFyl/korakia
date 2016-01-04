@@ -1,0 +1,64 @@
+#content.special-offers {
+  section.weddings {
+    h2 {
+      margin-bottom: 4.5rem;
+    }
+    p {
+      margin: 0;
+    }
+    .modal-outer {
+      margin: 10rem auto;
+    }
+  }
+  section.engagements {
+    h2, p {
+      @include span-columns(6);
+      @include shift(3);
+      text-align: center;
+      margin-bottom: 4.5rem;
+      float: none;
+    }
+    .assets {
+      width: 100%;
+      overflow: auto;
+      padding: 10rem 0;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+  }
+  section.events-retreat {
+    position: relative;
+    padding: 10rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    @extend .fill-remainder;
+    > .six:first-child {
+      float: left;
+      position: absolute;top: 50%;
+      @extend .vertical-center;
+      h2 {
+        margin-top: 0;
+        margin-bottom: 4.5rem;
+      }
+    }
+    > .six:nth-child(2) {
+      float: right;
+      .row {
+        margin-bottom: 1.2rem;
+      }
+    }
+  }
+  section.photoshoots {
+    width: 100%;
+    position: relative;
+    @extend .fill-remainder;
+    padding: 10rem 0;
+    > .six:nth-child(2) {
+      position: absolute;top: 50%;
+      right: 0;
+      @extend .vertical-center;
+      h2 {
+        margin-top: 0;
+        margin-bottom: 4.5rem;
+      }
+    }
+  }
+}

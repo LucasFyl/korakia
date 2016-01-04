@@ -1,0 +1,23 @@
+article.press {
+  @include clearfix;
+  padding: 7.5rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  &:first-child {
+    padding-top: 0;
+  }
+  .infos {
+    padding-left: 5rem;
+  }
+  h4 {
+    font-family: $base-font;
+    font-weight: 400;
+    @include font(2, 1.5);
+    margin-top: 1rem;
+  }
+  .date {
+    font-size: 1.4rem;
+    color: $dark;
+    font-weight: 200;
+    font-style:italic;
+  }
+}
