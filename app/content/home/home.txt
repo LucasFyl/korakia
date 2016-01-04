@@ -2,10 +2,6 @@ Title: Home
 
 ----
 
-Baseline: Welcome to a romantic retreat unlike any other
-
-----
-
 Secondtitle: Expanding your horizons
 
 ----
@@ -24,3 +20,11 @@ Secondtext: Korakia Pensione offers a unique and relaxing getaway from day to da
 ----
 
 Firsttitle: Different types of rooms
+
+----
+
+Baselinel1: Welcome to a romantic
+
+----
+
+Baselinel2: retreat unlike any other

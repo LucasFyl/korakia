@@ -6,10 +6,21 @@
 
 		<div class="landing">
 			<div class="wrapper">
-				<h1><?php echo $page->baseline() ?></h1>
+				<h1> <?php echo $page->baselineL1() ?> <br/> <?php echo $page->baselineL2() ?></h1>
 
 				<div class="date-picker">
-					<!-- TO DO : DATE PICKER -->
+					<div class="checkin">
+						<!-- calendar -->
+					</div>
+					<div class="checkout">
+						<!-- calendar -->
+					</div>
+					<div class="guests">
+						<!-- number dropdown -->
+					</div>
+					<div class="submit">
+						<a href="#">Check availability</a>
+					</div>
 				</div>
 			</div>
 			<!-- TO DO : IMAGE SLIDER + DOTS -->

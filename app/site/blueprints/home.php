@@ -6,10 +6,14 @@ fields:
   title:
     label: Title
     type:  text
-  baseline:
-    label: Landing baseline
+  baselineL1:
+    label: Landing baseline line 1
     type: text
-    default: Welcome to a romantic retreat unlike any other
+    default: Welcome to a romantic
+  baselineL2:
+    label: Landing baseline line 2
+    type: text
+    default: retreat unlike any other
   firstTitle:
     label: first title
     type: text
