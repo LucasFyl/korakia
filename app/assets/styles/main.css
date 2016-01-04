@@ -854,7 +854,7 @@ p {
 hr {
   margin: 22px 0 21px;
   height: 0;
-  border: solid #fff;
+  border: solid #e9e9e9;
   border-width: 1px 0 0;
   clear: both;
 }
@@ -1011,7 +1011,14 @@ footer div ul li a img {
   width: auto;
   object-fit: cover;
   position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 5;
+  max-width: none;
+  max-height: 100vh;
 }
 .landing .wrapper {
   position: fixed;
@@ -1029,6 +1036,12 @@ footer div ul li a img {
   text-align: center;
   font-style: italic;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.35);
+  float: none !important;
+}
+.landing .wrapper h1::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 .landing .scrolldown {
   font-size: 14px;
@@ -1087,6 +1100,98 @@ footer div ul li a img {
 .villas .landing .half p {
   color: #d2bb71;
   font-size: 1.6rem;
+}
+
+.date-picker {
+  height: 10rem;
+  width: 65rem;
+  margin: 14rem auto 0;
+  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.25);
+}
+.date-picker .checkin, .date-picker .checkout, .date-picker .guests {
+  height: 10rem;
+  width: 14.4rem;
+  background-color: white;
+  border-right: 1px solid #e9e9e9;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+.date-picker .checkin p.datepicker-date-selected, .date-picker .checkout p.datepicker-date-selected, .date-picker .guests p.datepicker-date-selected {
+  position: absolute;
+  margin: 0;
+  left: 3rem;
+  bottom: 3rem;
+  font-size: 4.8rem;
+  color: #293443;
+  font-family: "Playfair Display", garamond, serif;
+}
+.date-picker .checkin p.datepicker-month, .date-picker .checkout p.datepicker-month, .date-picker .guests p.datepicker-month {
+  position: absolute;
+  margin: 0;
+  height: 1.5rem;
+  width: auto;
+  bottom: 3rem;
+  left: 57%;
+  overflow: hidden;
+  font-size: 1.3rem;
+  line-height: 1;
+  color: #2c2c2c;
+  font-family: "Playfair Display", garamond, serif;
+}
+.date-picker .checkin:before, .date-picker .checkout:before, .date-picker .guests:before {
+  content: " ";
+  font-size: 1.3rem;
+  font-style: italic;
+  font-family: "Playfair Display", garamond, serif;
+  color: #cacaca;
+  position: absolute;
+  top: 2.5rem;
+  left: 3rem;
+}
+.date-picker .checkin:after, .date-picker .checkout:after, .date-picker .guests:after {
+  content: " ";
+  background: url("../images/asset-caret-down-brown.svg") no-repeat center center;
+  background-size: 0.75rem;
+  height: 0.45rem;
+  width: 0.75rem;
+  position: absolute;
+  right: 3rem;
+  bottom: 3.4rem;
+}
+.date-picker .checkin:before {
+  content: "Check in";
+}
+.date-picker .checkout:before {
+  content: "Check out";
+}
+.date-picker .guests:before {
+  content: "Guests";
+}
+.date-picker .submit {
+  width: calc(65rem - 14.5rem - 14.5rem - 14.5rem);
+  height: 10rem;
+  display: block;
+  float: right;
+  background-color: #d2bb71;
+}
+.date-picker .submit a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 9.2rem;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-family: "Playfair Display", garamond, serif;
+  text-decoration: none;
+}
+
+.calendar-wrap {
+  position: absolute;
 }
 
 #content.home .landing h1 {

@@ -1,0 +1,90 @@
+.date-picker {
+  @include size(65rem 10rem);
+  margin: 14rem auto 0;
+  box-shadow: 0px 5px 50px rgba(0,0,0,0.25);
+
+  .checkin, .checkout, .guests {
+    @include size(14.4rem 10rem);
+    background-color: white;
+    border-right: 1px solid $hr-color;
+
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    box-sizing: content-box;
+    cursor: pointer;
+
+    p.datepicker-date-selected {
+      position: absolute;
+      margin: 0;
+      left: 3rem; bottom: 3rem;
+
+      font-size: 4.8rem;
+      color: $dark;
+      font-family: $title-font;
+    }
+    p.datepicker-month {
+      position: absolute;
+      margin: 0;
+      @include size(auto 1.5rem);
+      bottom: 3rem; left: 57%;
+      overflow: hidden;
+
+      font-size: 1.3rem;
+      line-height: 1;
+      color: #2c2c2c;
+      font-family: $title-font;
+    }
+
+    &:before {
+      content: " ";
+      font-size: 1.3rem;
+      font-style: italic;
+      font-family: $title-font;
+      color: #cacaca;
+
+      position: absolute;
+      top: 2.5rem; left: 3rem;
+    }
+    &:after {
+      content: " ";
+      background: url('../images/asset-caret-down-brown.svg') no-repeat center center;
+      background-size: 0.75rem;
+
+      @include size(0.75rem 0.45rem);
+      position: absolute;
+      right: 3rem; bottom: 3.4rem;
+    }
+  }
+  .checkin {
+    &:before {content: "Check in";}
+  }
+  .checkout {
+    &:before {content: "Check out";}
+  }
+  .guests {
+    &:before {content: "Guests";}
+  }
+  .submit {
+    width: calc(65rem - 14.5rem - 14.5rem - 14.5rem);
+    height: 10rem;
+    display: block;
+    float: right;
+    background-color: $golden;
+    a {
+      display: block;
+      @include size(100%);
+      line-height: 9.2rem;
+      text-align: center;
+      color: white;
+      font-size: 2rem;
+      font-family: $title-font;
+      text-decoration: none;
+    }
+  }
+}
+
+.calendar-wrap {
+  position: absolute;
+}

@@ -8,15 +8,19 @@
 			<div class="wrapper">
 				<h1> <?php echo $page->baselineL1() ?> <br/> <?php echo $page->baselineL2() ?></h1>
 
-				<div id="datepicker"></div>
+				<div class="calendar-wrap">
+					<div id="datepicker-1"></div>
+					<div id="datepicker-2"></div>
+				</div>
+
 				<div class="date-picker">
 					<div class="checkin">
-						<!-- calendar -->
-						<p id="datepicker-date-selected"></p>
-						<p id="datepicker-day-of-week"></p>
+						<p class="datepicker-date-selected datepicker-date-selected-1"></p>
+						<p class="datepicker-month datepicker-month-1"></p>
 					</div>
 					<div class="checkout">
-						<!-- calendar -->
+						<p class="datepicker-date-selected datepicker-date-selected-2"></p>
+						<p class="datepicker-month datepicker-month-2"></p>
 					</div>
 					<div class="guests">
 						<!-- number dropdown -->

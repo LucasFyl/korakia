@@ -7,7 +7,12 @@
     @include size(auto);
     object-fit: cover;
     position: $position;
+    margin: auto;
+    top: 0;left: 0;right: 0;bottom: 0;
     z-index: 5;
+
+    max-width: none;
+    max-height: 100vh;
   }
   .wrapper {
     position: $position;
@@ -23,6 +28,9 @@
       font-style: italic;
 
       text-shadow: 2px 2px 8px rgba(0,0,0,0.35);
+
+      @include clearfix;
+      float: none !important;
     }
   }
   .scrolldown {

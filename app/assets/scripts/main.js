@@ -110,23 +110,41 @@ function datePickerSetup () {
 		weekday[5] = 'Friday';
 		weekday[6] = 'Saturday';
 
-		var todaysDay = weekday[dateToday.getDay()]; // returns Tuesday
-		$('#datepicker-day-of-week').text(todaysDay);
+		// var todaysDay = weekday[dateToday.getDay()]; // returns Tuesday
 
-		$('#datepicker').datepicker({
+		$('#datepicker-1').datepicker({
 			inline: true,
 			minDate: new Date(),
 			firstDay: 1,
-			dateFormat: 'dd-mm-yy',
+			dateFormat: 'mm-dd-yy',
 			onSelect: function(date) {
 				// work out selected date
 				var dateSelect = $(this).datepicker('getDate'); //used below
 
-    			var dayOfWeek = $.datepicker.formatDate('DD', dateSelect); //shows Monday
-    			$('#datepicker-day-of-week').text(dayOfWeek);
+    			// var dayOfWeek = $.datepicker.formatDate('DD', dateSelect); //shows Monday
+					var monthOfWeek = $.datepicker.formatDate('MM', dateSelect); //shows September
+    			$('.datepicker-month-1').text(monthOfWeek.substr(0, 3));
+					// console.log(result);
 
     			var dateOfSelected = $.datepicker.formatDate('d', dateSelect); //shows 10 if 10/03/1994
-    			$('#datepicker-date-selected').text(dateOfSelected);
+    			$('.datepicker-date-selected-1').text(dateOfSelected);
+		    }
+		});
+		$('#datepicker-2').datepicker({
+			inline: true,
+			minDate: new Date(),
+			firstDay: 1,
+			dateFormat: 'mm-dd-yy',
+			onSelect: function(date) {
+				// work out selected date
+				var dateSelect = $(this).datepicker('getDate'); //used below
+
+				// var dayOfWeek = $.datepicker.formatDate('DD', dateSelect); //shows Monday
+    			var monthOfWeek = $.datepicker.formatDate('MM', dateSelect); //shows September
+    			$('.datepicker-month-2').text(monthOfWeek.substr(0, 3));
+
+    			var dateOfSelected = $.datepicker.formatDate('d', dateSelect); //shows 10 if 10/03/1994
+    			$('.datepicker-date-selected-2').text(dateOfSelected);
 		    }
 		});
 	}
