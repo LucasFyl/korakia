@@ -69,6 +69,9 @@ html {
 }
 .slick-slide img {
   display: block;
+  height: auto;
+  width: auto;
+  object-fit: cover;
 }
 .slick-slide.slick-loading img {
   display: none;
