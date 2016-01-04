@@ -1414,6 +1414,37 @@ footer div ul li a img {
   outline: none;
 }
 
+.toTop {
+  height: 30rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  z-index: 9;
+}
+.toTop p {
+  position: absolute;
+  z-index: 9;
+  margin: 0;
+  top: 50%;
+  margin-top: -0.8rem;
+  width: 100%;
+  font-size: 16px;
+  line-height: 10px;
+  font-size: 1.6rem;
+  line-height: 1rem;
+  color: white;
+  text-align: center;
+  font-family: "Playfair Display", garamond, serif;
+  cursor: pointer;
+}
+.toTop > img {
+  height: auto;
+  width: auto;
+  object-fit: cover;
+  z-index: 5;
+}
+
 article.press {
   padding: 7.5rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);

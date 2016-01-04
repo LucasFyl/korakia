@@ -35,3 +35,30 @@
     }
   }
 }
+.toTop {
+  @include size(100% 30rem);
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  z-index: 9;
+
+  p {
+    position: absolute;
+    z-index: 9;
+    margin: 0;
+    top: 50%;
+    margin-top: -0.8rem;
+    width: 100%;
+
+    @include font(1.6, 1);
+    color: white; text-align: center;
+    font-family: $title-font;
+
+    cursor: pointer;
+  }
+  > img {
+    @include size(auto);
+    object-fit: cover;
+    z-index: 5;
+  }
+}

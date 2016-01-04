@@ -64,6 +64,11 @@
 					</article>
 				<?php endforeach; ?>
 		</div>
+
+		<div class="toTop">
+			<p>Back to top</p>
+			<img src="<?php echo $page->image('asset-backtotop.jpg')->url() ?>" alt="Back to top" />
+		</div>
 	</div> <!-- / #content  -->
 
 <?php snippet('footer') ?>
