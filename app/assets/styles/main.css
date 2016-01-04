@@ -896,7 +896,12 @@ small {
 .btn.cta:after {
   position: absolute;
   right: 3rem;
-  content: "\2192";
+  top: 2.1rem;
+  content: " ";
+  height: 1rem;
+  width: 0.6rem;
+  background: url("../images/asset-caret-right.svg") no-repeat center center;
+  background-size: 0.6rem;
   opacity: 0;
   transition: all 0.25s ease-out;
 }
