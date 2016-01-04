@@ -943,6 +943,7 @@ header nav {
 header nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 header nav ul li {
   display: inline-block;
@@ -1192,6 +1193,85 @@ footer div ul li a img {
 
 .calendar-wrap {
   position: absolute;
+  padding: 5rem 0 5rem 5rem;
+  background-color: black;
+  top: 0;
+  margin-top: -6.5rem;
+  left: 50%;
+  margin-left: -35.9rem;
+  z-index: 99;
+}
+.calendar-wrap .hasDatepicker {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%;
+}
+.calendar-wrap .hasDatepicker:last-child {
+  margin-right: 0;
+}
+.calendar-wrap .ui-datepicker {
+  margin-right: 5rem;
+}
+.calendar-wrap .ui-datepicker .ui-datepicker-header .ui-datepicker-title {
+  font-family: "Playfair Display", garamond, serif;
+  font-style: italic;
+  color: #d2bb71;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.calendar-wrap .ui-datepicker table.ui-datepicker-calendar thead tr th span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Playfair Display", garamond, serif;
+  text-decoration: none;
+}
+.calendar-wrap .ui-datepicker table.ui-datepicker-calendar tbody tr {
+  line-height: 3rem;
+  height: 3rem;
+}
+.calendar-wrap .ui-datepicker table.ui-datepicker-calendar tbody tr td {
+  width: 4rem;
+  line-height: 1.75rem;
+  padding: 0 .5rem;
+}
+.calendar-wrap .ui-datepicker table.ui-datepicker-calendar tbody tr td span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Playfair Display", garamond, serif;
+  text-decoration: none;
+}
+.calendar-wrap .ui-datepicker table.ui-datepicker-calendar tbody tr td.ui-datepicker-other-month span {
+  color: #656565;
+}
+.calendar-wrap .ui-datepicker table.ui-datepicker-calendar tbody tr td.ui-datepicker-unselectable {
+  /* like past days in current month */
+  cursor: not-allowed;
+}
+.calendar-wrap .ui-datepicker table.ui-datepicker-calendar tbody tr td.ui-datepicker-unselectable span {
+  color: #e9e9e9;
+}
+.calendar-wrap .ui-datepicker table.ui-datepicker-calendar tbody tr td.ui-datepicker-today a {
+  text-decoration: underline;
+}
+.calendar-wrap .ui-datepicker table.ui-datepicker-calendar tbody tr td a {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.calendar-wrap .ui-datepicker table.ui-datepicker-calendar tbody tr td a.ui-state-default {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #e9e9e9;
+  font-family: "Playfair Display", garamond, serif;
+  text-decoration: none;
+}
+.calendar-wrap .ui-datepicker table.ui-datepicker-calendar tbody tr td a.ui-state-active {
+  background-color: #d2bb71;
 }
 
 #content.home .landing h1 {

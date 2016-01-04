@@ -87,4 +87,101 @@
 
 .calendar-wrap {
   position: absolute;
+  padding: 5rem 0 5rem 5rem;
+  background-color: black;
+  top: 0; margin-top: -6.5rem;
+  left: 50%; margin-left: -35.9rem;
+  z-index: 99;
+  .hasDatepicker {
+    @include span-columns(6);
+
+  }
+  .ui-datepicker {
+    $font-size: 1.2rem;
+    margin-right: 5rem;
+
+    .ui-datepicker-header {
+      .ui-datepicker-prev {
+// TO DO
+      }
+      .ui-datepicker-next {
+// TO DO
+      }
+      .ui-datepicker-title {
+        font-family: $title-font;
+        font-style: italic;
+        color: $golden;
+        font-size: 1.4rem;
+        text-align: center;
+      }
+    }
+    table.ui-datepicker-calendar {
+      thead {
+        tr {
+          th {
+            span {
+              display: block;
+              width: 100%;
+              text-align:center;
+              font-size: $font-size;
+              font-family: $title-font;
+              text-decoration: none;
+            }
+            // &.ui-datepicker-week-end {}
+          }
+        }
+      }
+      tbody {
+        tr {
+          line-height: 3rem;
+          height: 3rem;
+          td {
+            width: 4rem;
+            line-height: 1.75rem;
+            padding: 0 .5rem;
+
+            span {
+              display: block;
+              width: 100%;
+              text-align:center;
+              font-size: $font-size;
+              font-family: $title-font;
+              text-decoration: none;
+            }
+
+
+            &.ui-datepicker-other-month {
+              span {
+                color:#656565;
+              }
+            }
+            &.ui-datepicker-unselectable { /* like past days in current month */
+              cursor: not-allowed;
+              span {
+                color: $hr-color;
+              }
+            }
+            &.ui-datepicker-today {
+              a {text-decoration: underline;}
+            }
+
+            a {
+              @include size(100%);
+              display: block;
+              &.ui-state-default {
+                text-align:center;
+                font-size: $font-size;
+                color: $hr-color;
+                font-family: $title-font;
+                text-decoration: none;
+              }
+              &.ui-state-active {
+                background-color: $golden;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
