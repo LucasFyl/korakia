@@ -1428,6 +1428,8 @@ footer div ul li a img {
   top: 50%;
   margin-top: -6rem;
   background-color: rgba(0, 0, 0, 0.56);
+  transform: translateX(-100%);
+  transition: all 0.25s ease;
 }
 #content.home .main section:last-child figure figcaption a {
   font-family: "Playfair Display", garamond, serif;
@@ -1451,14 +1453,35 @@ footer div ul li a img {
   position: absolute;
   top: 50%;
   margin-top: -2.5rem;
+  right: -5rem;
+  opacity: 0;
+  transition: all 0.25s ease;
+}
+#content.home .main section:last-child figure:first-child:hover figcaption {
+  transform: translateX(0);
+  transition: all 0.25s ease-out;
+}
+#content.home .main section:last-child figure:first-child:hover figcaption span {
   right: -2.5rem;
+  opacity: 1;
+  transition: all 0.25s 0.2s ease-out;
 }
 #content.home .main section:last-child figure:last-child figcaption {
+  transform: translateX(100%);
   right: 0;
 }
 #content.home .main section:last-child figure:last-child figcaption span {
   background-image: url("../images/asset-caret-right.svg");
+  left: -5rem;
+}
+#content.home .main section:last-child figure:last-child:hover figcaption {
+  transform: translateX(0);
+  transition: all 0.25s ease-out;
+}
+#content.home .main section:last-child figure:last-child:hover figcaption span {
   left: -2.5rem;
+  opacity: 1;
+  transition: all 0.25s 0.2s ease-out;
 }
 
 #content.about section.intro {

@@ -97,6 +97,10 @@
             position: absolute;
             top:50%; margin-top: -6rem;
             background-color: rgba(0,0,0,0.56);
+
+            @include transform(translateX(-100%));
+            @include transition(all 0.25s ease);
+
             a {
               font-family: $title-font;
               @include font(2.3, 8.5);
@@ -117,18 +121,47 @@
 
               position: absolute;
               top: 50%; margin-top: -2.5rem;
-              right: -2.5rem;
+              right: -5rem;
+
+              opacity: 0;
+              @include transition(all 0.25s ease);
+            }
+          }
+          &:first-child {
+            &:hover {
+              figcaption {
+                @include transform(translateX(0));
+                @include transition(all 0.25s ease-out);
+                span {
+                  right: -2.5rem;
+                  opacity: 1;
+                  @include transition(all 0.25s 0.2s ease-out);
+                }
+              }
             }
           }
           &:last-child {
             figcaption {
+              @include transform(translateX(100%));
               right: 0;
               span {
                 background-image: url('../images/asset-caret-right.svg');
-                left: -2.5rem;
+                left: -5rem;
+              }
+            }
+            &:hover {
+              figcaption {
+                @include transform(translateX(0));
+                @include transition(all 0.25s ease-out);
+                span {
+                  left: -2.5rem;
+                  opacity: 1;
+                  @include transition(all 0.25s 0.2s ease-out);
+                }
               }
             }
           }
+
         }
       }
     }

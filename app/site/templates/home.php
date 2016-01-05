@@ -85,16 +85,16 @@
 					<figure class="mediterranean six">
 						<figcaption>
 							<span></span>
-							<a href="<?php echo $pages->find('rooms/mediterranean') ?>" class="h4">The Mediterranean Villa</a>
+							<a href="<?php echo $pages->find('villas/mediterranean') ?>" class="h4">The Mediterranean Villa</a>
 						</figcaption>
-						<img src="<?php echo $page->image('asset-mediterranean.jpg')->url() ?>" alt="Discover The Mediterranean Villas" />
+						<a href="<?php echo $pages->find('villas/mediterranean') ?>" ><img src="<?php echo $page->image('asset-mediterranean.jpg')->url() ?>" alt="Discover The Mediterranean Villas" /></a>
 					</figure>
 					<figure class="moroccan six">
 						<figcaption>
 							<span></span>
-							<a href="<?php echo $pages->find('rooms/moroccan') ?>" class="h4">The Moroccan Villa</a>
+							<a href="<?php echo $pages->find('villas/moroccan') ?>" class="h4">The Moroccan Villa</a>
 						</figcaption>
-						<img src="<?php echo $page->image('asset-moroccan.jpg')->url() ?>" alt="Discover The Moroccan Villas" />
+						<a href="<?php echo $pages->find('villas/moroccan') ?>"><img src="<?php echo $page->image('asset-moroccan.jpg')->url() ?>" alt="Discover The Moroccan Villas" /></a>
 					</figure>
 				</div>
 			</section>
