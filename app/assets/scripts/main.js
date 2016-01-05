@@ -14,12 +14,14 @@ $(document).ready(function(){
 function initPage(){
 	'use strict';
 
+	// $('body').removeClass('loading');
 	// detectMobile();
 	// hideLoader();
 
 	if ( $('#content.feed').length ) {
 		initSlickSliders();
 		$('header').addClass('white');
+		backToTop();
 	} else if ( $('#content.home').length ) {
 		datePickerSetup();
 		displayCalendar();
@@ -27,6 +29,12 @@ function initPage(){
 	// } else if ( $('#content.about').length ) {
 	// } else if ( $('#content.contact').length ) {
 	// }
+}
+function backToTop() {
+	'use strict';
+	$('body').on('click', '.toTop', function(){
+		TweenMax.to(window, 0.35, {scrollTo:0,ease:Power3.easeOut});
+	});
 }
 function displayCalendar() {
 	'use strict';
