@@ -917,6 +917,14 @@ small {
   background-color: #d2bb71 !important;
 }
 
+#loader {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: white;
+  z-index: 99999;
+}
+
 header {
   padding-top: 4rem;
   position: fixed;

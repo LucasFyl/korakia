@@ -14,9 +14,8 @@ $(document).ready(function(){
 function initPage(){
 	'use strict';
 
-	// $('body').removeClass('loading');
 	// detectMobile();
-	// hideLoader();
+	hideLoader();
 
 	if ( $('#content.feed').length ) {
 		initSlickSliders();
@@ -87,7 +86,9 @@ function detectMobile(){
 }
 function hideLoader(){
 	'use strict';
-
+	TweenMax.to('#loader', 1, {opacity:0,ease:Power2.easeOut,onComplete:function(){
+		TweenMax.set('#loader', {display:'none'});
+	}});
 }
 function resize() {
 	'use strict';
