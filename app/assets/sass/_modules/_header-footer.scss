@@ -38,6 +38,12 @@ header {
       }
     }
   }
+  &.white {
+    padding: 3rem 0;
+    background-color: white;
+    a.logo{color: $dark;}
+    nav a {color: $dark;}
+  }
 }
 footer {
   @include clearfix;

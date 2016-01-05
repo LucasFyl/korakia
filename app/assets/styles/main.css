@@ -958,6 +958,16 @@ header nav ul li a {
   color: white;
   text-decoration: none;
 }
+header.white {
+  padding: 3rem 0;
+  background-color: white;
+}
+header.white a.logo {
+  color: #293443;
+}
+header.white nav a {
+  color: #293443;
+}
 
 footer {
   height: 7rem;

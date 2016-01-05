@@ -19,6 +19,7 @@ function initPage(){
 
 	if ( $('#content.villas').length ) {
 		initSlickSliders();
+		$('header').addClass('white');
 	} else if ( $('#content.home').length ) {
 		datePickerSetup();
 		displayCalendar();
