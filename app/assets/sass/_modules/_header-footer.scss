@@ -39,6 +39,7 @@ header {
     }
   }
   &.white {
+    z-index: 9999;
     padding: 3rem 0;
     background-color: white;
     a.logo{color: $dark;}

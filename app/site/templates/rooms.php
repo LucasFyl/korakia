@@ -2,28 +2,33 @@
 
 	<?php snippet('header') ?>
 
-	<div id="content" class="villas">
+	<div id="content" class="villas feed">
 
 		<div class="landing">
-			<img src="<?php echo $page->image('landing.jpg')->url() ?>" alt="Korokia Pensione" />
+			<div class="container">
+				<div class="six">
+					<a href="<?php echo $pages->find('villas/mediterranean')->url() ?>">
+						<h2 <?php e($page->id() === 'villas/mediterranean', ' class="active"') ?> >Mediterranean Villas</h2>
+						<?php $a;foreach($pages->find('villas/mediterranean')->children()->visible() as $child) { $a++; } ?>
+						<p class="counter"><?php echo $a ?> rooms</p>
+					</a>
+				</div>
+				<div class="six">
+					<a href="<?php echo $pages->find('villas/moroccan')->url() ?>">
+						<h2 <?php e($page->id() === 'villas/moroccan', ' class="active"') ?> >Moroccan Villas</h2>
+						<?php $b;foreach($pages->find('villas/moroccan')->children()->visible() as $child) { $b++; } ?>
+						<p class="counter"><?php echo $b ?> rooms</p>
+					</a>
+				</div>
+			</div>
+
 			<div class="half">
-				<a href="<?php echo $pages->find('villas/mediterranean')->url() ?>">
-					<span class="wrapper">
-						<h2>Mediterranean <br/>Villas</h2>
-						<p class="counter">12 rooms</p>
-					</span>
-					<img src="<?php echo $page->image('asset-blur-left.jpg')->url() ?>" alt="php" />
-				</a>
+				<img src="<?php echo $page->image('asset-left.jpg')->url() ?>" <?php e($page->id() === 'villas/mediterranean', ' class="active"') ?> alt="php" />
 			</div>
 			<div class="half">
-				<a href="<?php echo $pages->find('villas/moroccan')->url() ?>">
-					<span class="wrapper">
-						<h2>Moroccan <br/>Villas</h2>
-						<p class="counter">16 rooms</p>
-					</span>
-					<img src="<?php echo $page->image('asset-blur-right.jpg')->url() ?>" alt="php" />
-				</a>
+				<img src="<?php echo $page->image('asset-right.jpg')->url() ?>" <?php e($page->id() === 'villas/moroccan', ' class="active"') ?> alt="php" />
 			</div>
+
     </div>
 
 		<div class="main container">

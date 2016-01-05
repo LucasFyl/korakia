@@ -47,7 +47,7 @@
     z-index: 9;
   }
 }
-.villas .landing {
+.villas:not(.feed) .landing {
   .half {
     min-height: 100vh;
     width: 50%;

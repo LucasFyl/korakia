@@ -170,7 +170,7 @@ ul.no-bullet {
   display: none;
 }
 
-.fill-remainder, #content.special-offers section.events-retreat, #content.special-offers section.photoshoots, #content.villas article.room {
+.fill-remainder, #content.special-offers section.events-retreat, #content.special-offers section.photoshoots, #content.villas.feed article.room {
   float: none;
   overflow: hidden;
 }
@@ -959,6 +959,7 @@ header nav ul li a {
   text-decoration: none;
 }
 header.white {
+  z-index: 9999;
   padding: 3rem 0;
   background-color: white;
 }
@@ -1070,7 +1071,7 @@ footer div ul li a img {
   z-index: 9;
 }
 
-.villas .landing .half {
+.villas:not(.feed) .landing .half {
   min-height: 100vh;
   width: 50%;
   float: left;
@@ -1078,18 +1079,18 @@ footer div ul li a img {
   position: relative;
   z-index: 8;
 }
-.villas .landing .half > a {
+.villas:not(.feed) .landing .half > a {
   height: 100%;
   width: 100%;
   display: block;
 }
-.villas .landing .half > a:hover img {
+.villas:not(.feed) .landing .half > a:hover img {
   opacity: 1;
 }
-.villas .landing .half .wrapper {
+.villas:not(.feed) .landing .half .wrapper {
   width: 50%;
 }
-.villas .landing .half img {
+.villas:not(.feed) .landing .half img {
   width: 50%;
   position: fixed;
   z-index: 6;
@@ -1097,18 +1098,18 @@ footer div ul li a img {
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
-.villas .landing .half h2, .villas .landing .half p {
+.villas:not(.feed) .landing .half h2, .villas:not(.feed) .landing .half p {
   width: 100%;
   text-align: center;
 }
-.villas .landing .half h2 {
+.villas:not(.feed) .landing .half h2 {
   font-size: 4.5rem;
   color: white;
   font-style: italic;
   margin-bottom: 4rem;
   list-height: 5rem;
 }
-.villas .landing .half p {
+.villas:not(.feed) .landing .half p {
   color: #d2bb71;
   font-size: 1.6rem;
 }
@@ -1650,35 +1651,100 @@ footer div ul li a img {
   margin-bottom: 4.5rem;
 }
 
-#content.villas article.room {
+#content.villas.feed .landing {
+  height: 9.7rem;
+  top: 7.4rem;
   margin-bottom: 5rem;
 }
-#content.villas article.room ul {
+#content.villas.feed .landing .half {
+  width: 50%;
+  display: block;
+  float: left;
+  height: 9.7rem;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  background-color: black;
+}
+#content.villas.feed .landing .half:last-child {
+  right: 0;
+}
+#content.villas.feed .landing .half img {
+  opacity: 0.5;
+}
+#content.villas.feed .landing .half img.active {
+  opacity: 1;
+}
+#content.villas.feed .landing .container {
+  height: 9.7rem;
+  position: relative;
+}
+#content.villas.feed .landing .container a {
+  text-decoration: none;
+}
+#content.villas.feed .landing .container h2 {
+  width: 100%;
+  font-size: 2.5rem;
+  color: white;
+  line-height: 9.7rem;
+  margin: 0;
+  opacity: 0.5;
+}
+#content.villas.feed .landing .container h2.active {
+  opacity: 1;
+}
+#content.villas.feed .landing .container p {
+  font-family: "Playfair Display", garamond, serif;
+  color: #d2bb71;
+  font-size: 1.6rem;
+  position: absolute;
+  z-index: 99;
+  line-height: 9.7rem;
+  opacity: 0.5;
+}
+#content.villas.feed .landing .container h2.active + p {
+  opacity: 1;
+}
+#content.villas.feed .landing .container .six {
+  position: relative;
+}
+#content.villas.feed .landing .container .six p {
+  top: 0.3rem;
+  right: 3rem;
+  margin: 0;
+}
+#content.villas.feed .landing .container .six:last-child h2 {
+  padding-left: 5rem;
+}
+#content.villas.feed article.room {
+  margin-bottom: 5rem;
+}
+#content.villas.feed article.room ul {
   padding: 0 !important;
 }
-#content.villas article.room .infos {
+#content.villas.feed article.room .infos {
   padding-left: 5rem;
   position: relative;
 }
-#content.villas article.room .infos .price-range {
+#content.villas.feed article.room .infos .price-range {
   position: absolute;
   right: 3rem;
   top: 2rem;
   font-size: 1.6rem;
   font-weight: 500;
 }
-#content.villas article.room .infos h2 {
+#content.villas.feed article.room .infos h2 {
   margin-top: 0.5rem;
   margin-bottom: 4.5rem;
 }
-#content.villas article.room .infos ul.slider-nav {
+#content.villas.feed article.room .infos ul.slider-nav {
   list-style: none;
   margin: 5rem 0;
 }
-#content.villas article.room .infos ul.slider-nav li {
+#content.villas.feed article.room .infos ul.slider-nav li {
   margin-right: 0.5rem;
 }
-#content.villas article.room .infos ul.slider-nav li:focus {
+#content.villas.feed article.room .infos ul.slider-nav li:focus {
   outline: none;
 }
 

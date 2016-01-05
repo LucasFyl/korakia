@@ -17,7 +17,7 @@ function initPage(){
 	// detectMobile();
 	// hideLoader();
 
-	if ( $('#content.villas').length ) {
+	if ( $('#content.feed').length ) {
 		initSlickSliders();
 		$('header').addClass('white');
 	} else if ( $('#content.home').length ) {

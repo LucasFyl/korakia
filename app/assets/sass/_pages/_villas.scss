@@ -1,4 +1,69 @@
-#content.villas {
+#content.villas.feed {
+  .landing {
+    height: 9.7rem;
+    top: 7.4rem;
+    margin-bottom: 5rem;
+    .half {
+      width: 50%;
+      display:block;
+      float: left;
+      height: 9.7rem;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      background-color: black;
+      &:last-child {
+        right: 0;
+      }
+      img {
+        opacity: 0.5;
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+    .container {
+      height: 9.7rem;
+      position: relative;
+      a {text-decoration: none;}
+      h2 {
+        width: 100%;
+        font-size: 2.5rem;
+        color: white;
+        line-height: 9.7rem;
+
+        margin: 0;
+        opacity: 0.5;
+        &.active {
+          opacity: 1;
+        }
+      }
+      p {
+        font-family: $title-font;
+        color: $golden;
+        font-size: 1.6rem;
+
+        position: absolute;
+        z-index: 99;
+        line-height: 9.7rem;
+        opacity: 0.5;
+      }
+      h2.active + p {
+        opacity: 1;
+      }
+      .six {
+        position: relative;
+        p {
+          top: 0.3rem;
+          right: 3rem;
+          margin: 0;
+        }
+        &:last-child {
+          h2{padding-left: 5rem;}
+        }
+      }
+    }
+  }
   article.room {
     @extend .fill-remainder;
     margin-bottom: 5rem;
