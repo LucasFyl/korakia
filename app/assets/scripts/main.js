@@ -21,10 +21,14 @@ function initPage(){
 		initSlickSliders();
 	} else if ( $('#content.home').length ) {
 		datePickerSetup();
+		displayCalendar();
 	}
 	// } else if ( $('#content.about').length ) {
 	// } else if ( $('#content.contact').length ) {
 	// }
+}
+function displayCalendar() {
+	// TweenMax.to('')
 }
 function initSlickSliders() {
 	'use strict';
@@ -99,7 +103,6 @@ function datePickerSetup () {
 		var dateToday = new Date();
 		var todayDate = dateToday.toLocaleDateString('en-US'); //returns 05-12-2014
 		var todayDateNumber = dateToday.getDate(); //returns 5 if 05-12-2014
-		$('#datepicker-date-selected').text(todayDateNumber);
 
 		var weekday = new Array(7);
 		weekday[0]=  'Sunday';
@@ -109,8 +112,6 @@ function datePickerSetup () {
 		weekday[4] = 'Thursday';
 		weekday[5] = 'Friday';
 		weekday[6] = 'Saturday';
-
-		// var todaysDay = weekday[dateToday.getDay()]; // returns Tuesday
 
 		$('#datepicker-1').datepicker({
 			inline: true,

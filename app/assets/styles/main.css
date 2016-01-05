@@ -1213,12 +1213,35 @@ footer div ul li a img {
 .calendar-wrap .ui-datepicker {
   margin-right: 5rem;
 }
+.calendar-wrap .ui-datepicker .ui-datepicker-header {
+  position: relative;
+}
+.calendar-wrap .ui-datepicker .ui-datepicker-header .ui-datepicker-prev,
+.calendar-wrap .ui-datepicker .ui-datepicker-header .ui-datepicker-next {
+  height: 1.25rem;
+  width: 0.85rem;
+  position: absolute;
+  text-indent: -99999px;
+  cursor: pointer;
+}
+.calendar-wrap .ui-datepicker .ui-datepicker-header .ui-datepicker-prev {
+  left: 0;
+  background: url("../images/asset-caret-left.svg") no-repeat center center;
+  background-size: 0.85rem;
+}
+.calendar-wrap .ui-datepicker .ui-datepicker-header .ui-datepicker-next {
+  right: 0;
+  background: url("../images/asset-caret-right.svg") no-repeat center center;
+  background-size: 0.85rem;
+}
 .calendar-wrap .ui-datepicker .ui-datepicker-header .ui-datepicker-title {
   font-family: "Playfair Display", garamond, serif;
   font-style: italic;
   color: #d2bb71;
   font-size: 1.4rem;
   text-align: center;
+  line-height: 1.5rem;
+  margin: 0 0 2.5rem;
 }
 .calendar-wrap .ui-datepicker table.ui-datepicker-calendar thead tr th span {
   display: block;
@@ -1234,44 +1257,36 @@ footer div ul li a img {
 }
 .calendar-wrap .ui-datepicker table.ui-datepicker-calendar tbody tr td {
   width: 4rem;
-  line-height: 1.75rem;
+  height: 1.75rem;
   padding: 0 .5rem;
 }
-.calendar-wrap .ui-datepicker table.ui-datepicker-calendar tbody tr td span {
-  display: block;
+.calendar-wrap .ui-datepicker table.ui-datepicker-calendar tbody tr td span, .calendar-wrap .ui-datepicker table.ui-datepicker-calendar tbody tr td a {
+  height: 100%;
   width: 100%;
+  display: block;
   text-align: center;
   font-size: 1.2rem;
   font-family: "Playfair Display", garamond, serif;
   text-decoration: none;
+  line-height: 2;
+  color: #cacaca;
 }
 .calendar-wrap .ui-datepicker table.ui-datepicker-calendar tbody tr td.ui-datepicker-other-month span {
-  color: #656565;
+  color: #646464;
 }
 .calendar-wrap .ui-datepicker table.ui-datepicker-calendar tbody tr td.ui-datepicker-unselectable {
   /* like past days in current month */
   cursor: not-allowed;
 }
 .calendar-wrap .ui-datepicker table.ui-datepicker-calendar tbody tr td.ui-datepicker-unselectable span {
-  color: #e9e9e9;
+  color: #646464;
 }
 .calendar-wrap .ui-datepicker table.ui-datepicker-calendar tbody tr td.ui-datepicker-today a {
   text-decoration: underline;
 }
-.calendar-wrap .ui-datepicker table.ui-datepicker-calendar tbody tr td a {
-  height: 100%;
-  width: 100%;
-  display: block;
-}
-.calendar-wrap .ui-datepicker table.ui-datepicker-calendar tbody tr td a.ui-state-default {
-  text-align: center;
-  font-size: 1.2rem;
-  color: #e9e9e9;
-  font-family: "Playfair Display", garamond, serif;
-  text-decoration: none;
-}
 .calendar-wrap .ui-datepicker table.ui-datepicker-calendar tbody tr td a.ui-state-active {
   background-color: #d2bb71;
+  color: white;
 }
 
 #content.home .landing h1 {
