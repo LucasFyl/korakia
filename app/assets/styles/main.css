@@ -1335,6 +1335,74 @@ footer div ul li a img {
   color: white;
 }
 
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.overlay .modal {
+  height: 45rem;
+  width: 80rem;
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -40rem;
+  top: 50%;
+  margin-top: -22.5rem;
+  background-color: white;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+}
+.overlay .modal .closeModal {
+  height: 5rem;
+  width: 5rem;
+  display: block;
+  background: #d2bb71;
+  cursor: pointer;
+  position: absolute;
+  top: -2.5rem;
+  right: -2.5rem;
+  font-size: 1.2rem;
+  color: white;
+  line-height: 5rem;
+  text-align: center;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+}
+.overlay .modal .closeModal:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-outer {
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  position: relative;
+}
+.modal-outer .modal-trigger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -2.5rem;
+  margin-left: -2.5rem;
+  z-index: 99;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 100%;
+  background-color: #d2bb71;
+  background-image: url("../images/asset-caret-right.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 0.8rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+}
+.modal-outer .modal-trigger:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
 #content.home .landing h1 {
   float: left;
   display: block;

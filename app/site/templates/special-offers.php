@@ -90,5 +90,11 @@
       </section>
     </div>
 	</div> <!-- / #content  -->
+	<div class="overlay">
+		<div class="modal">
+			<div class="closeModal">Close</div>
+			<h1>Hello World</h1>
+		</div>
+	</div>
 
 <?php snippet('footer') ?>
