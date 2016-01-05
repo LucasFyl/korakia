@@ -1120,6 +1120,7 @@ footer div ul li a img {
   float: left;
   box-sizing: content-box;
   cursor: pointer;
+  transition: all 0.25s ease;
 }
 .date-picker .checkin p.datepicker-date-selected, .date-picker .checkout p.datepicker-date-selected, .date-picker .guests p.datepicker-date-selected {
   position: absolute;
@@ -1133,25 +1134,25 @@ footer div ul li a img {
 .date-picker .checkin p.datepicker-month, .date-picker .checkout p.datepicker-month, .date-picker .guests p.datepicker-month {
   position: absolute;
   margin: 0;
-  height: 1.5rem;
+  height: 1.8rem;
   width: auto;
   bottom: 3rem;
-  left: 57%;
+  left: 56%;
   overflow: hidden;
-  font-size: 1.3rem;
   line-height: 1;
   color: #2c2c2c;
   font-family: "Playfair Display", garamond, serif;
 }
 .date-picker .checkin:before, .date-picker .checkout:before, .date-picker .guests:before {
   content: " ";
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   font-style: italic;
   font-family: "Playfair Display", garamond, serif;
   color: #cacaca;
   position: absolute;
-  top: 2.5rem;
   left: 3rem;
+  top: 3.5rem;
+  transition: all 0.25s ease;
 }
 .date-picker .checkin:after, .date-picker .checkout:after, .date-picker .guests:after {
   content: " ";
@@ -1160,17 +1161,26 @@ footer div ul li a img {
   height: 0.45rem;
   width: 0.75rem;
   position: absolute;
-  right: 3rem;
-  bottom: 3.4rem;
+  bottom: 4.8rem;
+  transition: all 0.25s ease;
 }
 .date-picker .checkin:before {
   content: "Check in";
 }
+.date-picker .checkin:after {
+  right: 3rem;
+}
 .date-picker .checkout:before {
   content: "Check out";
 }
+.date-picker .checkout:after {
+  right: 2rem;
+}
 .date-picker .guests:before {
   content: "Guests";
+}
+.date-picker .guests:after {
+  right: 4.5rem;
 }
 .date-picker .submit {
   width: calc(65rem - 14.5rem - 14.5rem - 14.5rem);
@@ -1190,16 +1200,33 @@ footer div ul li a img {
   font-family: "Playfair Display", garamond, serif;
   text-decoration: none;
 }
+.date-picker .checkin.busy:before, .date-picker .checkout.busy:before {
+  font-size: 1.3rem;
+  top: 2.4rem;
+  left: 3rem;
+}
+.date-picker .checkin.busy:after, .date-picker .checkout.busy:after {
+  right: 2.5rem;
+  bottom: 3.5rem;
+}
 
 .calendar-wrap {
   position: absolute;
   padding: 5rem 0 5rem 5rem;
   background-color: black;
   top: 0;
-  margin-top: -6.5rem;
+  margin-top: -11.5rem;
   left: 50%;
   margin-left: -35.9rem;
   z-index: 99;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease;
+}
+.calendar-wrap.open {
+  margin-top: -6.5rem;
+  opacity: 1;
+  visibility: visible;
 }
 .calendar-wrap .hasDatepicker {
   float: left;

@@ -28,7 +28,13 @@ function initPage(){
 	// }
 }
 function displayCalendar() {
-	// TweenMax.to('')
+	'use strict';
+	var cal = $('.calendar-wrap');
+	$('body').on('click', '.checkin, .checkout',function(){
+		var input = $('.checkin, .checkout');
+		input.addClass('busy');
+		cal.toggleClass('open');
+	});
 }
 function initSlickSliders() {
 	'use strict';
