@@ -45,7 +45,7 @@
 
 				<div class="nine images">
 					<div class="row">
-						<figure class="six img-in">
+						<figure class="six">
 						<a href="<?php echo $pages->find('villas/mediterranean')->url() ?>">
 							<img src="<?php echo $pages->find('villas/mediterranean/apollonia-studio')->image('apollonia.room-187.jpg')->url() ?>" alt="Apollonia Studio" />
 							<figcaption>
@@ -53,7 +53,7 @@
 							</figcaption>
 						</a>
 						</figure>
-						<figure class="six img-in">
+						<figure class="six">
 						<a href="<?php echo $pages->find('villas/moroccan')->url() ?>">
 							<img src="<?php echo $pages->find('villas/moroccan/bedouin-suite')->image('bedouin.suite-48.jpg')->url() ?>" alt="Bedouin Suite" />
 							<figcaption>
@@ -63,7 +63,7 @@
 						</figure>
 					</div>
 					<div class="row">
-						<figure class="twelve img-in">
+						<figure class="twelve">
 						<a href="<?php echo $pages->find('villas/mediterranean')->url() ?>">
 							<img src="<?php echo $pages->find('villas/mediterranean/thessaly-room')->image('thessaly.room-110.jpg')->url() ?>" alt="Thessaly room" />
 							<figcaption>

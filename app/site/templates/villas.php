@@ -5,25 +5,25 @@
 	<div id="content" class="villas">
 
 		<div class="landing">
-			<img src="<?php echo $page->image('landing.jpg')->url() ?>" alt="Korokia Pensione" />
 			<div class="half">
 				<a href="<?php echo $pages->find('villas/mediterranean')->url() ?>">
 					<span class="wrapper">
 						<h2 class="img-in">Mediterranean <br/>Villas</h2>
-						<p class="counter">12 rooms</p>
+						<?php $a;foreach($pages->find('villas/mediterranean')->children()->visible() as $child) { $a++; } ?>
+						<p class="counter"><?php echo $a ?> rooms</p>
 					</span>
-					<img src="<?php echo $page->image('asset-blur-left.jpg')->url() ?>" alt="php" />
 				</a>
 			</div>
 			<div class="half">
 				<a href="<?php echo $pages->find('villas/moroccan')->url() ?>">
 					<span class="wrapper">
 						<h2 class="img-in">Moroccan <br/>Villas</h2>
-						<p class="counter">16 rooms</p>
+						<?php $b;foreach($pages->find('villas/moroccan')->children()->visible() as $child) { $b++; } ?>
+						<p class="counter"><?php echo $b ?> rooms</p>
 					</span>
-					<img src="<?php echo $page->image('asset-blur-right.jpg')->url() ?>" alt="php" />
 				</a>
 			</div>
+			<img src="<?php echo $page->image('landing.jpg')->url() ?>" alt="Korokia Pensione" />
     </div>
 	</div> <!-- / #content  -->
 

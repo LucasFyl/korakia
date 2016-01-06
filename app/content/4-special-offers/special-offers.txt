@@ -14,7 +14,7 @@ Weddingtext1st: Korakia offers an intimate and dramatic setting for your destina
 
 ----
 
-Weddingtext2nd: With outdoor event space for up to 130 people, Korakia can host your special day from start to finish. For more information on how we can help you plan an unforgettable wedding experience, please contact us by telephone at 760-864-6411 or email us.
+Weddingtext2nd: With outdoor event space for up to 130 people, Korakia can host your special day from start to finish. For more information on how we can help you plan an unforgettable wedding experience, please contact us by telephone at (link: phone:760-864-6411 text: 760-864-6411) or (link: mailto:contact@korokia.com text: email us).
 
 ----
 
@@ -46,4 +46,4 @@ Photostext:
 
 Korakia offers a beautiful setting for some of the top photographers in the world. Whether it's gracing the pages of leading publications such as Architectural Digest, Elle, Vogue, or making your own memories with a wedding or engagement shoot, Korakia is sure to bring character and a dramatic backdrop to any picture moment.
 
-To inquire about photo shoots please call 760-864-6411.
+To inquire about photo shoots please call (link: phone:760-864-6411 text: 760-864-6411.)
