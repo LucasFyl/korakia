@@ -6,7 +6,7 @@
 
 		<div class="landing">
 			<div class="wrapper">
-				<h1><?php echo $page->landingTitle1() ?><br/>
+				<h1 class="img-in"><?php echo $page->landingTitle1() ?><br/>
 				    <?php echo $page->landingTitle2() ?></h1>
 			</div>
       <img src="<?php echo $page->image('landing.jpg')->url() ?>" alt="<?php echo $page->landingTitle1() ?> <?php echo $page->landingTitle2() ?>" />
@@ -17,8 +17,8 @@
 
     <div class="main">
       <section class="container intro">
-        <h2><?php echo $page->introTitle() ?></h2>
-        <div class="row">
+        <h2 class="img-in"><?php echo $page->introTitle() ?></h2>
+        <div class="row img-in">
           <div class="six">
             <?php echo $page->introText1stCol()->kirbytext() ?>
           </div>
@@ -34,7 +34,7 @@
         </div>
         <div class="container">
           <div class="five image">
-            <img src="<?php echo $page->image('asset-mediterranean.jpg')->url() ?>" alt="<?php echo $page->firstTitle() ?>" />
+            <img class="img-in" src="<?php echo $page->image('asset-mediterranean.jpg')->url() ?>" alt="<?php echo $page->firstTitle() ?>" />
           </div>
           <div class="seven infos">
             <h3><?php echo $page->firstTitle() ?></h3>
@@ -49,7 +49,7 @@
             <a href="<?php echo $pages->find('villas/moroccan')->url() ?>" class="btn golden cta">Explore all our rooms</a>
           </div>
           <div class="five image">
-            <img src="<?php echo $page->image('asset-moroccan.jpg')->url() ?>" alt="<?php echo $page->secondTitle() ?>" />
+            <img class="img-in" src="<?php echo $page->image('asset-moroccan.jpg')->url() ?>" alt="<?php echo $page->secondTitle() ?>" />
           </div>
         </div>
       </section>

@@ -35,7 +35,7 @@
 				<?php error_reporting(E_ALL); ini_set('display_errors', '1'); ?>
 	      <?php $rooms = $page->children()->visible() ?>
 	      <?php foreach($rooms as $room): ?>
-					<article class="room">
+					<article class="room img-in">
 						<div class="six images">
 							<ul class="slider-for">
 								<?php $images = $room->images(); ?>

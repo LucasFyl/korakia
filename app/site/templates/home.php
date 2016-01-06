@@ -6,7 +6,7 @@
 
 		<div class="landing">
 			<div class="wrapper">
-				<h1> <?php echo $page->baselineL1() ?> <br/> <?php echo $page->baselineL2() ?></h1>
+				<h1 class="img-in"> <?php echo $page->baselineL1() ?> <br/> <?php echo $page->baselineL2() ?></h1>
 
 				<div class="calendar-wrap">
 					<div id="datepicker-1"></div>
@@ -45,7 +45,7 @@
 
 				<div class="nine images">
 					<div class="row">
-						<figure class="six">
+						<figure class="six img-in">
 						<a href="<?php echo $pages->find('villas/mediterranean')->url() ?>">
 							<img src="<?php echo $pages->find('villas/mediterranean/apollonia-studio')->image('apollonia.room-187.jpg')->url() ?>" alt="Apollonia Studio" />
 							<figcaption>
@@ -53,7 +53,7 @@
 							</figcaption>
 						</a>
 						</figure>
-						<figure class="six">
+						<figure class="six img-in">
 						<a href="<?php echo $pages->find('villas/moroccan')->url() ?>">
 							<img src="<?php echo $pages->find('villas/moroccan/bedouin-suite')->image('bedouin.suite-48.jpg')->url() ?>" alt="Bedouin Suite" />
 							<figcaption>
@@ -63,7 +63,7 @@
 						</figure>
 					</div>
 					<div class="row">
-						<figure class="twelve">
+						<figure class="twelve img-in">
 						<a href="<?php echo $pages->find('villas/mediterranean')->url() ?>">
 							<img src="<?php echo $pages->find('villas/mediterranean/thessaly-room')->image('thessaly.room-110.jpg')->url() ?>" alt="Thessaly room" />
 							<figcaption>

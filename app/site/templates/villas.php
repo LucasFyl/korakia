@@ -9,7 +9,7 @@
 			<div class="half">
 				<a href="<?php echo $pages->find('villas/mediterranean')->url() ?>">
 					<span class="wrapper">
-						<h2>Mediterranean <br/>Villas</h2>
+						<h2 class="img-in">Mediterranean <br/>Villas</h2>
 						<p class="counter">12 rooms</p>
 					</span>
 					<img src="<?php echo $page->image('asset-blur-left.jpg')->url() ?>" alt="php" />
@@ -18,7 +18,7 @@
 			<div class="half">
 				<a href="<?php echo $pages->find('villas/moroccan')->url() ?>">
 					<span class="wrapper">
-						<h2>Moroccan <br/>Villas</h2>
+						<h2 class="img-in">Moroccan <br/>Villas</h2>
 						<p class="counter">16 rooms</p>
 					</span>
 					<img src="<?php echo $page->image('asset-blur-right.jpg')->url() ?>" alt="php" />

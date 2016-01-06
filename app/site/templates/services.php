@@ -6,7 +6,7 @@
 
 		<div class="landing">
 			<div class="wrapper">
-				<h1><?php echo $page->title() ?></h1>
+				<h1 class="img-in"><?php echo $page->title() ?></h1>
 			</div>
       <img src="<?php echo $page->image('landing.jpg')->url() ?>" alt="<?php echo $page->title() ?>" />
 
@@ -17,7 +17,7 @@
       <?php foreach($articles as $article): ?>
 			<article>
 				<div class="six image">
-					<img src="<?php echo $article->images()->first()->url() ?>" alt="<?php echo $article->title() ?>" />
+					<img class="img-in" src="<?php echo $article->images()->first()->url() ?>" alt="<?php echo $article->title() ?>" />
 				</div>
 				<div class="six infos">
 					<h3><?php echo $article->title() ?></h3>

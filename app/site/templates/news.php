@@ -5,7 +5,7 @@
 
 		<div class="landing">
       <div class="wrapper">
-        <h1><?php echo $page->title() ?></h1>
+        <h1 class="img-in"><?php echo $page->title() ?></h1>
       </div>
       <img src="<?php echo $page->image('landing.jpg')->url() ?>" alt="<?php echo $page->landingTitle1() ?> <?php echo $page->landingTitle2() ?>" />
 
@@ -16,7 +16,7 @@
       <?php $articles = $page->children()->visible()->paginate(4); ?>
 
       <?php foreach($articles as $article): ?>
-      <article class="press">
+      <article class="press img-in">
         <div class="five image">
           <img src="<?php echo $article->images()->first()->url() ?>" alt="<?php echo $article->title() ?>" />
         </div>

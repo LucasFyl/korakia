@@ -30,6 +30,7 @@ function initPage(){
 	}
 	// } else if ( $('#content.contact').length ) {
 	// }
+	MagicStuff.init();
 }
 function backToTop() {
 	'use strict';

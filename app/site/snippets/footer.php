@@ -17,7 +17,10 @@
         <?= js('assets/scripts/vendor/gsap.scrollTo.min.js') ?>
         <?= js('assets/scripts/vendor/retina.js') ?>
         <?= js('assets/scripts/vendor/slick.min.js') ?>
+        <?= js('assets/scripts/vendor/scrollMagic.min.js') ?>
+        <?= js('assets/scripts/vendor/scrollMagic.gsap.min.js') ?>
         <!--  import main user scripts  -->
+        <?= js('assets/scripts/scroll-magic.js') ?>
         <?= js('assets/scripts/main.js') ?>
         <?= js('assets/scripts/modal.js') ?>
         <?= js('assets/scripts/navigation.js') ?>

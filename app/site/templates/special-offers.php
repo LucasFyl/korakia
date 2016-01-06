@@ -6,7 +6,7 @@
 
 		<div class="landing">
 			<div class="wrapper">
-				<h1><?php echo $page->Landingtitle() ?></h1>
+				<h1 class="img-in"><?php echo $page->Landingtitle() ?></h1>
 			</div>
       <img src="<?php echo $page->image('landing.jpg')->url() ?>" alt="<?php echo $page->title() ?>" />
 
@@ -30,7 +30,7 @@
         <!--  TO DO MODAL -->
         <div class="modal-outer">
           <a href="#" class="modal-trigger play-icon"></a>
-          <img src="<?php echo $page->image('asset-weddings.jpg')->url() ?>" alt="<?php echo $page->weddingTitle() ?>" />
+          <img class="img-in" src="<?php echo $page->image('asset-weddings.jpg')->url() ?>" alt="<?php echo $page->weddingTitle() ?>" />
         </div>
 
         <section class="engagements">
@@ -38,16 +38,16 @@
           <?php echo $page->engagementsText()->kirbytext() ?>
           <div class="row assets">
             <div class="three">
-              <img src="<?php echo $page->image('asset-engagements-1.jpg')->url() ?>" alt="<?php echo $page->engagementsTitle() ?>" />
+              <img class="img-in" src="<?php echo $page->image('asset-engagements-1.jpg')->url() ?>" alt="<?php echo $page->engagementsTitle() ?>" />
             </div>
             <div class="three">
-              <img src="<?php echo $page->image('asset-engagements-2.jpg')->url() ?>" alt="<?php echo $page->engagementsTitle() ?>" />
+              <img class="img-in" src="<?php echo $page->image('asset-engagements-2.jpg')->url() ?>" alt="<?php echo $page->engagementsTitle() ?>" />
             </div>
             <div class="three">
-              <img src="<?php echo $page->image('asset-engagements-3.jpg')->url() ?>" alt="<?php echo $page->engagementsTitle() ?>" />
+              <img class="img-in" src="<?php echo $page->image('asset-engagements-3.jpg')->url() ?>" alt="<?php echo $page->engagementsTitle() ?>" />
             </div>
             <div class="three">
-              <img src="<?php echo $page->image('asset-engagements-4.jpg')->url() ?>" alt="<?php echo $page->engagementsTitle() ?>" />
+              <img class="img-in" src="<?php echo $page->image('asset-engagements-4.jpg')->url() ?>" alt="<?php echo $page->engagementsTitle() ?>" />
             </div>
           </div>
         </section>
@@ -62,18 +62,18 @@
         <div class="six">
           <div class="row">
             <div class="six">
-              <img src="<?php echo $page->image('asset-events-1.jpg')->url() ?>" alt="<?php echo $page->eventsTitle() ?>" />
+              <img class="img-in" src="<?php echo $page->image('asset-events-1.jpg')->url() ?>" alt="<?php echo $page->eventsTitle() ?>" />
             </div>
             <div class="six">
-              <img src="<?php echo $page->image('asset-events-2.jpg')->url() ?>" alt="<?php echo $page->eventsTitle() ?>" />
+              <img class="img-in" src="<?php echo $page->image('asset-events-2.jpg')->url() ?>" alt="<?php echo $page->eventsTitle() ?>" />
             </div>
           </div>
           <div class="row">
             <div class="six">
-              <img src="<?php echo $page->image('asset-events-3.jpg')->url() ?>" alt="<?php echo $page->eventsTitle() ?>" />
+              <img class="img-in" src="<?php echo $page->image('asset-events-3.jpg')->url() ?>" alt="<?php echo $page->eventsTitle() ?>" />
             </div>
             <div class="six">
-              <img src="<?php echo $page->image('asset-events-4.jpg')->url() ?>" alt="<?php echo $page->eventsTitle() ?>" />
+              <img class="img-in" src="<?php echo $page->image('asset-events-4.jpg')->url() ?>" alt="<?php echo $page->eventsTitle() ?>" />
             </div>
           </div>
         </div>
@@ -81,7 +81,7 @@
 
       <section class="photoshoots">
         <div class="six">
-          <img src="<?php echo $page->image('asset-photoshoot.jpg')->url() ?>" alt="<?php echo $page->photosTitle() ?>" />
+          <img class="img-in" src="<?php echo $page->image('asset-photoshoot.jpg')->url() ?>" alt="<?php echo $page->photosTitle() ?>" />
         </div>
         <div class="six">
           <h2><?php echo $page->photosTitle() ?></h2>
