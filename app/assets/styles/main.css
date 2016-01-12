@@ -1048,6 +1048,7 @@ footer div ul li a img {
   width: auto;
   object-fit: cover;
   position: fixed;
+  left: 0;
   z-index: 5;
   max-width: none;
   max-height: 100vh;
@@ -1130,11 +1131,23 @@ footer div ul li a img {
 .villas:not(.feed) .landing .half .wrapper {
   width: 50%;
 }
+@media screen and (max-width: 480px) {
+  .villas:not(.feed) .landing .half .wrapper {
+    top: 35%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .villas:not(.feed) .landing .half:nth-child(2) .wrapper {
+    top: 70%;
+  }
+}
 .villas:not(.feed) .landing .half img {
   width: 50%;
   position: fixed;
   z-index: 6;
   top: 0;
+  left: 0;
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
@@ -1154,6 +1167,16 @@ footer div ul li a img {
 .villas:not(.feed) .landing .half p {
   color: #d2bb71;
   font-size: 1.6rem;
+}
+@media screen and (max-width: 480px) {
+  .villas:not(.feed) .landing .half {
+    min-height: 50vh;
+    height: 50vh;
+    width: 100vw;
+  }
+  .villas:not(.feed) .landing .half h2, .villas:not(.feed) .landing .half p {
+    opacity: 1 !important;
+  }
 }
 
 .date-picker {
@@ -1979,6 +2002,11 @@ footer div ul li a img {
   top: 7.4rem;
   margin-bottom: 5rem;
 }
+@media screen and (max-width: 480px) {
+  #content.villas.feed .landing {
+    top: 15.7rem;
+  }
+}
 #content.villas.feed .landing .half {
   width: 50%;
   display: block;
@@ -1994,6 +2022,13 @@ footer div ul li a img {
 }
 #content.villas.feed .landing .half img {
   opacity: 0.5;
+}
+@media screen and (max-width: 480px) {
+  #content.villas.feed .landing .half img {
+    height: 100%;
+    max-width: none;
+    width: auto;
+  }
 }
 #content.villas.feed .landing .half img.active {
   opacity: 1;
@@ -2016,6 +2051,12 @@ footer div ul li a img {
 #content.villas.feed .landing .container h2.active {
   opacity: 1;
 }
+@media screen and (max-width: 480px) {
+  #content.villas.feed .landing .container h2 {
+    line-height: 2.7rem;
+    padding-top: 1.5rem;
+  }
+}
 #content.villas.feed .landing .container p {
   font-family: "Playfair Display", garamond, serif;
   color: #d2bb71;
@@ -2031,13 +2072,34 @@ footer div ul li a img {
 #content.villas.feed .landing .container .six {
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  #content.villas.feed .landing .container .six {
+    max-height: 100%;
+  }
+}
 #content.villas.feed .landing .container .six p {
   top: 0.3rem;
   right: 3rem;
   margin: 0;
 }
+@media screen and (max-width: 480px) {
+  #content.villas.feed .landing .container .six p {
+    top: 1.2rem;
+  }
+}
 #content.villas.feed .landing .container .six:last-child h2 {
   padding-left: 5rem;
+}
+@media screen and (max-width: 480px) {
+  #content.villas.feed .landing .container .six:last-child p {
+    right: -2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  #content.villas.feed .main {
+    padding-top: 15rem;
+    z-index: -1;
+  }
 }
 #content.villas.feed article.room {
   margin-bottom: 5rem;
@@ -2045,9 +2107,54 @@ footer div ul li a img {
 #content.villas.feed article.room ul {
   padding: 0 !important;
 }
+@media screen and (min-width: 480px) {
+  #content.villas.feed article.room .images {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
+  }
+  #content.villas.feed article.room .images:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #content.villas.feed article.room .images {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%;
+  }
+  #content.villas.feed article.room .images:last-child {
+    margin-right: 0;
+  }
+}
 #content.villas.feed article.room .infos {
   padding-left: 5rem;
   position: relative;
+}
+@media screen and (min-width: 480px) {
+  #content.villas.feed article.room .infos {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
+  }
+  #content.villas.feed article.room .infos:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #content.villas.feed article.room .infos {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%;
+    padding-left: 0;
+  }
+  #content.villas.feed article.room .infos:last-child {
+    margin-right: 0;
+  }
 }
 #content.villas.feed article.room .infos .price-range {
   position: absolute;
@@ -2100,6 +2207,7 @@ footer div ul li a img {
   width: auto;
   object-fit: cover;
   z-index: 5;
+  min-height: 100%;
 }
 
 article.press {

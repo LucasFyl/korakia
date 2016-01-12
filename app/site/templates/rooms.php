@@ -36,7 +36,7 @@
 	      <?php $rooms = $page->children()->visible()->sortBy('title', 'asc') ?>
 	      <?php foreach($rooms as $room): ?>
 					<article class="room img-in">
-						<div class="six images">
+						<div class="images">
 							<ul class="slider-for">
 								<?php $images = $room->images(); ?>
 								<?php foreach ($images as $image): ?>
@@ -48,12 +48,12 @@
 								<?php endforeach; ?>
 							</ul>
 						</div>
-						<div class="six infos">
+						<div class="infos">
 							<h2><?php echo $room->title() ?></h2>
 							<?php echo $room->text()->kirbytext() ?>
-							<div class="price-range">
+							<!-- <div class="price-range">
 								<?php echo $room->priceRange() ?>
-							</div>
+							</div> -->
 							<ul class="slider-nav">
 								<?php $images = $room->images(); ?>
 								<?php foreach ($images as $image): ?>

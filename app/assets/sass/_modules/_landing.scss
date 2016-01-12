@@ -7,6 +7,7 @@
     @include size(auto);
     object-fit: cover;
     position: $position;
+    left: 0;
     z-index: 5;
 
     max-width: none;
@@ -74,11 +75,22 @@
     }
     .wrapper {
       width: 50%;
+      @include media($mobile) {
+        top: 35%;
+        width: 100%;
+      }
+    }
+    &:nth-child(2) {
+      .wrapper {
+        @include media($mobile) {
+          top: 70%;
+        }
+      }
     }
     img {
       width: 50%;
       position: fixed;
-      z-index: 6;top: 0;
+      z-index: 6;top: 0;left: 0;
       opacity: 0;
       @include transition(all 0.5s ease-in-out);
     }
@@ -98,6 +110,15 @@
     p {
       color: $golden;
       font-size: 1.6rem;
+    }
+
+    @include media($mobile) {
+      min-height: 50vh;
+      height: 50vh;
+      width: 100vw;
+      h2, p {
+        opacity: 1 !important;
+      }
     }
 
   }

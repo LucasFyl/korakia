@@ -3,6 +3,9 @@
     height: 9.7rem;
     top: 7.4rem;
     margin-bottom: 5rem;
+    @include media($mobile) {
+      top:15.7rem;
+    }
     .half {
       width: 50%;
       display:block;
@@ -17,6 +20,11 @@
       }
       img {
         opacity: 0.5;
+        @include media($mobile) {
+          height: 100%;
+          max-width: none;
+          width: auto;
+        }
         &.active {
           opacity: 1;
         }
@@ -37,6 +45,10 @@
         &.active {
           opacity: 1;
         }
+        @include media($mobile) {
+          line-height:2.7rem;
+          padding-top: 1.5rem;
+        }
       }
       p {
         font-family: $title-font;
@@ -53,15 +65,28 @@
       }
       .six {
         position: relative;
+        @include media($mobile) {
+          max-height: 100%;
+        }
         p {
           top: 0.3rem;
           right: 3rem;
           margin: 0;
+          @include media($mobile){
+            top: 1.2rem;
+          }
         }
         &:last-child {
           h2{padding-left: 5rem;}
+          @include media($mobile) {p {right: -2rem;}}
         }
       }
+    }
+  }
+  @include media($mobile) {
+    .main {
+      padding-top: 15rem;
+      z-index: -1;
     }
   }
   article.room {
@@ -71,11 +96,23 @@
       padding: 0 !important;
     }
     .images {
-
+      @include media($desktop) {
+        @include span-columns(6);
+      } @include media($mobile) {
+        @include span-columns(12);
+      }
     }
     .infos {
       padding-left: 5rem;
       position: relative;
+
+      @include media($desktop) {
+        @include span-columns(6);
+      } @include media($mobile) {
+        @include span-columns(12);
+        padding-left: 0;
+      }
+
       .price-range {
         position: absolute;
         right: 3rem; top: 2rem;
@@ -125,5 +162,6 @@
     @include size(auto);
     object-fit: cover;
     z-index: 5;
+    min-height: 100%;
   }
 }
