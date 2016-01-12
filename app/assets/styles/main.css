@@ -601,7 +601,7 @@ ul.no-bullet {
   overflow: hidden;
 }
 
-.vertical-center, #content.special-offers section.events-retreat > .six:first-child, #content.special-offers section.photoshoots > .six:nth-child(2) {
+.vertical-center {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -1964,18 +1964,56 @@ footer div ul li a img {
 #content.special-offers section.weddings .modal-outer {
   margin: 10rem auto;
 }
+@media screen and (min-width: 480px) {
+  #content.special-offers section.weddings .text {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
+  }
+  #content.special-offers section.weddings .text:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #content.special-offers section.weddings .text {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%;
+  }
+  #content.special-offers section.weddings .text:last-child {
+    margin-right: 0;
+  }
+}
 #content.special-offers section.engagements h2, #content.special-offers section.engagements p {
-  float: left;
-  display: block;
-  margin-right: 2.3576515979%;
-  width: 48.821174201%;
-  margin-left: 25.5894128995%;
   text-align: center;
-  margin-bottom: 4.5rem;
   float: none;
 }
-#content.special-offers section.engagements h2:last-child, #content.special-offers section.engagements p:last-child {
-  margin-right: 0;
+@media screen and (min-width: 480px) {
+  #content.special-offers section.engagements h2, #content.special-offers section.engagements p {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
+    margin-left: 25.5894128995%;
+    margin-bottom: 4.5rem;
+  }
+  #content.special-offers section.engagements h2:last-child, #content.special-offers section.engagements p:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #content.special-offers section.engagements h2, #content.special-offers section.engagements p {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%;
+    margin-left: 0%;
+  }
+  #content.special-offers section.engagements h2:last-child, #content.special-offers section.engagements p:last-child {
+    margin-right: 0;
+  }
 }
 #content.special-offers section.engagements .assets {
   width: 100%;
@@ -1988,19 +2026,44 @@ footer div ul li a img {
   padding: 10rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-#content.special-offers section.events-retreat > .six:first-child {
-  float: left;
-  position: absolute;
-  top: 50%;
+@media screen and (min-width: 480px) {
+  #content.special-offers section.events-retreat .infos, #content.special-offers section.events-retreat .images {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
+  }
+  #content.special-offers section.events-retreat .infos:last-child, #content.special-offers section.events-retreat .images:last-child {
+    margin-right: 0;
+  }
 }
-#content.special-offers section.events-retreat > .six:first-child h2 {
+@media screen and (max-width: 480px) {
+  #content.special-offers section.events-retreat .infos, #content.special-offers section.events-retreat .images {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%;
+  }
+  #content.special-offers section.events-retreat .infos:last-child, #content.special-offers section.events-retreat .images:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 480px) {
+  #content.special-offers section.events-retreat .infos {
+    float: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+#content.special-offers section.events-retreat .infos h2 {
   margin-top: 0;
   margin-bottom: 4.5rem;
 }
-#content.special-offers section.events-retreat > .six:nth-child(2) {
+#content.special-offers section.events-retreat .images {
   float: right;
 }
-#content.special-offers section.events-retreat > .six:nth-child(2) .row {
+#content.special-offers section.events-retreat .images .row {
   margin-bottom: 1.2rem;
 }
 #content.special-offers section.photoshoots {
@@ -2008,12 +2071,42 @@ footer div ul li a img {
   position: relative;
   padding: 10rem 0;
 }
-#content.special-offers section.photoshoots > .six:nth-child(2) {
-  position: absolute;
-  top: 50%;
-  right: 0;
+@media screen and (min-width: 480px) {
+  #content.special-offers section.photoshoots .infos, #content.special-offers section.photoshoots .image {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
+  }
+  #content.special-offers section.photoshoots .infos:last-child, #content.special-offers section.photoshoots .image:last-child {
+    margin-right: 0;
+  }
 }
-#content.special-offers section.photoshoots > .six:nth-child(2) h2 {
+@media screen and (max-width: 480px) {
+  #content.special-offers section.photoshoots .infos, #content.special-offers section.photoshoots .image {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%;
+  }
+  #content.special-offers section.photoshoots .infos:last-child, #content.special-offers section.photoshoots .image:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 480px) {
+  #content.special-offers section.photoshoots .infos {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #content.special-offers section.photoshoots .infos {
+    margin-top: 4rem;
+  }
+}
+#content.special-offers section.photoshoots .infos h2 {
   margin-top: 0;
   margin-bottom: 4.5rem;
 }

@@ -20,10 +20,10 @@
       <section class="weddings">
         <h2><?php echo $page->weddingTitle() ?></h2>
         <div class="row">
-          <div class="six">
+          <div class="text">
             <?php echo $page->weddingText1st()->kirbytext() ?>
           </div>
-          <div class="six">
+          <div class="text">
             <?php echo $page->weddingText2nd()->kirbytext() ?>
           </div>
         </div>
@@ -54,12 +54,12 @@
       </section>
 
       <section class="events-retreat">
-        <div class="six">
+        <div class="infos">
           <h2><?php echo $page->eventsTitle() ?></h2>
           <?php echo $page->eventsText()->kirbytext() ?>
         </div>
 
-        <div class="six">
+        <div class="images">
           <div class="row">
             <div class="six">
               <img class="img-in" src="<?php echo $page->image('asset-events-1.jpg')->url() ?>" alt="<?php echo $page->eventsTitle() ?>" />
@@ -80,10 +80,10 @@
       </section>
 
       <section class="photoshoots">
-        <div class="six">
+        <div class="image">
           <img class="img-in" src="<?php echo $page->image('asset-photoshoot.jpg')->url() ?>" alt="<?php echo $page->photosTitle() ?>" />
         </div>
-        <div class="six">
+        <div class="infos">
           <h2><?php echo $page->photosTitle() ?></h2>
           <?php echo $page->photosText()->kirbytext() ?>
         </div>
