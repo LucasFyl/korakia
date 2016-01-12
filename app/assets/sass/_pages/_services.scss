@@ -9,7 +9,16 @@
       }
       .infos {
         padding: 7.5rem 7.5rem 0 7.5rem;
-        p {
+        @include media($mobile) {
+          padding: 5rem;
+        }
+      }
+      .infos, .image {
+        @include media($desktop) {
+          @include span-columns(6);
+        }
+        @include media($mobile) {
+          @include span-columns(12);
         }
       }
     }

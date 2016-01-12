@@ -1078,14 +1078,8 @@ footer div ul li a img {
 }
 @media screen and (max-width: 480px) {
   .landing .wrapper h1 {
-    float: left;
-    display: block;
-    margin-right: 2.3576515979%;
-    width: 74.4105871005%;
-    margin-left: 8.5298042998%;
-  }
-  .landing .wrapper h1:last-child {
-    margin-right: 0;
+    width: 100%;
+    margin: 0;
   }
 }
 .landing .scrolldown {
@@ -1932,6 +1926,33 @@ footer div ul li a img {
 }
 #content.services .main article .infos {
   padding: 7.5rem 7.5rem 0 7.5rem;
+}
+@media screen and (max-width: 480px) {
+  #content.services .main article .infos {
+    padding: 5rem;
+  }
+}
+@media screen and (min-width: 480px) {
+  #content.services .main article .infos, #content.services .main article .image {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
+  }
+  #content.services .main article .infos:last-child, #content.services .main article .image:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #content.services .main article .infos, #content.services .main article .image {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%;
+  }
+  #content.services .main article .infos:last-child, #content.services .main article .image:last-child {
+    margin-right: 0;
+  }
 }
 
 #content.special-offers section.weddings h2 {

@@ -31,8 +31,8 @@
       @include clearfix;
       float: none !important;
       @include media($mobile) {
-        @include span-columns(9);
-        @include shift(1);
+        width: 100%;
+        margin: 0;
       }
     }
   }
