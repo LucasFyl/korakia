@@ -1209,6 +1209,29 @@ footer div ul li a img {
 .date-picker .checkout:after {
   right: 2rem;
 }
+.date-picker .guests select {
+  height: 100%;
+  width: 46%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  background: transparent;
+  color: #293443;
+  font-family: "Playfair Display", garamond, serif;
+  padding-left: 8rem;
+  font-size: 4.8rem;
+}
+.date-picker .guests select option:not(:checked) {
+  font-size: 1.2rem;
+}
+.date-picker .guests select:focus {
+  outline: none;
+}
 .date-picker .guests:before {
   content: "Guests";
 }
@@ -1233,12 +1256,12 @@ footer div ul li a img {
   font-family: "Playfair Display", garamond, serif;
   text-decoration: none;
 }
-.date-picker .checkin.busy:before, .date-picker .checkout.busy:before {
+.date-picker .checkin.busy:before, .date-picker .checkout.busy:before, .date-picker .guests.busy:before {
   font-size: 1.3rem;
   top: 2.4rem;
   left: 3rem;
 }
-.date-picker .checkin.busy:after, .date-picker .checkout.busy:after {
+.date-picker .checkin.busy:after, .date-picker .checkout.busy:after, .date-picker .guests.busy:after {
   right: 2.5rem;
   bottom: 3.5rem;
 }
@@ -1248,7 +1271,7 @@ footer div ul li a img {
   padding: 5rem 0 5rem 5rem;
   background-color: black;
   top: 0;
-  margin-top: -11.5rem;
+  margin-top: -16.5rem;
   left: 50%;
   margin-left: -35.9rem;
   z-index: 99;
@@ -1257,9 +1280,18 @@ footer div ul li a img {
   transition: all 0.35s ease;
 }
 .calendar-wrap.open {
-  margin-top: -6.5rem;
+  margin-top: -11.5rem;
   opacity: 1;
   visibility: visible;
+}
+.calendar-wrap > div p {
+  margin: 0 0 2rem;
+  width: 100%;
+  font-family: "Playfair Display", garamond, serif;
+  font-size: 1.6rem;
+  font-style: italic;
+  padding-right: 5rem;
+  letter-spacing: .1rem;
 }
 .calendar-wrap .hasDatepicker {
   float: left;

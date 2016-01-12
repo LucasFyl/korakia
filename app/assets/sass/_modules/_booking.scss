@@ -68,6 +68,28 @@
     &:after {right: 2rem;}
   }
   .guests {
+    select {
+      @include size(46% 100%);
+      @include appearance(none);
+      border:none;
+      outline:none;
+      border-radius: 0;
+      background: transparent;
+
+      color: $dark;
+      font-family: $title-font;
+      padding-left: 8rem;
+      font-size: 4.8rem;
+      option:not(:checked) {
+        font-size: 1.2rem;
+      }
+      &:focus {
+        outline:none;
+      }
+
+      option[selected=selected] {
+      }
+    }
     &:before {content: "Guests";}
     &:after {right: 4.5rem;}
   }
@@ -90,7 +112,7 @@
   }
 
   // Animation
-  .checkin, .checkout {
+  .checkin, .checkout, .guests {
     &.busy {
       &:before {
         font-size: 1.3rem;
@@ -107,15 +129,24 @@
   position: absolute;
   padding: 5rem 0 5rem 5rem;
   background-color: black;
-  top: 0; margin-top: -11.5rem;
+  top: 0; margin-top: -16.5rem;
   left: 50%; margin-left: -35.9rem;
   z-index: 99;
   visibility: hidden; opacity: 0;
   @include transition(all 0.35s ease);
   &.open {
-    margin-top: -6.5rem;
+    margin-top: -11.5rem;
     opacity: 1;
     visibility: visible;
+  }
+  > div p {
+    margin: 0 0 2rem;
+    width: 100%;
+    font-family: $title-font;
+    font-size:1.6rem;
+    font-style: italic;
+    padding-right: 5rem;
+    letter-spacing: .1rem;
   }
   .hasDatepicker {
     @include span-columns(6);

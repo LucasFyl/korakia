@@ -9,8 +9,12 @@
 				<h1 class="img-in"> <?php echo $page->baselineL1() ?> <br/> <?php echo $page->baselineL2() ?></h1>
 
 				<div class="calendar-wrap">
-					<div id="datepicker-1"></div>
-					<div id="datepicker-2"></div>
+					<div id="datepicker-1">
+						<p>Check in</p>
+					</div>
+					<div id="datepicker-2">
+						<p>Check out</p>
+					</div>
 				</div>
 
 				<div class="date-picker">
@@ -23,7 +27,12 @@
 						<p class="datepicker-month datepicker-month-2"></p>
 					</div>
 					<div class="guests">
-						<!-- number dropdown -->
+						<select class="custom-select" name="guests">
+							<option value="" selected="selected"></option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+						</select>
 					</div>
 					<div class="submit">
 						<a href="#">Check availability</a>

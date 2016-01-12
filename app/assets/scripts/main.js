@@ -42,9 +42,16 @@ function displayCalendar() {
 	'use strict';
 	var cal = $('.calendar-wrap');
 	$('body').on('click', '.checkin, .checkout',function(){
-		var input = $('.checkin, .checkout');
+		var input = $('.checkin, .checkout, .guests');
 		input.addClass('busy');
 		cal.toggleClass('open');
+	});
+	$('body').on('click', '.guests',function(){
+		$('.guests').addClass('busy');
+	});
+	$('body').on('click', '.landing img', function(event){
+		event.stopPropagation();
+		cal.removeClass('open');
 	});
 }
 function initSlickSliders() {
