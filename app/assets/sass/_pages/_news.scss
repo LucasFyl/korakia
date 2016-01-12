@@ -5,8 +5,24 @@ article.press {
   &:first-child {
     padding-top: 0;
   }
+  .image {
+    @include media($desktop) {
+      @include span-columns(5);
+    }
+    @include media($mobile) {
+      @include span-columns(12);
+    }
+  }
   .infos {
-    padding-left: 5rem;
+
+    @include media($desktop) {
+      @include span-columns(7);
+      padding-left: 5rem;
+    }
+    @include media($mobile) {
+      @include span-columns(12);
+      padding-top: 5rem;
+    }
   }
   h4 {
     font-family: $base-font;

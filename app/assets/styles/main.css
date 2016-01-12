@@ -2336,8 +2336,51 @@ article.press::after {
 article.press:first-child {
   padding-top: 0;
 }
-article.press .infos {
-  padding-left: 5rem;
+@media screen and (min-width: 480px) {
+  article.press .image {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 40.2913699012%;
+  }
+  article.press .image:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  article.press .image {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%;
+  }
+  article.press .image:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 480px) {
+  article.press .infos {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 57.3509785009%;
+    padding-left: 5rem;
+  }
+  article.press .infos:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  article.press .infos {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%;
+    padding-top: 5rem;
+  }
+  article.press .infos:last-child {
+    margin-right: 0;
+  }
 }
 article.press h4 {
   font-family: "Lato", helvetica, sans-serif;
