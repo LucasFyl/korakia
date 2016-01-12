@@ -2,7 +2,7 @@ Title: About
 
 ----
 
-Landingtitle1: About Korokia Pensione
+Landingtitle1: About Korakia Pensione
 
 ----
 
@@ -16,7 +16,7 @@ Introtitle: Escape, mediterranean style
 
 Introtext1stcol: 
 
-Welcome to a romantic retreat unlike any other. Korokia Pensione offers a unique and relaxing getaway from day to day reality. Crafted after a Mediterranean-style pensione, Korokia blends the silhouette of Tangier with a whisper of the Mediterranean.
+Welcome to a romantic retreat unlike any other. Korakia Pensione offers a unique and relaxing getaway from day to day reality. Crafted after a Mediterranean-style pensione, Korakia blends the silhouette of Tangier with a whisper of the Mediterranean.
 
 Begin the day with a complimentary full-cooked breakfast in the Moroccan courtyard. Soothe your soul poolside, seek healing through yoga or pamper yourself with our spa offerings. Curl up with a vintage book from the library lounge. Join a game of bocce ball or explore downtown Palm Springs on one of our complimentary bicycles. Relax and refresh with the Moroccan tea service each afternoon.
 
@@ -26,7 +26,7 @@ Introtext2ndcol:
 
 Lanterns and fire-pits flicker, illuminating the heated pools at night. Classic and foreign films glimmer on a nearby screen. A Moroccan daybed beckons for stargazing. Nightly turn-downs are done in the European tradition.
 
-Come and see why Forbes Traveler named Korokia one of the “Sexiest Hotels in America.”
+Come and see why Forbes Traveler named korakia one of the “Sexiest Hotels in America.”
 
 ----
 
@@ -64,4 +64,4 @@ Charitiestitle: charities
 
 ----
 
-Charitiestext: Korokia sponsors and supports select charities. Over the years, we have participated in events, including the AIDS Project, and have donated to many non-profit organizations. We believe that giving back is essential to making our world a better place. If you are interested in joining us in these events or would like to share information about your non-profit organization, please email us at email us.
+Charitiestext: Korakia sponsors and supports select charities. Over the years, we have participated in events, including the AIDS Project, and have donated to many non-profit organizations. We believe that giving back is essential to making our world a better place. If you are interested in joining us in these events or would like to share information about your non-profit organization, please email us at email us.

@@ -10,11 +10,11 @@ Weddingtitle: Weddings
 
 ----
 
-Weddingtext1st: Korokia offers an intimate and dramatic setting for your destination wedding. Imagine an outdoor wedding amidst candle lit walkways, jasmine scented air, and stunning views of the San Jacinto Mountains. Come and see why Korokia is a favorite subject for art and fashion photographers.
+Weddingtext1st: Korakia offers an intimate and dramatic setting for your destination wedding. Imagine an outdoor wedding amidst candle lit walkways, jasmine scented air, and stunning views of the San Jacinto Mountains. Come and see why Korakia is a favorite subject for art and fashion photographers.
 
 ----
 
-Weddingtext2nd: With outdoor event space for up to 130 people, Korokia can host your special day from start to finish. For more information on how we can help you plan an unforgettable wedding experience, please contact us by telephone at (link: phone:760-864-6411 text: 760-864-6411) or (link: mailto:contact@korokia.com text: email us).
+Weddingtext2nd: With outdoor event space for up to 130 people, Korakia can host your special day from start to finish. For more information on how we can help you plan an unforgettable wedding experience, please contact us by telephone at (link: phone:760-864-6411 text: 760-864-6411) or (link: mailto:contact@korakia.com text: email us).
 
 ----
 
@@ -22,7 +22,7 @@ Engagementstitle: Engagements
 
 ----
 
-Engagementstext: Korokia is the perfect location to capture one of the very special moments in your life. The backdrop of the property is sure to make your pictures memorable and with style. Korokia is sure to bring character to your special occasion with romance and meaning to your engagement event.
+Engagementstext: Korakia is the perfect location to capture one of the very special moments in your life. The backdrop of the property is sure to make your pictures memorable and with style. Korakia is sure to bring character to your special occasion with romance and meaning to your engagement event.
 
 ----
 
@@ -36,7 +36,7 @@ Photostitle: Photoshoots
 
 Eventstext: 
 
-Whether you need to host an executive retreat, a corporate think-tank getaway, or a reunion with good friends, Korokia is an inspirational location for small gatherings. We have indoor meeting space for up to 30 people conference-style, in addition to ample outdoor event space for up to 130 guests. We can assist you with planning itineraries, excursions and entertainment.
+Whether you need to host an executive retreat, a corporate think-tank getaway, or a reunion with good friends, Korakia is an inspirational location for small gatherings. We have indoor meeting space for up to 30 people conference-style, in addition to ample outdoor event space for up to 130 guests. We can assist you with planning itineraries, excursions and entertainment.
 
 For more information on how we can help inspire your event planning, please contact us by telephone at 760-864-6411 or email us.
 
@@ -44,6 +44,6 @@ For more information on how we can help inspire your event planning, please cont
 
 Photostext: 
 
-Korokia offers a beautiful setting for some of the top photographers in the world. Whether it's gracing the pages of leading publications such as Architectural Digest, Elle, Vogue, or making your own memories with a wedding or engagement shoot, Korokia is sure to bring character and a dramatic backdrop to any picture moment.
+Korakia offers a beautiful setting for some of the top photographers in the world. Whether it's gracing the pages of leading publications such as Architectural Digest, Elle, Vogue, or making your own memories with a wedding or engagement shoot, Korakia is sure to bring character and a dramatic backdrop to any picture moment.
 
 To inquire about photo shoots please call (link: phone:760-864-6411 text: 760-864-6411.)

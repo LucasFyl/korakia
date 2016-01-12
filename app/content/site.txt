@@ -1,4 +1,4 @@
-Title: Korokia
+Title: Korakia Pensione
 
 ----
 
@@ -14,4 +14,4 @@ Keywords:
 
 ----
 
-Copyright: © 20015-(date: Year) (link: http://korokia.com text: Korokia)
+Copyright: © 20015-(date: Year) (link: http://korokia.com text: Korakia)

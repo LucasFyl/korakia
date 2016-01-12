@@ -9,8 +9,8 @@ role: admin
 firstname: Lucas
 lastname: Fayolle
 history:
+  - about
+  - special-offers
+  - home
   - villas/moroccan/nomad-suite
   - villas/moroccan/marrakech-suite
-  - villas/mediterranean/leonean-bungalow
-  - special-offers
-  - about
