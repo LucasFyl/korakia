@@ -109,10 +109,17 @@
       font-family: $title-font;
       text-decoration: none;
     }
+    @include media($mobile) {
+      float: none;
+      margin-left: 22%;
+    }
   }
 
   // Animation
   .checkin, .checkout, .guests {
+    @include media($mobile) {
+      display: none !important;
+    }
     &.busy {
       &:before {
         font-size: 1.3rem;

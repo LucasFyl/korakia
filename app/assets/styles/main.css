@@ -961,6 +961,12 @@ header nav ul li {
   display: inline-block;
   margin-right: 4rem;
 }
+@media screen and (max-width: 480px) {
+  header nav ul li {
+    width: 38%;
+    padding-top: 1.5rem;
+  }
+}
 header nav ul li a {
   display: block;
   font-size: 14px;
@@ -1002,6 +1008,13 @@ footer div > p {
   color: #293443;
   margin-top: 0;
   margin-bottom: 0;
+}
+@media screen and (max-width: 480px) {
+  footer div > p {
+    line-height: 1.2;
+    width: 60% !important;
+    padding-top: 2.5rem;
+  }
 }
 footer div ul {
   list-style: none;
@@ -1256,6 +1269,17 @@ footer div ul li a img {
   font-family: "Playfair Display", garamond, serif;
   text-decoration: none;
 }
+@media screen and (max-width: 480px) {
+  .date-picker .submit {
+    float: none;
+    margin-left: 22%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .date-picker .checkin, .date-picker .checkout, .date-picker .guests {
+    display: none !important;
+  }
+}
 .date-picker .checkin.busy:before, .date-picker .checkout.busy:before, .date-picker .guests.busy:before {
   font-size: 1.3rem;
   top: 2.4rem;
@@ -1459,8 +1483,25 @@ footer div ul li a img {
 #content.home .landing h1:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 480px) {
+  #content.home .landing h1 {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 82.9403914003%;
+    margin-left: 8.5298042998%;
+  }
+  #content.home .landing h1:last-child {
+    margin-right: 0;
+  }
+}
 #content.home .main {
   padding-top: 15rem;
+}
+@media screen and (max-width: 480px) {
+  #content.home .main {
+    padding-top: 5rem;
+  }
 }
 #content.home .main section:first-child {
   padding-bottom: 15rem;
@@ -1476,14 +1517,44 @@ footer div ul li a img {
 #content.home .main section:first-child .infos {
   padding-top: 14.4rem;
 }
+@media screen and (max-width: 480px) {
+  #content.home .main section:first-child .infos {
+    padding-top: 0;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  #content.home .main section:first-child .infos:last-child {
+    margin-right: 0;
+  }
+}
 #content.home .main section:first-child .images {
   padding-left: 5rem;
+}
+@media screen and (max-width: 480px) {
+  #content.home .main section:first-child .images {
+    padding-left: 0;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%;
+  }
+  #content.home .main section:first-child .images:last-child {
+    margin-right: 0;
+  }
 }
 #content.home .main section:first-child .images figure {
   height: 30rem;
   overflow: hidden;
   position: relative;
   margin-left: 0;
+}
+@media screen and (max-width: 480px) {
+  #content.home .main section:first-child .images figure {
+    height: 18rem;
+  }
 }
 #content.home .main section:first-child .images figure img {
   min-width: 100%;
@@ -1531,6 +1602,18 @@ footer div ul li a img {
   margin-left: 25.5894128995%;
   text-align: center;
 }
+@media screen and (max-width: 480px) {
+  #content.home .main section:last-child > .six {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 82.9403914003%;
+    margin-left: 8.5298042998%;
+  }
+  #content.home .main section:last-child > .six:last-child {
+    margin-right: 0;
+  }
+}
 #content.home .main section:last-child > .six h2 {
   float: left;
   display: block;
@@ -1541,6 +1624,18 @@ footer div ul li a img {
 }
 #content.home .main section:last-child > .six h2:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 480px) {
+  #content.home .main section:last-child > .six h2 {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 82.9403914003%;
+    margin-left: 8.5298042998%;
+  }
+  #content.home .main section:last-child > .six h2:last-child {
+    margin-right: 0;
+  }
 }
 #content.home .main section:last-child > .six p {
   margin: 8rem 0;
@@ -1554,6 +1649,11 @@ footer div ul li a img {
 #content.home .main section:last-child figure img {
   min-width: 100%;
   object-fit: cover;
+}
+@media screen and (max-width: 480px) {
+  #content.home .main section:last-child figure {
+    width: 100%;
+  }
 }
 #content.home .main section:last-child figure figcaption {
   height: 12rem;
@@ -1599,6 +1699,17 @@ footer div ul li a img {
   opacity: 1;
   transition: all 0.25s 0.2s ease-out;
 }
+@media screen and (max-width: 480px) {
+  #content.home .main section:last-child figure:first-child figcaption {
+    transform: translateX(0);
+    transition: all 0.25s ease-out;
+  }
+  #content.home .main section:last-child figure:first-child figcaption span {
+    right: -2.5rem;
+    opacity: 1;
+    transition: all 0.25s 0.2s ease-out;
+  }
+}
 #content.home .main section:last-child figure:last-child figcaption {
   transform: translateX(100%);
   right: 0;
@@ -1615,6 +1726,17 @@ footer div ul li a img {
   left: -2.5rem;
   opacity: 1;
   transition: all 0.25s 0.2s ease-out;
+}
+@media screen and (max-width: 480px) {
+  #content.home .main section:last-child figure:last-child figcaption {
+    transform: translateX(0);
+    transition: all 0.25s ease-out;
+  }
+  #content.home .main section:last-child figure:last-child figcaption span {
+    left: -2.5rem;
+    opacity: 1;
+    transition: all 0.25s 0.2s ease-out;
+  }
 }
 
 #content.about section.intro {

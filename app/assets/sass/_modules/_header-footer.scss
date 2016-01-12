@@ -27,7 +27,10 @@ header {
       li {
         display: inline-block;
         margin-right: 4rem;
-
+        @include media($mobile) {
+          width: 38%;
+          padding-top: 1.5rem;
+        }
         a {
           display: block;
 
@@ -58,6 +61,11 @@ footer {
 
       margin-top: 0;
       margin-bottom: 0;
+      @include media($mobile) {
+        line-height: 1.2;
+        width: 60% !important;
+        padding-top: 2.5rem;
+      }
     }
     ul {
       list-style: none;
