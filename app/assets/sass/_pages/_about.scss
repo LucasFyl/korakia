@@ -26,10 +26,31 @@
       img {
         width: 100%;
         object-fit: cover;
+        min-height: 100%;
       }
     }
     .container {
       padding-top: 10rem;
+      .infos {
+        @include media($desktop) {
+          @include span-columns(5);
+        }
+        @include media($mobile) {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          @include span-columns(12);
+        }
+
+      }
+      .images {
+        @include media($desktop) {
+          @include span-columns(7);
+        }
+        @include media($mobile) {
+          @include span-columns(12);
+        }
+
+      }
       &:nth-child(2) .infos {
         padding-left: 9.5rem;
       }
@@ -37,11 +58,12 @@
         padding-right: 9.5rem;
       }
       h3 {
-        @include font(3.6, 1);
+        @include font(3.6, 4.5);
         margin-bottom: 6rem;
       }
       .btn {
         margin-top: 3.5rem;
+        margin-bottom: 3.5rem;
       }
     }
   }
@@ -58,6 +80,7 @@
     img {
       width: 100%;
       object-fit: cover;
+      min-height: 100%;
     }
     .container {
       position: relative;
@@ -68,12 +91,19 @@
         &.title {
           top: 18rem;
           left: 0;
+          @include media($mobile) {
+            @include span-columns(12);
+            top: 3rem;
+          }
         }
         &.text {
           top: 15rem;
           right: 0;
           @include font(1.65, 2.5);
           color:white;
+          @include media($mobile) {
+            @include span-columns(12);
+          }
         }
       }
     }

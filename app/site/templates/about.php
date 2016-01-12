@@ -33,22 +33,22 @@
           <img src="<?php echo $page->image('asset-bg-banner.jpg')->url() ?>" alt="<?php echo $page->historyTitle() ?>" />
         </div>
         <div class="container">
-          <div class="five image">
+          <div class="image">
             <img class="img-in" src="<?php echo $page->image('asset-mediterranean.jpg')->url() ?>" alt="<?php echo $page->firstTitle() ?>" />
           </div>
-          <div class="seven infos">
+          <div class="infos">
             <h3><?php echo $page->firstTitle() ?></h3>
             <?php echo $page->firstText()->kirbytext() ?>
             <a href="<?php echo $pages->find('villas/mediterranean')->url() ?>" class="btn golden cta">Explore all our rooms</a>
           </div>
         </div>
         <div class="container">
-          <div class="seven infos">
+          <div class="infos">
             <h3><?php echo $page->secondTitle() ?></h3>
             <?php echo $page->secondText()->kirbytext() ?>
             <a href="<?php echo $pages->find('villas/moroccan')->url() ?>" class="btn golden cta">Explore all our rooms</a>
           </div>
-          <div class="five image">
+          <div class="image">
             <img class="img-in" src="<?php echo $page->image('asset-moroccan.jpg')->url() ?>" alt="<?php echo $page->secondTitle() ?>" />
           </div>
         </div>

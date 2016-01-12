@@ -7,8 +7,6 @@
     @include size(auto);
     object-fit: cover;
     position: $position;
-    margin: auto;
-    top: 0;left: 0;right: 0;bottom: 0;
     z-index: 5;
 
     max-width: none;
@@ -31,6 +29,10 @@
 
       @include clearfix;
       float: none !important;
+      @include media($mobile) {
+        @include span-columns(9);
+        @include shift(1);
+      }
     }
   }
   .scrolldown {
