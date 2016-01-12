@@ -2,7 +2,7 @@ Title: Nomad Suite
 
 ----
 
-Text: A large, bright and airy suite situated in the center of the courtyard adobe. The living room overlooks the swimming pool with views of the San Jacinto Mountains beyond. The suite offers a small private patio, a Queen bed, full kitchen and a fireplace in the living room.
+Text: A large, bright and airy suite situated in the center of the courtyard adobe. The living room overlooks the swimming pool with views of the San Jacinto Mountains beyond. The suite offers a private patio, Queen bed, full kitchen and a fireplace in the living room.
 
 ----
 

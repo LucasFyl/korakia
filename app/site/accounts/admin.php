@@ -10,7 +10,7 @@ firstname: Lucas
 lastname: Fayolle
 history:
   - special-offers
-  - home
-  - services/other
-  - services/candles
-  - services/maroccan-tea
+  - about
+  - villas/moroccan/bedouin-room
+  - villas/moroccan/nomad-suite
+  - villas/moroccan/artist-studio

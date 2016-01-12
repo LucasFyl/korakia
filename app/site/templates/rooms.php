@@ -33,7 +33,7 @@
 
 		<div class="main container">
 				<?php error_reporting(E_ALL); ini_set('display_errors', '1'); ?>
-	      <?php $rooms = $page->children()->visible() ?>
+	      <?php $rooms = $page->children()->visible()->sortBy('title', 'asc') ?>
 	      <?php foreach($rooms as $room): ?>
 					<article class="room img-in">
 						<div class="six images">

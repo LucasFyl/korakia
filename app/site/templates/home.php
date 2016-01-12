@@ -39,7 +39,9 @@
 					</div>
 				</div>
 			</div>
-			<!-- TO DO : IMAGE SLIDER + DOTS -->
+			<div class="scrolldown">
+        scroll down
+      </div>
 			<img src="<?php echo $page->image('landing.jpg')->url() ?>" alt="Discover The Moroccan Villas" />
 		</div>
 

@@ -2,11 +2,11 @@ Title: About
 
 ----
 
-Landingtitle1: About Korokia Hotel
+Landingtitle1: About Korokia Pensione
 
 ----
 
-Landingtitle2: Morrocain & Mediterranean Villa
+Landingtitle2: Moroccan & Mediterranean Villa
 
 ----
 
@@ -16,7 +16,7 @@ Introtitle: Escape, mediterranean style
 
 Introtext1stcol: 
 
-Welcome to a romantic retreat unlike any other. Korakia Pensione offers a unique and relaxing getaway from day to day reality. Crafted after a Mediterranean-style pensione, Korakia blends the silhouette of Tangier with a whisper of the Mediterranean.
+Welcome to a romantic retreat unlike any other. Korokia Pensione offers a unique and relaxing getaway from day to day reality. Crafted after a Mediterranean-style pensione, Korokia blends the silhouette of Tangier with a whisper of the Mediterranean.
 
 Begin the day with a complimentary full-cooked breakfast in the Moroccan courtyard. Soothe your soul poolside, seek healing through yoga or pamper yourself with our spa offerings. Curl up with a vintage book from the library lounge. Join a game of bocce ball or explore downtown Palm Springs on one of our complimentary bicycles. Relax and refresh with the Moroccan tea service each afternoon.
 
@@ -26,7 +26,7 @@ Introtext2ndcol:
 
 Lanterns and fire-pits flicker, illuminating the heated pools at night. Classic and foreign films glimmer on a nearby screen. A Moroccan daybed beckons for stargazing. Nightly turn-downs are done in the European tradition.
 
-Come and see why Forbes Traveler named Korakia one of the “Sexiest Hotels in America.”
+Come and see why Forbes Traveler named Korokia one of the “Sexiest Hotels in America.”
 
 ----
 
@@ -54,11 +54,9 @@ The Orchard House is a rare 1918 California adobe. Two 1940s steel windows have 
 
 Secondtext: 
 
-J. Carol Naish, an early silent-screen star and neighbor to Coutts, owned the 1930's Mediterranean villa. The Naish property blends the charm of Southern Europe with North African accents throughout its structure. The main house boasts an impossibly romantic master suite, high wood beam ceilings, an indoor/outdoor bathroom and a massive fireplace.
+Built in 1924, The Moroccan villa, originally named Dar Marroc, was the former hideaway of Scottish painter Gordon Coutts. The villa served as the venue for Coutts to re-create his earlier life in Tangier by employing a wide variety of architectural features that promoted a Moroccan decor.
 
-Using a variety of textures and colors, the outdoor area of the Naish property lends an exotic feel to its poolside experience. Within the sun-drenched pool area itself, the villa and bungalows' exterior walls greet visitors with a vivid blend of earth-tone hues, that range from deep ocher, rusts to tawny yellows and stone.
-
-The Orchard House is a rare 1918 California adobe. Two 1940s steel windows have been welded together to create a dramatic pivoting window wall. The whitewashed stone wall encloses a grove of citrus trees.
+A visionary with a dream to re-live his art-filled Moroccan days, the flamboyant Coutts did not stop with the recapturing of his physical existence in Tangier with Dar Marroc, but his social existence as well. Coutts hung his paintings in the library, where he regaled his guests with tales of adventure. Dar Marroc quickly became a gathering place for musicians, visiting artists such as John Lavery, Agnes Pelton, Nicolai Fenshin and Grant Wood and celebrities such as Rudolph Valentino and Errol Flynn. It is rumored that even Winston Churchill has painted in the villa's Artist Studio.
 
 ----
 
@@ -66,4 +64,4 @@ Charitiestitle: charities
 
 ----
 
-Charitiestext: Korakia sponsors and supports select charities. Over the years, we have participated in events, including the AIDS Project, and have donated to many non-profit organizations. We believe that giving back is essential to making our world a better place. If you are interested in joining us in these events or would like to share information about your non-profit organization, please email us at email us.
+Charitiestext: Korokia sponsors and supports select charities. Over the years, we have participated in events, including the AIDS Project, and have donated to many non-profit organizations. We believe that giving back is essential to making our world a better place. If you are interested in joining us in these events or would like to share information about your non-profit organization, please email us at email us.
