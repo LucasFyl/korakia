@@ -1115,6 +1115,10 @@ footer div ul li a img {
   z-index: 9;
 }
 
+.villas:not(.feed) .landing > img {
+  max-width: 100%;
+  min-height: 100vh;
+}
 .villas:not(.feed) .landing .half {
   min-height: 100vh;
   width: 50%;
@@ -1140,16 +1144,16 @@ footer div ul li a img {
   z-index: 9;
 }
 .villas:not(.feed) .landing .half .wrapper {
-  width: 50%;
+  width: 100%;
 }
 @media screen and (max-width: 480px) {
   .villas:not(.feed) .landing .half .wrapper {
-    top: 35%;
+    top: 50%;
     width: 100%;
   }
 }
 @media screen and (max-width: 480px) {
-  .villas:not(.feed) .landing .half:nth-child(2) .wrapper {
+  .villas:not(.feed) .landing .half:first-child .wrapper {
     top: 70%;
   }
 }
