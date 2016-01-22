@@ -615,13 +615,15 @@ ul.no-bullet {
 
 @media screen and (max-width: 480px) {
   .hide-mobile {
-    display: none;
+    display: none !important;
+    visibility: hidden !important;
   }
 }
 
 @media screen and (min-width: 480px) {
   .hide-desktop {
-    display: none;
+    display: none !important;
+    visibility: hidden !important;
   }
 }
 
@@ -1019,7 +1021,7 @@ header.hide-desktop .hamburger {
   width: 4rem;
   display: block;
   background: url("../images/asset-icon-hamburger.svg") no-repeat center center;
-  background-size: 4rem;
+  background-size: 3rem;
   margin-top: 3.5rem;
   float: right;
 }
@@ -1028,13 +1030,13 @@ header.hide-desktop nav a {
 }
 
 .hide-desktop.menu {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: calc(100vh - 11.1rem);
   display: block;
   z-index: 9998;
   background: white;
-  top: 11.1rem;
+  top: -100%;
 }
 .hide-desktop.menu .close {
   width: 100%;
@@ -1391,6 +1393,7 @@ footer div ul li a img {
   .date-picker .submit {
     float: none;
     margin-left: 22%;
+    width: 29rem;
   }
 }
 @media screen and (max-width: 480px) {

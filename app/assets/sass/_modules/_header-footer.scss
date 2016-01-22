@@ -73,7 +73,7 @@ header {
       @include size(4rem);
       display: block;
       background: url('../images/asset-icon-hamburger.svg') no-repeat center center;
-      background-size:4rem;
+      background-size:3rem;
       margin-top: 3.5rem;
       float: right;
     }
@@ -82,13 +82,15 @@ header {
   }
 }
 .hide-desktop.menu {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: calc(100vh - 11.1rem);
   display: block;
   z-index: 9998;
   background: white;
-  top: 11.1rem;
+  top: -100%;
+
+
   .close {
     width: 100%;
     text-align: center;

@@ -28,6 +28,18 @@ function initPage(){
 	} else if ( $('#content.special-offers').length ) {
 		Modal.init();
 	}
+	if ( $('.isMobile:visible') ) {
+		$('body').on('touchstart', 'header .hamburger', function(e){
+			e.preventDefault();
+			var menu = $('.menu.hide-desktop');
+			TweenMax.to(menu, 0.5, {top:'11.1rem',ease:Expo.easeOut});
+		});
+		$('body').on('touchstart', '.menu .close', function(e){
+			e.preventDefault();
+			var menu = $('.menu.hide-desktop');
+			TweenMax.to(menu, 0.5, {top:'-100%',ease:Expo.easeIn});
+		});
+	}
 	MagicStuff.init();
 }
 function backToTop() {
