@@ -42,7 +42,7 @@
         }
 
       }
-      .images {
+      .image {
         @include media($desktop) {
           @include span-columns(7);
         }

@@ -139,6 +139,7 @@
         }
       }
       ul.slider-nav {
+        cursor: pointer;
         list-style: none;
         margin: 5rem 0;
         @include media($mobile) {
