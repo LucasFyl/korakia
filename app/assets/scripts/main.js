@@ -15,7 +15,7 @@ $(document).ready(function(){
 function initPage(){
 	'use strict';
 
-	// detectMobile();
+	detectMobile();
 	hideLoader();
 
 	if ( $('#content.feed').length ) {
@@ -56,7 +56,7 @@ function initHomeSlider() {
 		speed: 750,
   	cssEase: 'ease-in-out'
 	});
-	if ( $('.isMobile:visible') ) {
+	if ( isMobile === true ) {
 		slider.slick('unslick');
 	}
 }
