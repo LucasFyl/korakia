@@ -5,3 +5,5 @@
     <?php snippet('menu'); ?>
   </div>
 </header>
+
+<div class="isMobile"></div>
