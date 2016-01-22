@@ -62,8 +62,12 @@
         margin-bottom: 6rem;
       }
       .btn {
+        width: 22rem;
         margin-top: 3.5rem;
         margin-bottom: 3.5rem;
+        span {
+          min-width: 13.2rem;
+        }
       }
     }
   }

@@ -2015,8 +2015,12 @@ footer div ul li a img {
   margin-bottom: 6rem;
 }
 #content.about section.history .container .btn {
+  width: 22rem;
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
+}
+#content.about section.history .container .btn span {
+  min-width: 13.2rem;
 }
 #content.about section.charities {
   height: 43rem;
