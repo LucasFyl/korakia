@@ -19,7 +19,7 @@
     p.datepicker-date-selected {
       position: absolute;
       margin: 0;
-      left: 3rem; bottom: 3rem;
+      left: 2.1rem; bottom: 3rem;
 
       font-size: 4.8rem;
       color: $dark;
@@ -102,7 +102,7 @@
     a {
       display: block;
       @include size(100%);
-      line-height: 9rem;
+      line-height: 10rem;
       text-align: center;
       color: white;
       font-size: 2rem;
