@@ -141,6 +141,9 @@
       ul.slider-nav {
         list-style: none;
         margin: 5rem 0;
+        @include media($mobile) {
+          margin: 2rem 0;
+        }
         li {
           margin-right: 0.5rem;
           &:focus {
