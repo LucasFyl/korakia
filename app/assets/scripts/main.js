@@ -56,6 +56,9 @@ function initHomeSlider() {
 		speed: 750,
   	cssEase: 'ease-in-out'
 	});
+	if ( $('.isMobile:visible') ) {
+		slider.slick('unslick');
+	}
 }
 function backToTop() {
 	'use strict';

@@ -13,6 +13,8 @@
     max-width: none;
     max-height: 100vh;
   }
+  // home slider :
+
   .img-wrap {
     max-height: 100vh;
     overflow: hidden;
@@ -20,12 +22,49 @@
       min-width: 0 !important;
       max-width: 100vw;
       min-height: 100vh;
+      @include media($mobile) {
+        width: auto !important;
+        max-width: none !important;
+        min-height: 100vh;
+      }
     }
     .slick-dots {
       display: block;
       position: absolute;
-      top: 10rem;
+      top: 20rem; left: 50%;
+      @include transform(translateX(-50%));
       z-index: 9999;
+      list-style-type: none;
+      padding: 0; margin: 0;
+
+      li {
+        display: block; float: left;
+        margin-right: 1rem;
+
+        &:last-child {
+          margin-right: 0;
+        }
+        &.slick-active {
+          button {
+            background: white !important;
+          }
+        }
+      }
+
+      button {
+        @include appearance(none);
+        @include size(1.1rem);
+        border-radius: 100%;
+        border: 1px solid white;
+        text-indent: -99999px;
+        background: transparent;
+        padding: 0;
+        outline: none;
+
+        &:hover {
+          background: white;
+        }
+      }
     }
   }
   .wrapper {
