@@ -29,6 +29,12 @@
             @include span-columns(12);
             margin-bottom: 3rem;
           }
+          .cta {
+            min-width: 22rem;
+            span {
+              min-width: 14rem;
+            }
+          }
         }
         .images {
           padding-left: 5rem;

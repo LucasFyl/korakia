@@ -1712,6 +1712,12 @@ footer div ul li a img {
     margin-right: 0;
   }
 }
+#content.home .main section:first-child .infos .cta {
+  min-width: 22rem;
+}
+#content.home .main section:first-child .infos .cta span {
+  min-width: 14rem;
+}
 #content.home .main section:first-child .images {
   padding-left: 5rem;
 }

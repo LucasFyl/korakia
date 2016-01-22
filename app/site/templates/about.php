@@ -39,14 +39,14 @@
           <div class="infos">
             <h3><?php echo $page->firstTitle() ?></h3>
             <?php echo $page->firstText()->kirbytext() ?>
-            <a href="<?php echo $pages->find('villas/mediterranean')->url() ?>" class="btn golden cta">Explore all our rooms</a>
+            <a href="<?php echo $pages->find('villas/mediterranean')->url() ?>" class="btn golden cta"><span>Explore all our rooms</span></a>
           </div>
         </div>
         <div class="container">
           <div class="infos">
             <h3><?php echo $page->secondTitle() ?></h3>
             <?php echo $page->secondText()->kirbytext() ?>
-            <a href="<?php echo $pages->find('villas/moroccan')->url() ?>" class="btn golden cta">Explore all our rooms</a>
+            <a href="<?php echo $pages->find('villas/moroccan')->url() ?>" class="btn golden cta"><span>Explore all our rooms</span></a>
           </div>
           <div class="image">
             <img class="img-in" src="<?php echo $page->image('asset-moroccan.jpg')->url() ?>" alt="<?php echo $page->secondTitle() ?>" />

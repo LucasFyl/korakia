@@ -55,7 +55,7 @@
 				<div class="three infos">
 					<h2><?php echo $page->firstTitle() ?></h2>
 					<p><?php echo $page->firstText() ?></p>
-					<a href="<?php echo $pages->find('villas')->url(); ?>" class="btn cta golden">Explore all our rooms</a>
+					<a href="<?php echo $pages->find('villas')->url(); ?>" class="btn cta golden"><span>Explore all our rooms</span></a>
 				</div>
 
 				<div class="nine images">
