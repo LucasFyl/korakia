@@ -43,6 +43,7 @@ header {
     }
   }
   &.white {
+    position: fixed;
     z-index: 9999;
     padding: 3rem 0;
     background-color: white;

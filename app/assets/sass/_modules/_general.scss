@@ -17,8 +17,20 @@
   color: $dark;
 
   &.cta {
-    text-align: left;
-    padding-right: 5rem;
+    width: 20rem;
+    height: 5rem;
+    text-align: center;
+    padding: 1.7rem 3rem;
+    @include transition(all 0.25s ease-out);
+
+    span {
+      width: auto;
+      text-align: left;
+      position: absolute;
+      left: 50%;@include transform(translateX(-50%));
+      @include transition(all 0.25s ease-out);
+    }
+
     &:after {
       position: absolute;
       right: 3rem;
@@ -32,6 +44,10 @@
       @include transition(all 0.25s ease-out);
     }
     &:hover {
+      span {
+        left: 3rem;
+        @include transform(none);
+      }
       &:after {
         opacity: 1;
         right: 2rem;

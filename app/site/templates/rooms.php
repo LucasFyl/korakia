@@ -64,7 +64,7 @@
 									<?php endif; ?>
 								<?php endforeach; ?>
 							</ul>
-							<a href="#" class="btn golden cta">Book this room</a>
+							<a href="#" class="btn golden cta"><span>Book this room</span></a>
 						</div>
 					</article>
 				<?php endforeach; ?>

@@ -893,8 +893,19 @@ small {
   color: #293443;
 }
 .btn.cta {
+  width: 20rem;
+  height: 5rem;
+  text-align: center;
+  padding: 1.7rem 3rem;
+  transition: all 0.25s ease-out;
+}
+.btn.cta span {
+  width: auto;
   text-align: left;
-  padding-right: 5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.25s ease-out;
 }
 .btn.cta:after {
   position: absolute;
@@ -907,6 +918,10 @@ small {
   background-size: 0.6rem;
   opacity: 0;
   transition: all 0.25s ease-out;
+}
+.btn.cta:hover span {
+  left: 3rem;
+  transform: none;
 }
 .btn.cta:hover:after {
   opacity: 1;
@@ -977,6 +992,7 @@ header nav ul li a {
   text-decoration: none;
 }
 header.white {
+  position: fixed;
   z-index: 9999;
   padding: 3rem 0;
   background-color: white;

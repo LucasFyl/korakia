@@ -28,8 +28,6 @@ function initPage(){
 	} else if ( $('#content.special-offers').length ) {
 		Modal.init();
 	}
-	// } else if ( $('#content.contact').length ) {
-	// }
 	MagicStuff.init();
 }
 function backToTop() {
