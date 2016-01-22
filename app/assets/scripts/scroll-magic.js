@@ -12,6 +12,14 @@
       if ( $('.img-in').length ) {
 				this.imgInAnim(controller);
 			}
+
+			var headerTween = TweenMax.set('header', {className:'+=white'});
+			var headerScene = new ScrollMagic.Scene({
+				triggerElement: $('header'),
+				triggerHook: 'onLeave',
+				offset: 90
+			}).addTo(controller).setTween(headerTween);
+
 		},
     imgInAnim: function(controller) {
       'use strict';

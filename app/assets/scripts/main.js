@@ -110,18 +110,6 @@ function initSlider() {
 }
 function landingAnimHome() {
 	'use strict';
-
-	// var landingTl = new TimelineMax({paused:true});
-	// TweenMax.set('.menu .menu-trigger, .center span.title, .social li', {y:-30,opacity:0});
-	// TweenMax.set('.center h1', {y:20,opacity:0});
-	// TweenMax.set('.center a', {opacity:0,scale:0.5});
-
-	// landingTl.to('.menu .menu-trigger', 0.25, {y:0,opacity:1,ease:Power3.easeOut})
-	// 		 .staggerTo('.social li', 0.25, {y:0,opacity:1,ease:Power3.easeOut}, 0.1, '-=0.25')
-	// 		 .staggerTo('.center span.title, .center h1', 0.5, {y:0,opacity:1,ease:Power2.easeOut}, 0.2)
-	// 		 .to('.center a', 0.5, {opacity:1,scale:1,ease:Power2.easeOut});
-
-	// setTimeout(function(){landingTl.play();}, 200);
 }
 function datePickerSetup () {
   'use strict';

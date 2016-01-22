@@ -931,7 +931,7 @@ img {
 
 header {
   padding-top: 4rem;
-  position: fixed;
+  position: absolute;
   z-index: 99;
   width: 100%;
   top: 0;
@@ -1048,14 +1048,14 @@ footer div ul li a img {
   height: auto;
   width: auto;
   object-fit: cover;
-  position: fixed;
+  position: absolute;
   left: 0;
   z-index: 5;
   max-width: none;
   max-height: 100vh;
 }
 .landing .wrapper {
-  position: fixed;
+  position: absolute;
   z-index: 9;
   width: 100%;
   top: 50%;
@@ -1094,7 +1094,7 @@ footer div ul li a img {
   font-style: italic;
   width: 100%;
   background: rgba(0, 0, 0, 0.3);
-  position: fixed;
+  position: absolute;
   bottom: 0;
   z-index: 9;
 }
