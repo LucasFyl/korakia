@@ -13,6 +13,21 @@
     max-width: none;
     max-height: 100vh;
   }
+  .img-wrap {
+    max-height: 100vh;
+    overflow: hidden;
+    img {
+      min-width: 0 !important;
+      max-width: 100vw;
+      min-height: 100vh;
+    }
+    .slick-dots {
+      display: block;
+      position: absolute;
+      top: 10rem;
+      z-index: 9999;
+    }
+  }
   .wrapper {
     position: $position;
     z-index: 9;

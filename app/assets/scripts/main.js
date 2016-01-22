@@ -25,6 +25,7 @@ function initPage(){
 	} else if ( $('#content.home').length ) {
 		datePickerSetup();
 		displayCalendar();
+		initHomeSlider();
 	} else if ( $('#content.special-offers').length ) {
 		Modal.init();
 	}
@@ -41,6 +42,20 @@ function initPage(){
 		});
 	}
 	MagicStuff.init();
+}
+function initHomeSlider() {
+	'use strict';
+	var slider = $('.landing .img-wrap');
+	slider.slick({
+		infinite:true,
+		dots: true,
+		arrows: false,
+		autoplay:true,
+		autoplaySpeed: 4000,
+		fade: true,
+		speed: 750,
+  	cssEase: 'ease-in-out'
+	});
 }
 function backToTop() {
 	'use strict';

@@ -42,7 +42,11 @@
 			<div class="scrolldown">
         scroll down
       </div>
-			<img src="<?php echo $page->image('landing.jpg')->url() ?>" alt="Discover The Moroccan Villas" />
+			<div class="img-wrap">
+				<img src="<?php echo $page->image('landing-1.jpg')->url() ?>" alt="Welcome to a retreat unlike any other" />
+				<img src="<?php echo $page->image('landing-2.jpg')->url() ?>" alt="Welcome to a retreat unlike any other" />
+				<img src="<?php echo $page->image('landing-3.jpg')->url() ?>" alt="Welcome to a retreat unlike any other" />
+			</div>
 		</div>
 
 		<div class="main">

@@ -1145,6 +1145,21 @@ footer div ul li a img {
   max-width: none;
   max-height: 100vh;
 }
+.landing .img-wrap {
+  max-height: 100vh;
+  overflow: hidden;
+}
+.landing .img-wrap img {
+  min-width: 0 !important;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+.landing .img-wrap .slick-dots {
+  display: block;
+  position: absolute;
+  top: 10rem;
+  z-index: 9999;
+}
 .landing .wrapper {
   position: absolute;
   z-index: 9;
