@@ -87,6 +87,7 @@
     }
 
     .infos {
+      text-align: right;
       @include media($desktop) {
         position: absolute;top: 50%;
         @include transform(translateY(-50%));
