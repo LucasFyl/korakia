@@ -1145,6 +1145,7 @@ footer div ul li a img {
 .landing .img-wrap {
   max-height: 100vh;
   overflow: hidden;
+  z-index: -1;
 }
 .landing .img-wrap img {
   min-width: 0 !important;
@@ -1164,7 +1165,7 @@ footer div ul li a img {
   top: 16rem;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 9999;
+  z-index: 95;
   list-style-type: none;
   padding: 0;
   margin: 0;
