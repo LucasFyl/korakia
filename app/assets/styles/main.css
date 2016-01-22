@@ -976,12 +976,6 @@ header nav ul li {
   display: inline-block;
   margin-right: 4rem;
 }
-@media screen and (max-width: 480px) {
-  header nav ul li {
-    width: 38%;
-    padding-top: 1.5rem;
-  }
-}
 header nav ul li a {
   display: block;
   font-size: 14px;
@@ -1004,6 +998,84 @@ header.white a.logo {
 header.white nav a {
   color: #293443;
 }
+header.hide-desktop {
+  position: fixed;
+  z-index: 9999;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  height: 11.1rem;
+  line-height: 11.1rem;
+  padding: 0 3rem;
+}
+header.hide-desktop a.logo {
+  font-size: 2.6rem;
+  color: #293443;
+  height: 100%;
+  line-height: 11rem;
+  letter-spacing: .2rem;
+}
+header.hide-desktop .hamburger {
+  height: 4rem;
+  width: 4rem;
+  display: block;
+  background: url("../images/asset-icon-hamburger.svg") no-repeat center center;
+  background-size: 4rem;
+  margin-top: 3.5rem;
+  float: right;
+}
+header.hide-desktop nav a {
+  color: #293443;
+}
+
+.hide-desktop.menu {
+  position: absolute;
+  width: 100vw;
+  height: calc(100vh - 11.1rem);
+  display: block;
+  z-index: 9998;
+  background: white;
+  top: 11.1rem;
+}
+.hide-desktop.menu .close {
+  width: 100%;
+  text-align: center;
+  background: #d2bb71;
+  position: absolute;
+  bottom: 0;
+  font-size: 2.1rem;
+  text-decoration: none;
+  line-height: 11.1rem;
+  font-family: "Lato", helvetica, sans-serif;
+  color: white;
+  letter-spacing: .2rem;
+  text-transform: capitalize;
+}
+.hide-desktop.menu nav ul {
+  padding: 0;
+  margin: 0;
+}
+.hide-desktop.menu nav ul li {
+  width: 100%;
+  text-align: center;
+}
+.hide-desktop.menu nav ul li.active {
+  background: #000;
+}
+.hide-desktop.menu nav ul li.active a {
+  color: white;
+}
+.hide-desktop.menu nav ul li a {
+  height: 100%;
+  width: 100%;
+  display: block;
+  font-size: 2.1rem;
+  text-decoration: none;
+  line-height: 11.1rem;
+  font-family: "Lato", helvetica, sans-serif;
+  color: #8d8d8d;
+  letter-spacing: .2rem;
+  text-transform: capitalize;
+}
 
 footer {
   height: 7rem;
@@ -1022,6 +1094,7 @@ footer div > p {
   font-size: 1.3rem;
   line-height: 7rem;
   font-family: "Playfair Display", garamond, serif;
+  font-style: italic;
   color: #293443;
   margin-top: 0;
   margin-bottom: 0;

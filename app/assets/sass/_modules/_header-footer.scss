@@ -28,10 +28,10 @@ header {
       li {
         display: inline-block;
         margin-right: 4rem;
-        @include media($mobile) {
-          width: 38%;
-          padding-top: 1.5rem;
-        }
+        // @include media($mobile) {
+        //   width: 38%;
+        //   padding-top: 1.5rem;
+        // }
         a {
           display: block;
 
@@ -51,6 +51,87 @@ header {
     a.logo{color: $dark;}
     nav a {color: $dark;}
   }
+  &.hide-desktop {
+    position: fixed;
+    z-index: 9999;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+
+    height: 11.1rem;
+    line-height: 11.1rem;
+
+    padding: 0 3rem;
+
+    a.logo{
+      font-size: 2.6rem;
+      color: $dark;
+      height: 100%;
+      line-height: 11rem;
+      letter-spacing: .2rem;
+    }
+    .hamburger {
+      @include size(4rem);
+      display: block;
+      background: url('../images/asset-icon-hamburger.svg') no-repeat center center;
+      background-size:4rem;
+      margin-top: 3.5rem;
+      float: right;
+    }
+
+    nav a {color: $dark;}
+  }
+}
+.hide-desktop.menu {
+  position: absolute;
+  width: 100vw;
+  height: calc(100vh - 11.1rem);
+  display: block;
+  z-index: 9998;
+  background: white;
+  top: 11.1rem;
+  .close {
+    width: 100%;
+    text-align: center;
+    background: $golden;
+
+    position: absolute;
+    bottom:0;
+
+    font-size: 2.1rem;
+    text-decoration: none;
+    line-height: 11.1rem;
+    font-family: $base-font;
+    color: white;
+    letter-spacing: .2rem;
+    text-transform: capitalize;
+
+  }
+  nav {
+    ul {
+      padding: 0;margin: 0;
+      li {
+        width: 100%;
+        text-align: center;
+        &.active {
+          background: #000;
+          a {
+            color: white;
+          }
+        }
+        a {
+          @include size(100%);
+          display: block;
+          font-size: 2.1rem;
+          text-decoration: none;
+          line-height: 11.1rem;
+          font-family: $base-font;
+          color: #8d8d8d;
+          letter-spacing: .2rem;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
 }
 footer {
   @include clearfix;
@@ -60,6 +141,7 @@ footer {
     > p {
       @include font(1.3, 7);
       font-family: $title-font;
+      font-style: italic;
       color: $dark;
 
       margin-top: 0;
