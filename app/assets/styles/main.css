@@ -2153,6 +2153,8 @@ footer div ul li a img {
 }
 #content.villas.feed .landing .half img {
   opacity: 0.5;
+  object-fit: cover;
+  min-height: 100%;
 }
 @media screen and (max-width: 480px) {
   #content.villas.feed .landing .half img {
@@ -2297,6 +2299,16 @@ footer div ul li a img {
 #content.villas.feed article.room .infos h2 {
   margin-top: 0.5rem;
   margin-bottom: 4.5rem;
+  position: relative;
+}
+#content.villas.feed article.room .infos h2:after {
+  content: " ";
+  position: absolute;
+  width: 2rem;
+  height: 1px;
+  background: #c5c6c9;
+  top: 6.3rem;
+  left: 0;
 }
 #content.villas.feed article.room .infos ul.slider-nav {
   list-style: none;
