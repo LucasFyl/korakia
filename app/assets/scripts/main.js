@@ -3,6 +3,7 @@
 /* jshint unused:false */
 var isMobile = false; //initiate as false
 var Modal;
+var Instagram;
 
 $(document).ready(function(){
 	'use strict';
@@ -28,6 +29,10 @@ function initPage(){
 		initHomeSlider();
 	} else if ( $('#content.special-offers').length ) {
 		Modal.init();
+	} else if ( $('#content.social-feed').length ) {
+		resizeInstagramElt();
+		wrapHashtagInstagram();
+		Instagram.init();
 	}
 	if ( $('.isMobile:visible') ) {
 		$('body').on('touchstart', 'header .hamburger', function(e){
@@ -131,10 +136,11 @@ function hideLoader(){
 function resize() {
 	'use strict';
 
+	// Resize instagram elts
+	resizeInstagramElt();
 }
 function initSlider() {
 	'use strict';
-
 }
 function landingAnimHome() {
 	'use strict';
@@ -192,39 +198,72 @@ function datePickerSetup () {
 	});
 }
 var Modal = {
-		init: function(){
-			'use strict';
-			TweenMax.set('.overlay', {opacity:0,visibility:'hidden'});
-			TweenMax.set('.closeModal', {opacity:0,visibility:'hidden'});
-			Modal.bindEvents();
-		},
-		open: function(){
-			'use strict';
-			TweenMax.to('.overlay', 0.75, {visibility:'visible',opacity:1,ease:Power2.easeOut});
-			TweenMax.fromTo('.modal', 0.5, {opacity:0,y:-50}, {y:0,opacity:1,ease:Power2.easeOut,delay:0.5});
-			TweenMax.to('.closeModal', 0.25, {visibility:'visible',opacity:1,ease:Power2.easeOut,delay:0.7});
-		},
-		close: function(){
-			'use strict';
-			TweenMax.to('.closeModal', 0.25, {opacity:0,visibility:'hidden',ease:Power2.easeOut});
-			TweenMax.to('.overlay', 0.75, {opacity:0,visibility:'hidden',delay:0.35,ease:Power2.easeIn});
-			TweenMax.fromTo('.modal', 0.5, {y:0,opacity:1}, {opacity:0,y:50,ease:Power2.easeIn});
-		},
-		bindEvents: function(){
-			'use strict';
-			$('body').on('click', '.modal-trigger', function(e){
-				$('body').css('overflow', 'auto');
-				e.preventDefault();
-				Modal.open();
-			});
-			$('body').on('click', '.overlay, .closeModal', function(e){
-				e.preventDefault();
-				Modal.close();
-			});
-			$(document).keyup(function(e){
-				if(e.which === 27) {
-				  	Modal.close();
-				}
-			});
+	init: function(){
+		'use strict';
+		TweenMax.set('.overlay', {opacity:0,visibility:'hidden'});
+		TweenMax.set('.closeModal', {opacity:0,visibility:'hidden'});
+		Modal.bindEvents();
+	},
+	open: function(){
+		'use strict';
+		TweenMax.to('.overlay', 0.75, {visibility:'visible',opacity:1,ease:Power2.easeOut});
+		TweenMax.fromTo('.modal', 0.5, {opacity:0,y:-50}, {y:0,opacity:1,ease:Power2.easeOut,delay:0.5});
+		TweenMax.to('.closeModal', 0.25, {visibility:'visible',opacity:1,ease:Power2.easeOut,delay:0.7});
+	},
+	close: function(){
+		'use strict';
+		TweenMax.to('.closeModal', 0.25, {opacity:0,visibility:'hidden',ease:Power2.easeOut});
+		TweenMax.to('.overlay', 0.75, {opacity:0,visibility:'hidden',delay:0.35,ease:Power2.easeIn});
+		TweenMax.fromTo('.modal', 0.5, {y:0,opacity:1}, {opacity:0,y:50,ease:Power2.easeIn});
+	},
+	bindEvents: function(){
+		'use strict';
+		$('body').on('click', '.modal-trigger', function(e){
+			$('body').css('overflow', 'auto');
+			e.preventDefault();
+			Modal.open();
+		});
+		$('body').on('click', '.overlay, .closeModal', function(e){
+			e.preventDefault();
+			Modal.close();
+		});
+		$(document).keyup(function(e){
+			if(e.which === 27) {
+			  	Modal.close();
+			}
+		});
+	}
+};
+
+/* INSTAGRAM */
+function resizeInstagramElt() {
+	'use strict';
+	$('.instagram-elt').height($('.instagram-elt').width());
+}
+
+function wrapHashtagInstagram() {
+	$.each($('.caption'), function(i, caption) {
+		if($('.caption').eq(i).html().match('@[a-z]*') != null) {
+			var matchedElt = $('.caption').eq(i).html().match('@[a-z]*')[0];
+
 		}
-	};
+
+		// $('.caption').eq(i).html().match('@[a-z]*').wrap("<span div='hashtag'></span>");
+	});
+}
+
+var Instagram = {
+	init: function() {
+		'use strict';
+
+	 	// hover
+		$('#instagram-area').on('mouseenter', '.instagram-elt', function() {
+	        var idElt = $(this).attr('data-id');
+	        $('.'+ idElt).addClass('active');
+		});
+
+		$('#instagram-area').on('mouseleave', '.instagram-elt', function() {
+			    $('.instagram-elt.active').removeClass('active');
+		});
+	}
+};

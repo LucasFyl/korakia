@@ -2575,3 +2575,275 @@ article.press .date {
   font-weight: 200;
   font-style: italic;
 }
+
+.social-feed .instagram-elt {
+  position: relative;
+  float: left;
+  width: 33.3333%;
+  color: grey;
+  font-size: 35px;
+}
+.social-feed .instagram-elt.explore {
+  background-color: #fff;
+  font-size: 40px;
+  color: #000000;
+  text-align: center;
+}
+.social-feed .instagram-elt.explore img {
+  min-width: 1px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 23px;
+  height: 13px;
+}
+.social-feed .instagram-elt.image {
+  z-index: 3;
+}
+.social-feed .instagram-elt.image .instagram-image {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.social-feed .instagram-elt.image .go-to-instagram {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  left: 35%;
+  top: 35%;
+  z-index: 3;
+  min-width: 1px !important;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.social-feed .instagram-elt.active .go-to-instagram {
+  opacity: 1;
+}
+.social-feed .instagram-elt.text {
+  z-index: 4;
+  background-color: #fff;
+}
+.social-feed .instagram-elt.text img {
+  min-width: 1px;
+}
+.social-feed .instagram-elt.text .inner {
+  padding: 14%;
+  padding-top: 19%;
+}
+.social-feed .instagram-elt.text .inner .like img {
+  display: block;
+  float: left;
+  width: 22px;
+  height: auto;
+}
+.social-feed .instagram-elt.text .inner .like .like-image {
+  display: block;
+}
+.social-feed .instagram-elt.text .inner .like .like-image-hover {
+  display: none;
+}
+.social-feed .instagram-elt.text .inner .like .nb-like {
+  float: left;
+  color: #000000;
+  font-size: 29px;
+  margin-left: 15px;
+  line-height: 25px;
+}
+.social-feed .instagram-elt.text .inner .liseret {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  width: 25px;
+  height: 1px;
+  background-color: #b5b5b5;
+}
+.social-feed .instagram-elt.text .inner .caption {
+  font-size: 15px;
+  color: #b5b5b5;
+}
+.social-feed .instagram-elt.text .inner .caption .hashtag {
+  color: #000000;
+}
+.social-feed .instagram-elt.text .arrow-text {
+  position: absolute;
+}
+.social-feed .instagram-elt.text .arrow-bg {
+  position: absolute;
+}
+.social-feed .instagram-elt.text .arrow-text-normal {
+  display: block;
+}
+.social-feed .instagram-elt.text .arrow-text-hover {
+  display: none;
+}
+.social-feed .instagram-elt.text.first .arrow-text {
+  left: -8px;
+  top: 50%;
+  margin-top: -4px;
+  width: 8px;
+  height: auto;
+  z-index: 6;
+}
+.social-feed .instagram-elt.text.first .arrow-bg {
+  left: -5px;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  z-index: 5;
+}
+.social-feed .instagram-elt.text.img-left .arrow-text {
+  left: -8px;
+  top: 50%;
+  margin-top: -4px;
+  width: 8px;
+  height: auto;
+  z-index: 6;
+}
+.social-feed .instagram-elt.text.img-left .arrow-bg {
+  left: -5px;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  z-index: 5;
+}
+.social-feed .instagram-elt.text.img-right .arrow-text {
+  right: -8px;
+  top: 50%;
+  margin-top: -4px;
+  width: 8px;
+  height: auto;
+  z-index: 6;
+}
+.social-feed .instagram-elt.text.img-right .arrow-bg {
+  right: -5px;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  z-index: 5;
+}
+.social-feed .instagram-elt.text.img-top .arrow-text {
+  top: -8px;
+  left: 50%;
+  margin-left: -4px;
+  height: 8px;
+  width: auto;
+  z-index: 6;
+}
+.social-feed .instagram-elt.text.img-top .arrow-bg {
+  top: -5px;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  z-index: 5;
+}
+.social-feed .instagram-elt.text.active {
+  background-color: #293443;
+}
+.social-feed .instagram-elt.text.active .inner {
+  padding: 14%;
+  padding-top: 19%;
+}
+.social-feed .instagram-elt.text.active .inner .like .like-image {
+  display: none;
+}
+.social-feed .instagram-elt.text.active .inner .like .like-image-hover {
+  display: block;
+}
+.social-feed .instagram-elt.text.active .inner .like .nb-like {
+  color: #d1ba76;
+}
+.social-feed .instagram-elt.text.active .inner .caption .hashtag {
+  color: #d1ba76;
+}
+.social-feed .instagram-elt.text.active .arrow-text-normal {
+  display: none;
+}
+.social-feed .instagram-elt.text.active .arrow-text-hover {
+  display: block;
+}
+
+.vertical_align {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.vertical_align_inner {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.clear {
+  clear: both;
+}
+
+@media (max-width: 1320px) {
+  .social-feed .instagram-elt.explore {
+    font-size: 35px;
+  }
+  .social-feed .instagram-elt.explore img {
+    margin-top: 35px;
+  }
+  .social-feed .instagram-elt.text .inner {
+    padding: 14%;
+    padding-top: 19%;
+  }
+  .social-feed .instagram-elt.text .inner .like img {
+    display: block;
+    float: left;
+    width: 22px;
+    height: auto;
+  }
+  .social-feed .instagram-elt.text .inner .like .nb-like {
+    float: left;
+    color: #000000;
+    font-size: 22px;
+    margin-left: 11px;
+    line-height: 19px;
+  }
+  .social-feed .instagram-elt.text .inner .liseret {
+    margin-top: 18px;
+    margin-bottom: 21px;
+  }
+  .social-feed .instagram-elt.text .inner .caption {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1000px) {
+  .social-feed .instagram-elt.explore {
+    font-size: 28px;
+  }
+  .social-feed .instagram-elt.explore img {
+    margin-top: 27px;
+  }
+  .social-feed .instagram-elt.text .inner {
+    padding: 14%;
+    padding-top: 19%;
+  }
+  .social-feed .instagram-elt.text .inner .like img {
+    display: block;
+    float: left;
+    width: 19px;
+    height: auto;
+  }
+  .social-feed .instagram-elt.text .inner .like .nb-like {
+    float: left;
+    color: #000000;
+    font-size: 19px;
+    margin-left: 9px;
+    line-height: 17px;
+  }
+  .social-feed .instagram-elt.text .inner .liseret {
+    margin-top: 14px;
+    margin-bottom: 16px;
+  }
+  .social-feed .instagram-elt.text .inner .caption {
+    font-size: 11px;
+  }
+}

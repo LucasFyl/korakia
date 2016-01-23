@@ -1,0 +1,5 @@
+Title: Social Feed
+
+----
+
+Text: Lorem ipsum
