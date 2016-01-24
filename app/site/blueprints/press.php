@@ -15,3 +15,10 @@ fields:
     label: Landing baseline
     type: text
     default: News & Press
+  photosTitle:
+  	label: Photoshoots part title
+  	type: text
+  	default: Photoshoots
+  photosText:
+  	label: Main text Photoshoots
+  	type: textarea

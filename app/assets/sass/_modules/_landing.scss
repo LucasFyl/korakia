@@ -42,7 +42,7 @@
       background-size: cover;
     }
   }
-  body.news & {
+  body.press & {
     background: white url('../images/landing/news-landing.jpg') no-repeat center center fixed;
     background-size: cover;
     @media (-webkit-min-device-pixel-ratio: 2),
@@ -51,7 +51,7 @@
       background-size: cover;
     }
   }
-  
+
   .wrapper {
     position: $position;
     z-index: 9;

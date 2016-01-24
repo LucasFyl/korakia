@@ -8,8 +8,8 @@ fields:
     label: Title
     type:  text
     default: Special offers
-  landingTitle: 
-  	label: Page title - Landing 
+  landingTitle:
+  	label: Page title - Landing
   	type: text
   	default: Special Occasions
   weddingTitle:
@@ -37,11 +37,4 @@ fields:
   	default: Events & Retreats
   eventsText:
   	label: Main text Events & Retreats
-  	type: textarea
-  photosTitle:
-  	label: Photoshoots part title
-  	type: text
-  	default: Photoshoots
-  photosText:
-  	label: Main text Photoshoots
   	type: textarea

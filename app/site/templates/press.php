@@ -12,8 +12,22 @@
     </div>
 
     <div class="main container">
-      <?php $articles = $page->children()->visible()->paginate(4); ?>
 
+      <section class="photoshoots">
+        <div class="image">
+          <div class="img-wrap">
+            <?php foreach ($pages->find('press/photoshoots')->images() as $image): ?>
+  					<img src="<?php echo $image->url() ?>" alt="Korakia Pensione - Photoshoot" draggable="false" />
+    				<?php endforeach; ?>
+          </div>
+        </div>
+        <div class="infos">
+          <h2><?php echo $page->photosTitle() ?></h2>
+          <?php echo $page->photosText()->kirbytext() ?>
+        </div>
+      </section>
+
+      <?php $articles = $page->children()->visible()->paginate(4); ?>
       <?php foreach($articles as $article): ?>
       <article class="press img-in">
         <div class="image">

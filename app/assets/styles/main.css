@@ -596,7 +596,7 @@ ul.no-bullet {
   display: none;
 }
 
-.fill-remainder, #content.special-offers section.events-retreat, #content.special-offers section.photoshoots, #content.villas.feed article.room {
+.fill-remainder, #content.special-offers section.events-retreat, #content.villas.feed article.room, section.photoshoots {
   float: none;
   overflow: hidden;
 }
@@ -1182,12 +1182,12 @@ body.special-offers .landing {
     background-size: cover;
   }
 }
-body.news .landing {
+body.press .landing {
   background: white url("../images/landing/news-landing.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  body.news .landing {
+  body.press .landing {
     background: white url("../images/landing/news-landing@2x.jpg") no-repeat center center fixed;
     background-size: cover;
   }
@@ -2276,53 +2276,6 @@ body.news .landing {
 #content.special-offers section.events-retreat .images .row {
   margin-bottom: 1.2rem;
 }
-#content.special-offers section.photoshoots {
-  width: 100%;
-  position: relative;
-  padding: 10rem 0;
-}
-@media screen and (min-width: 480px) {
-  #content.special-offers section.photoshoots .infos, #content.special-offers section.photoshoots .image {
-    float: left;
-    display: block;
-    margin-right: 2.3576515979%;
-    width: 48.821174201%;
-  }
-  #content.special-offers section.photoshoots .infos:last-child, #content.special-offers section.photoshoots .image:last-child {
-    margin-right: 0;
-  }
-}
-@media screen and (max-width: 480px) {
-  #content.special-offers section.photoshoots .infos, #content.special-offers section.photoshoots .image {
-    float: left;
-    display: block;
-    margin-right: 2.3576515979%;
-    width: 100%;
-  }
-  #content.special-offers section.photoshoots .infos:last-child, #content.special-offers section.photoshoots .image:last-child {
-    margin-right: 0;
-  }
-}
-#content.special-offers section.photoshoots .infos {
-  text-align: right;
-}
-@media screen and (min-width: 480px) {
-  #content.special-offers section.photoshoots .infos {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-  }
-}
-@media screen and (max-width: 480px) {
-  #content.special-offers section.photoshoots .infos {
-    margin-top: 4rem;
-  }
-}
-#content.special-offers section.photoshoots .infos h2 {
-  margin-top: 0;
-  margin-bottom: 4.5rem;
-}
 
 #content.villas.feed .landing {
   height: 9.7rem;
@@ -2553,6 +2506,90 @@ body.news .landing {
   object-fit: cover;
   z-index: 5;
   min-height: 100%;
+}
+
+section.photoshoots {
+  width: 100%;
+  position: relative;
+  padding: 10rem 0;
+  overflow: visible !important;
+}
+section.photoshoots::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+@media screen and (min-width: 480px) {
+  section.photoshoots .infos, section.photoshoots .image {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
+  }
+  section.photoshoots .infos:last-child, section.photoshoots .image:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  section.photoshoots .infos, section.photoshoots .image {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%;
+  }
+  section.photoshoots .infos:last-child, section.photoshoots .image:last-child {
+    margin-right: 0;
+  }
+}
+section.photoshoots img {
+  min-width: 0 !important;
+}
+section.photoshoots .arrow {
+  height: 5rem;
+  width: 5rem;
+  background-color: #d2bb71;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 0.8rem 1.75rem;
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  margin-top: -2.5rem;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+section.photoshoots .arrow:hover {
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: translateY(-2px);
+  box-shadow: 0px 2px 10px rgab(0, 0, 0, 0.6);
+}
+section.photoshoots .arrow.arrow-right {
+  background-image: url("../images/asset-caret-right.svg");
+  right: -2.5rem;
+}
+section.photoshoots .arrow.arrow-left {
+  background-image: url("../images/asset-caret-left.svg");
+  left: -2.5rem;
+}
+section.photoshoots .infos {
+  text-align: right;
+  padding-left: 5rem;
+}
+@media screen and (min-width: 480px) {
+  section.photoshoots .infos {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  section.photoshoots .infos {
+    margin-top: 4rem;
+  }
+}
+section.photoshoots .infos h2 {
+  margin-top: 0;
+  margin-bottom: 4.5rem;
 }
 
 article.press {

@@ -29,6 +29,8 @@ function initPage(){
 		initHomeSlider();
 	} else if ( $('#content.special-offers').length ) {
 		Modal.init();
+	} else if ( $('#content.news').length ) {
+		initPhotoshootSlider();
 	} else if ( $('#content.social-feed').length ) {
 		$('header').addClass('white');
 		resizeInstagramElt();
@@ -49,6 +51,25 @@ function initPage(){
 	}
 	MagicStuff.init();
 }
+function initPhotoshootSlider() {
+	'use strict';
+	var slider = $('.photoshoots .img-wrap');
+	slider.slick({
+		infinite:true,
+		dots: false,
+		arrows: true,
+		autoplay:true,
+		autoplaySpeed: 4000,
+		fade: true,
+		speed: 750,
+  	cssEase: 'ease-in-out',
+    prevArrow: '<a href=\'#\' class=\'arrow arrow-left\'></a>',
+    nextArrow: '<a href=\'#\' class=\'arrow arrow-right\'></a>'
+	});
+	if ( isMobile === true ) {
+		slider.slick('unslick');
+	}
+}
 function initHomeSlider() {
 	'use strict';
 	var slider = $('.landing .img-wrap');
@@ -61,8 +82,8 @@ function initHomeSlider() {
 		fade: true,
 		speed: 750,
   	cssEase: 'ease-in-out',
-    prevArrow: "<a href='#' class='arrow arrow-left'></a>",
-    nextArrow: "<a href='#' class='arrow arrow-right'></a>"
+    prevArrow: '<a href=\'#\' class=\'arrow arrow-left\'></a>',
+    nextArrow: '<a href=\'#\' class=\'arrow arrow-right\'></a>'
 	});
 	if ( isMobile === true ) {
 		slider.slick('unslick');

@@ -1,7 +1,74 @@
+section.photoshoots {
+  width: 100%;
+  position: relative;
+  @extend .fill-remainder;
+  padding: 10rem 0;
+  overflow: visible !important;
+  @include clearfix;
+
+  .infos, .image {
+    @include media($desktop) {
+      @include span-columns(6);
+    }
+    @include media($mobile) {
+      @include span-columns(12);
+    }
+  }
+  img {
+    min-width: 0 !important;
+  }
+
+  .arrow {
+    @include size(5rem);
+
+    background-color: $golden;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 0.8rem 1.75rem;
+
+    position: absolute;
+    z-index: 999;
+    top: 50%; margin-top: -2.5rem;
+
+    @include transition(all 0.5s $ease-out-back);
+    &:hover {
+      @include transition(all 0.5s $ease-out-back);
+      @include transform(translateY(-2px));
+      box-shadow: 0px 2px 10px rgab(0,0,0,0.6);
+    }
+    &.arrow-right {
+      background-image: url('../images/asset-caret-right.svg');
+      right: -2.5rem;
+    }
+    &.arrow-left {
+      background-image: url('../images/asset-caret-left.svg');
+      left: -2.5rem;
+    }
+  }
+
+  .infos {
+    text-align: right;
+    padding-left: 5rem;
+    @include media($desktop) {
+      position: absolute;top: 50%;
+      @include transform(translateY(-50%));
+      right: 0;
+    }
+    @include media($mobile) {
+      margin-top: 4rem;
+    }
+    h2 {
+      margin-top: 0;
+      margin-bottom: 4.5rem;
+    }
+  }
+}
+
 article.press {
   @include clearfix;
   padding: 7.5rem 0;
   border-bottom: 1px solid rgba(0,0,0,0.1);
+
   &:first-child {
     padding-top: 0;
   }

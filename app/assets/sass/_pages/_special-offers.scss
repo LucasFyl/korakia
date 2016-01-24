@@ -71,35 +71,4 @@
       }
     }
   }
-  section.photoshoots {
-    width: 100%;
-    position: relative;
-    @extend .fill-remainder;
-    padding: 10rem 0;
-
-    .infos, .image {
-      @include media($desktop) {
-        @include span-columns(6);
-      }
-      @include media($mobile) {
-        @include span-columns(12);
-      }
-    }
-
-    .infos {
-      text-align: right;
-      @include media($desktop) {
-        position: absolute;top: 50%;
-        @include transform(translateY(-50%));
-        right: 0;
-      }
-      @include media($mobile) {
-        margin-top: 4rem;
-      }
-      h2 {
-        margin-top: 0;
-        margin-bottom: 4.5rem;
-      }
-    }
-  }
 }

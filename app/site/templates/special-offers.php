@@ -77,16 +77,6 @@
           </div>
         </div>
       </section>
-
-      <section class="photoshoots">
-        <div class="image">
-          <img class="img-in" src="<?php echo $page->image('asset-photoshoot.jpg')->url() ?>" alt="<?php echo $page->photosTitle() ?>" />
-        </div>
-        <div class="infos">
-          <h2><?php echo $page->photosTitle() ?></h2>
-          <?php echo $page->photosText()->kirbytext() ?>
-        </div>
-      </section>
     </div>
 	</div> <!-- / #content  -->
 	<div class="overlay">
