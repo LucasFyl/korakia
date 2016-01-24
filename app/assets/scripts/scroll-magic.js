@@ -13,7 +13,9 @@
 				this.imgInAnim(controller);
 			}
 			if ( !$('.isMobile').is(':visible') ) {
-				var headerTween = TweenMax.set('header', {className:'+=white'});
+				var headerTween = TweenMax.set('header', {className:'+=white',onComplete:function(){
+					TweenMax.to('header', 0.25,{top:0,ease:Power2.easeOut});
+				}});
 				var headerScene = new ScrollMagic.Scene({
 					triggerElement: $('header'),
 					triggerHook: 'onLeave',

@@ -130,10 +130,10 @@
 
 			&.first {
 				.arrow-text {
-					left: -8px;
+					left: -12px;
 					top: 50%;
 					margin-top: -4px;
-					width: 8px;
+					width: 14px;
 					height: auto;
 					z-index: 6;
 				}
@@ -149,10 +149,10 @@
 
 			&.img-left {
 				.arrow-text {
-					left: -8px;
+					left: -12px;
 					top: 50%;
 					margin-top: -4px;
-					width: 8px;
+					width: 14px;
 					height: auto;
 					z-index: 6;
 				}
@@ -168,10 +168,10 @@
 
 			&.img-right {
 				.arrow-text {
-					right: -8px;
+					right: -12px;
 					top: 50%;
 					margin-top: -4px;
-					width: 8px;
+					width: 14px;
 					height: auto;
 					z-index: 6;
 
@@ -188,10 +188,10 @@
 
 			&.img-top {
 				.arrow-text {
-					top: -8px;
+					top: -12px;
 					left: 50%;
 					margin-left: -4px;
-					height: 8px;
+					height: 14px;
 					width: auto;
 					z-index: 6;
 				}
@@ -357,8 +357,4 @@
 			}
 		}
 	}
-}
-
-@media (max-width: 1000px) {
-
 }

@@ -989,6 +989,7 @@ header nav ul li a {
 }
 header.white {
   position: fixed;
+  top: -11.1rem;
   z-index: 9999;
   padding: 3rem 0;
   background-color: white;
@@ -1002,6 +1003,7 @@ header.white nav a {
 }
 header.hide-desktop {
   position: fixed;
+  top: 0;
   z-index: 9999;
   background-color: white;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
@@ -1136,18 +1138,14 @@ footer div ul li a img {
   overflow: hidden;
 }
 .landing > img {
-  height: auto;
-  width: auto;
-  object-fit: cover;
-  position: absolute;
-  left: 0;
-  z-index: 5;
   max-width: none;
-  max-height: 100vh;
+  min-height: 100vh;
+  width: 100vw;
 }
 .landing .img-wrap {
   max-height: 100vh;
   overflow: hidden;
+  z-index: -1;
 }
 .landing .img-wrap img {
   min-width: 0 !important;
@@ -1164,10 +1162,10 @@ footer div ul li a img {
 .landing .img-wrap .slick-dots {
   display: block;
   position: absolute;
-  top: 20rem;
+  top: 16rem;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 9999;
+  z-index: 95;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -1712,6 +1710,12 @@ footer div ul li a img {
     margin-right: 0;
   }
 }
+#content.home .main section:first-child .infos .cta {
+  min-width: 22rem;
+}
+#content.home .main section:first-child .infos .cta span {
+  min-width: 14rem;
+}
 #content.home .main section:first-child .images {
   padding-left: 5rem;
 }
@@ -1977,24 +1981,24 @@ footer div ul li a img {
   }
 }
 @media screen and (min-width: 480px) {
-  #content.about section.history .container .images {
+  #content.about section.history .container .image {
     float: left;
     display: block;
     margin-right: 2.3576515979%;
     width: 57.3509785009%;
   }
-  #content.about section.history .container .images:last-child {
+  #content.about section.history .container .image:last-child {
     margin-right: 0;
   }
 }
 @media screen and (max-width: 480px) {
-  #content.about section.history .container .images {
+  #content.about section.history .container .image {
     float: left;
     display: block;
     margin-right: 2.3576515979%;
     width: 100%;
   }
-  #content.about section.history .container .images:last-child {
+  #content.about section.history .container .image:last-child {
     margin-right: 0;
   }
 }
@@ -2012,8 +2016,12 @@ footer div ul li a img {
   margin-bottom: 6rem;
 }
 #content.about section.history .container .btn {
+  width: 22rem;
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
+}
+#content.about section.history .container .btn span {
+  min-width: 13.2rem;
 }
 #content.about section.charities {
   height: 43rem;
@@ -2455,6 +2463,7 @@ footer div ul li a img {
   left: 0;
 }
 #content.villas.feed article.room .infos ul.slider-nav {
+  cursor: pointer;
   list-style: none;
   margin: 5rem 0;
 }
@@ -2682,10 +2691,10 @@ article.press .date {
   display: none;
 }
 .social-feed .instagram-elt.text.first .arrow-text {
-  left: -8px;
+  left: -12px;
   top: 50%;
   margin-top: -4px;
-  width: 8px;
+  width: 14px;
   height: auto;
   z-index: 6;
 }
@@ -2697,10 +2706,10 @@ article.press .date {
   z-index: 5;
 }
 .social-feed .instagram-elt.text.img-left .arrow-text {
-  left: -8px;
+  left: -12px;
   top: 50%;
   margin-top: -4px;
-  width: 8px;
+  width: 14px;
   height: auto;
   z-index: 6;
 }
@@ -2712,10 +2721,10 @@ article.press .date {
   z-index: 5;
 }
 .social-feed .instagram-elt.text.img-right .arrow-text {
-  right: -8px;
+  right: -12px;
   top: 50%;
   margin-top: -4px;
-  width: 8px;
+  width: 14px;
   height: auto;
   z-index: 6;
 }
@@ -2727,10 +2736,10 @@ article.press .date {
   z-index: 5;
 }
 .social-feed .instagram-elt.text.img-top .arrow-text {
-  top: -8px;
+  top: -12px;
   left: 50%;
   margin-left: -4px;
-  height: 8px;
+  height: 14px;
   width: auto;
   z-index: 6;
 }

@@ -20,6 +20,9 @@
 
   $listInstagramImages = getInstagramData();
 
+  // Limite caption size
+  $limitCaptionSize = 250;
+
 ?>
 
 <?php snippet('head') ?>
@@ -42,7 +45,7 @@
             $caption = '';
             if ($key == 0) {
               if(isset($data->caption->text) && $data->caption->text != '') {
-                $caption = substr($data->caption->text,0, 250);
+                $caption = substr($data->caption->text,0, $limitCaptionSize);
               }
               echo "
                 <div class='instagram-elt first image ". $data->id ."' data-id='". $data->id ."' >
@@ -72,7 +75,7 @@
             } else {
               if ($key%3 == 1) {
                 if(isset($data->caption->text) && $data->caption->text != '') {
-                  $caption = substr($data->caption->text, 0, 250);
+                  $caption = substr($data->caption->text, 0, $limitCaptionSize);
                 }
                 echo "
                   <div class='instagram-elt img-left image ". $data->id ."' data-id='". $data->id ."' >
@@ -101,7 +104,7 @@
                 ";
               } elseif ($key%3 == 0) {
                 if(isset($data->caption->text) && $data->caption->text != '') {
-                  $caption = substr($listInstagramImages->data[$key-1]->caption->text, 0, 250);
+                  $caption = substr($listInstagramImages->data[$key-1]->caption->text, 0, $limitCaptionSize);
                 }
                 echo "
                   <div class='instagram-elt img-top image ". $data->id ."' data-id='". $data->id ."' >
@@ -130,7 +133,7 @@
                 ";
               } else {
                 if(isset($data->caption->text) && $data->caption->text != '') {
-                  $caption = substr($listInstagramImages->data[$key+1]->caption->text, 0, 250);
+                  $caption = substr($listInstagramImages->data[$key+1]->caption->text, 0, $limitCaptionSize);
                 }
                 echo "
                   <div class='instagram-elt img-right image ". $data->id ."' data-id='". $data->id ."' >
@@ -179,71 +182,63 @@
     var nbElt = ($('.instagram-elt').length - 2);
     var lastId = $('.instagram-elt').eq(nbElt).attr('data-id');
 
-    //console.log("Nb elts : "+ nbElt +"last id : "+ lastId);
-
     if($(window).scrollTop() + $(window).height() == $(document).height()) {
-           console.log("Bottom");
-
-           //console.log("Last elt : "+ nbElt +" / id : "+ lastId);
-           //$('#instagram-area').append(buildInstagramElt("bla1", "bla2", "bla3"));
-            pollInstagram('https://api.instagram.com/v1/users/52746983/media/recent?access_token=509731687.73b2123.3f895a50426f4fed96adbfb6c1c123cc&max_id='+ lastId +'&count=3');
-     }
+      getInstagramLastImages('https://api.instagram.com/v1/users/52746983/media/recent?access_token=509731687.73b2123.3f895a50426f4fed96adbfb6c1c123cc&max_id='+ lastId +'&count=3');
+    }
   };
 
-  function pollInstagram(next_url, count) {
+  function getInstagramLastImages(url) {
     console.log("Call ajax");
     $.ajax({
         method: "GET",
-        url: next_url,
+        url: url,
         dataType: "jsonp",
         jsonp: "callback",
         jsonpCallback: "jsonpcallback",
         success: function(data) {
-          console.log("success");
-          //$('#instagram-area').append(buildInstagramElt("bla1", "bla2", "bla3"));
-            $.each(data.data, function(i, item) {
-              var eltImage,
-                  eltLink,
-                  eltText,
-                  eltId,
-                  nbLike,
-                  idText;
+          $.each(data.data, function(i, item) {
+            var eltImage,
+                eltLink,
+                eltText,
+                eltId,
+                nbLike,
+                idText,
+                limitCaptionSize = 250;
 
-              if(i == 0) {
-                eltImage = item.images.standard_resolution.url;
-                eltLink = item.link;
-                eltText = item.caption.text.substr(0, 250);
-                eltId = item.id,
-                nbLike = item.likes.count,
-                idText = item.id;
-              } else if(i == 1) {
-                eltImage = item.images.standard_resolution.url;
-                eltLink = item.link;
-                eltText = data.data[i+1].caption.text.substr(0, 250);
-                eltId = item.id,
-                nbLike = data.data[i+1].likes.count,
-                idText = data.data[i+1].id;
-              } else {
-                eltImage = item.images.standard_resolution.url;
-                eltLink = item.link;
-                eltText = data.data[i-1].caption.text.substr(0, 250);
-                eltId = item.id,
-                nbLike = data.data[i-1].likes.count,
-                idText = data.data[i-1].id;
-              }
+            if(i == 0) {
+              eltImage = item.images.standard_resolution.url;
+              eltLink = item.link;
+              eltText = item.caption.text.substr(0, limitCaptionSize);
+              eltId = item.id,
+              nbLike = item.likes.count,
+              idText = item.id;
+            } else if(i == 1) {
+              eltImage = item.images.standard_resolution.url;
+              eltLink = item.link;
+              eltText = data.data[i+1].caption.text.substr(0, limitCaptionSize);
+              eltId = item.id,
+              nbLike = data.data[i+1].likes.count,
+              idText = data.data[i+1].id;
+            } else {
+              eltImage = item.images.standard_resolution.url;
+              eltLink = item.link;
+              eltText = data.data[i-1].caption.text.substr(0, limitCaptionSize);
+              eltId = item.id,
+              nbLike = data.data[i-1].likes.count,
+              idText = data.data[i-1].id;
+            }
 
-              $('#instagram-area').append(buildInstagramElt(i, eltImage , eltLink, eltText, nbLike, eltId, idText));
-              //$('.instagram-elt.image').width("33.333333%");
-              //$('.instagram-elt.image').height($('.instagram-elt.image').width);
-            });
+            //Add new images
+            $('#instagram-area').append(buildInstagramElt(i, eltImage , eltLink, eltText, nbLike, eltId, idText));
+          });
         },
         error: function(jqXHR, textStatus, errorThrown) {
             alert("Check your internet Connection");
-            //$("#log").val($("#log").val() + 'Error\n');
         }
     });
   };
 
+  // Build news instagram elements
   function buildInstagramElt(cpt, image, link, text, like, id, idText) {
     console.log("cpt : "+ cpt);
 
@@ -251,11 +246,6 @@
 
     var imgClass,
         textClass;
-
-      /*
-      <img src='". $page->image('arrow-left.png')->url() ."' class='arrow-text' />
-      <img src='". $page->image('arrow-bg-left.png')->url() ."' class='arrow-bg' />
-      */
 
     if(cpt == 0) {
       imgClass = "img-left";

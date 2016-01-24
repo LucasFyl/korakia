@@ -4,20 +4,23 @@
   z-index: 5;
   overflow: hidden;
   > img {
-    @include size(auto);
-    object-fit: cover;
-    position: $position;
-    left: 0;
-    z-index: 5;
-
     max-width: none;
-    max-height: 100vh;
+    min-height: 100vh;
+    width: 100vw;
+
+    // object-fit: cover;
+
+    // position: $position;
+    // left: 0;
+    // z-index: 5;
+
   }
   // home slider :
 
   .img-wrap {
     max-height: 100vh;
     overflow: hidden;
+    z-index: -1;
     img {
       min-width: 0 !important;
       max-width: 100vw;
@@ -31,9 +34,9 @@
     .slick-dots {
       display: block;
       position: absolute;
-      top: 20rem; left: 50%;
+      top: 16rem; left: 50%;
       @include transform(translateX(-50%));
-      z-index: 9999;
+      z-index: 95;
       list-style-type: none;
       padding: 0; margin: 0;
 
