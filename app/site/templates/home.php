@@ -43,9 +43,9 @@
         scroll down
       </div>
 			<div class="img-wrap">
-				<img src="<?php echo $page->image('landing-1.jpg')->url() ?>" alt="Welcome to a retreat unlike any other" />
-				<img src="<?php echo $page->image('landing-2.jpg')->url() ?>" alt="Welcome to a retreat unlike any other" />
-				<img src="<?php echo $page->image('landing-3.jpg')->url() ?>" alt="Welcome to a retreat unlike any other" />
+				<?php foreach ($pages->find('home/slider')->images() as $image): ?>
+					<img src="<?php echo $image->url() ?>" alt="Korakia Pensione" draggable="false" />
+				<?php endforeach; ?>
 			</div>
 		</div>
 
