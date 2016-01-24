@@ -15,7 +15,19 @@
       padding-top: 5rem;
     }
     section {
-      &:first-child {
+      &.intro {
+        padding-bottom: 15rem;
+        h2 {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 5rem;
+          margin-top: 0;
+        }
+        p {
+          @include font(1.4, 1.9);
+        }
+      }
+      &.types-of-room {
         padding-bottom: 15rem;
         overflow: auto;
         p {
@@ -95,7 +107,7 @@
           }
         }
       }
-      &:last-child {
+      &.expand {
         > .six {
           @include shift(3);
           text-align: center;

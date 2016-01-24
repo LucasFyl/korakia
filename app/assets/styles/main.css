@@ -1732,22 +1732,37 @@ body.news .landing {
     padding-top: 5rem;
   }
 }
-#content.home .main section:first-child {
+#content.home .main section.intro {
+  padding-bottom: 15rem;
+}
+#content.home .main section.intro h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 0;
+}
+#content.home .main section.intro p {
+  font-size: 14px;
+  line-height: 19px;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+}
+#content.home .main section.types-of-room {
   padding-bottom: 15rem;
   overflow: auto;
 }
-#content.home .main section:first-child p {
+#content.home .main section.types-of-room p {
   font-size: 14px;
   line-height: 19px;
   font-size: 1.4rem;
   line-height: 1.9rem;
   margin: 4rem 0;
 }
-#content.home .main section:first-child .infos {
+#content.home .main section.types-of-room .infos {
   padding-top: 14.4rem;
 }
 @media screen and (max-width: 480px) {
-  #content.home .main section:first-child .infos {
+  #content.home .main section.types-of-room .infos {
     padding-top: 0;
     float: left;
     display: block;
@@ -1755,52 +1770,52 @@ body.news .landing {
     width: 100%;
     margin-bottom: 3rem;
   }
-  #content.home .main section:first-child .infos:last-child {
+  #content.home .main section.types-of-room .infos:last-child {
     margin-right: 0;
   }
 }
-#content.home .main section:first-child .infos .cta {
+#content.home .main section.types-of-room .infos .cta {
   min-width: 22rem;
 }
-#content.home .main section:first-child .infos .cta span {
+#content.home .main section.types-of-room .infos .cta span {
   min-width: 14rem;
 }
-#content.home .main section:first-child .images {
+#content.home .main section.types-of-room .images {
   padding-left: 5rem;
 }
 @media screen and (max-width: 480px) {
-  #content.home .main section:first-child .images {
+  #content.home .main section.types-of-room .images {
     padding-left: 0;
     float: left;
     display: block;
     margin-right: 2.3576515979%;
     width: 100%;
   }
-  #content.home .main section:first-child .images:last-child {
+  #content.home .main section.types-of-room .images:last-child {
     margin-right: 0;
   }
 }
-#content.home .main section:first-child .images figure {
+#content.home .main section.types-of-room .images figure {
   height: 30rem;
   overflow: hidden;
   position: relative;
   margin-left: 0;
 }
 @media screen and (max-width: 480px) {
-  #content.home .main section:first-child .images figure {
+  #content.home .main section.types-of-room .images figure {
     height: 18rem;
   }
 }
-#content.home .main section:first-child .images figure img {
+#content.home .main section.types-of-room .images figure img {
   min-width: 100%;
   object-fit: cover;
 }
-#content.home .main section:first-child .images figure a {
+#content.home .main section.types-of-room .images figure a {
   height: 100%;
   width: 100%;
   display: block;
 }
-#content.home .main section:first-child .images figure figcaption {
+#content.home .main section.types-of-room .images figure figcaption {
   position: absolute;
   z-index: 99;
   margin: 5%;
@@ -1812,7 +1827,7 @@ body.news .landing {
   opacity: 0;
   transition: all 0.25s ease-out;
 }
-#content.home .main section:first-child .images figure figcaption p {
+#content.home .main section.types-of-room .images figure figcaption p {
   font-size: 23px;
   line-height: 180px;
   font-size: 2.3rem;
@@ -1821,35 +1836,35 @@ body.news .landing {
   text-align: center;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
-#content.home .main section:first-child .images figure:hover figcaption {
+#content.home .main section.types-of-room .images figure:hover figcaption {
   opacity: 1;
 }
-#content.home .main section:first-child .images figure.twelve img {
+#content.home .main section.types-of-room .images figure.twelve img {
   transform: translateY(-35%);
 }
-#content.home .main section:first-child .images figure.twelve figcaption {
+#content.home .main section.types-of-room .images figure.twelve figcaption {
   margin: 2.5%;
 }
-#content.home .main section:first-child .images figure.twelve:hover figcaption {
+#content.home .main section.types-of-room .images figure.twelve:hover figcaption {
   margin-top: 2.5%;
 }
-#content.home .main section:last-child > .six {
+#content.home .main section.expand > .six {
   margin-left: 25.5894128995%;
   text-align: center;
 }
 @media screen and (max-width: 480px) {
-  #content.home .main section:last-child > .six {
+  #content.home .main section.expand > .six {
     float: left;
     display: block;
     margin-right: 2.3576515979%;
     width: 82.9403914003%;
     margin-left: 8.5298042998%;
   }
-  #content.home .main section:last-child > .six:last-child {
+  #content.home .main section.expand > .six:last-child {
     margin-right: 0;
   }
 }
-#content.home .main section:last-child > .six h2 {
+#content.home .main section.expand > .six h2 {
   float: left;
   display: block;
   margin-right: 2.3576515979%;
@@ -1857,40 +1872,40 @@ body.news .landing {
   margin-left: 25.5894128995%;
   float: none;
 }
-#content.home .main section:last-child > .six h2:last-child {
+#content.home .main section.expand > .six h2:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 480px) {
-  #content.home .main section:last-child > .six h2 {
+  #content.home .main section.expand > .six h2 {
     float: left;
     display: block;
     margin-right: 2.3576515979%;
     width: 82.9403914003%;
     margin-left: 8.5298042998%;
   }
-  #content.home .main section:last-child > .six h2:last-child {
+  #content.home .main section.expand > .six h2:last-child {
     margin-right: 0;
   }
 }
-#content.home .main section:last-child > .six p {
+#content.home .main section.expand > .six p {
   margin: 8rem 0;
 }
-#content.home .main section:last-child figure {
+#content.home .main section.expand figure {
   margin: 0;
   width: 50%;
   overflow: hidden;
   position: relative;
 }
-#content.home .main section:last-child figure img {
+#content.home .main section.expand figure img {
   min-width: 100%;
   object-fit: cover;
 }
 @media screen and (max-width: 480px) {
-  #content.home .main section:last-child figure {
+  #content.home .main section.expand figure {
     width: 100%;
   }
 }
-#content.home .main section:last-child figure figcaption {
+#content.home .main section.expand figure figcaption {
   height: 12rem;
   position: absolute;
   top: 50%;
@@ -1899,7 +1914,7 @@ body.news .landing {
   transform: translateX(-100%);
   transition: all 0.25s ease;
 }
-#content.home .main section:last-child figure figcaption a {
+#content.home .main section.expand figure figcaption a {
   font-family: "Playfair Display", garamond, serif;
   font-size: 23px;
   line-height: 85px;
@@ -1910,7 +1925,7 @@ body.news .landing {
   display: inline-block;
   padding: 0 8rem;
 }
-#content.home .main section:last-child figure figcaption span {
+#content.home .main section.expand figure figcaption span {
   height: 5rem;
   width: 5rem;
   background-color: #d2bb71;
@@ -1925,49 +1940,49 @@ body.news .landing {
   opacity: 0;
   transition: all 0.25s ease;
 }
-#content.home .main section:last-child figure:first-child:hover figcaption {
+#content.home .main section.expand figure:first-child:hover figcaption {
   transform: translateX(0);
   transition: all 0.25s ease-out;
 }
-#content.home .main section:last-child figure:first-child:hover figcaption span {
+#content.home .main section.expand figure:first-child:hover figcaption span {
   right: -2.5rem;
   opacity: 1;
   transition: all 0.25s 0.2s ease-out;
 }
 @media screen and (max-width: 480px) {
-  #content.home .main section:last-child figure:first-child figcaption {
+  #content.home .main section.expand figure:first-child figcaption {
     transform: translateX(0);
     transition: all 0.25s ease-out;
   }
-  #content.home .main section:last-child figure:first-child figcaption span {
+  #content.home .main section.expand figure:first-child figcaption span {
     right: -2.5rem;
     opacity: 1;
     transition: all 0.25s 0.2s ease-out;
   }
 }
-#content.home .main section:last-child figure:last-child figcaption {
+#content.home .main section.expand figure:last-child figcaption {
   transform: translateX(100%);
   right: 0;
 }
-#content.home .main section:last-child figure:last-child figcaption span {
+#content.home .main section.expand figure:last-child figcaption span {
   background-image: url("../images/asset-caret-right.svg");
   left: -5rem;
 }
-#content.home .main section:last-child figure:last-child:hover figcaption {
+#content.home .main section.expand figure:last-child:hover figcaption {
   transform: translateX(0);
   transition: all 0.25s ease-out;
 }
-#content.home .main section:last-child figure:last-child:hover figcaption span {
+#content.home .main section.expand figure:last-child:hover figcaption span {
   left: -2.5rem;
   opacity: 1;
   transition: all 0.25s 0.2s ease-out;
 }
 @media screen and (max-width: 480px) {
-  #content.home .main section:last-child figure:last-child figcaption {
+  #content.home .main section.expand figure:last-child figcaption {
     transform: translateX(0);
     transition: all 0.25s ease-out;
   }
-  #content.home .main section:last-child figure:last-child figcaption span {
+  #content.home .main section.expand figure:last-child figcaption span {
     left: -2.5rem;
     opacity: 1;
     transition: all 0.25s 0.2s ease-out;

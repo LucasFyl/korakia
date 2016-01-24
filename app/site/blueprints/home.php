@@ -14,6 +14,18 @@ fields:
     label: Landing baseline line 2
     type: text
     default: retreat unlike any other
+  introTitle:
+    label: Intro part title
+    type: text
+    default: Korakia Pensione
+  introText1:
+    label: Intro text 1st col
+    type: textarea
+    width: 1/2
+  introText2:
+    label: Intro text 2nd col
+    type: textarea
+    width: 1/2
   firstTitle:
     label: first title
     type: text

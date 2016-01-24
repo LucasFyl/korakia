@@ -50,8 +50,16 @@
 		</div>
 
 		<div class="main">
-
-			<section class="container">
+			<section class="container intro">
+				<h2><?php echo $page->introTitle() ?></h2>
+				<div class="six">
+					<?php echo $page->introText1()->kirbytext() ?>
+				</div>
+				<div class="six">
+					<?php echo $page->introText2()->kirbytext() ?>
+				</div>
+			</section>
+			<section class="container types-of-room">
 				<div class="three infos">
 					<h2><?php echo $page->firstTitle() ?></h2>
 					<p><?php echo $page->firstText() ?></p>
@@ -90,7 +98,7 @@
 				</div>
 			</section>
 
-			<section>
+			<section class="expand">
 				<div class="six">
 					<h2><?php echo $page->secondTitle() ?></h2>
 					<p><?php echo $page->secondText() ?></p>

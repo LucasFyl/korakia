@@ -28,3 +28,29 @@ Baselinel1: Welcome to a Retreat
 ----
 
 Baselinel2: unlike any other
+
+----
+
+Introtitle: Korakia Pensione
+
+----
+
+Introtext1: 
+
+Rescued from disrepair in 1989, Dar Marroc was renamed Korakia (Greek for "crow") and crafted into a Mediterranean-style resort. The resort, now housed in two lovingly restored historic villas, rests on 1.5 lush acres, consisting of bungalows, guesthouses, gardens and pools. 
+
+From Korakia's distinct keyhole-shaped grand entrance housing a set of ornately carved Moorish wooden double doors to the antiques and handmade furniture found in every room, everything blends harmoniously to create an oasis in the California desert. 
+
+With citrus blossoms, olive trees, oleander bushes, date palms, bougainvillea vines, gorgeous Moroccan fountains and a stone waterfall spread across the main courtyard area, every aspect of the villas have
+
+----
+
+Introtext2: 
+
+been restored to the artistic ambiance of their halcyon days.
+
+Today the legacy of the original historic Dar Marroc lives on. What the art community once favored during the 'old Palm Springs era' continues. Korakia remains a popular rendezvous for an eclectic crowd, including renowned actors, writers, producers and photographers. 
+
+Dramatic photo spreads of Korakia have graced the pages of such leading publications as Architectural Digest, HIP Hotels and Condé Nast Traveler as well as Vogue, Elle, Marie-Claire and their European counterparts. 
+
+The New York Times has called the Korakia "One of the sexiest hotels in America.
