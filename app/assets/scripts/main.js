@@ -30,6 +30,7 @@ function initPage(){
 	} else if ( $('#content.special-offers').length ) {
 		Modal.init();
 	} else if ( $('#content.social-feed').length ) {
+		$('header').addClass('white');
 		resizeInstagramElt();
 		wrapHashtagInstagram();
 		Instagram.init();
@@ -242,13 +243,11 @@ function resizeInstagramElt() {
 }
 
 function wrapHashtagInstagram() {
+	'use strict';
 	$.each($('.caption'), function(i, caption) {
-		if($('.caption').eq(i).html().match('@[a-z]*') != null) {
+		if($('.caption').eq(i).html().match('@[a-z]*') !== null) {
 			var matchedElt = $('.caption').eq(i).html().match('@[a-z]*')[0];
-
 		}
-
-		// $('.caption').eq(i).html().match('@[a-z]*').wrap("<span div='hashtag'></span>");
 	});
 }
 
@@ -258,12 +257,12 @@ var Instagram = {
 
 	 	// hover
 		$('#instagram-area').on('mouseenter', '.instagram-elt', function() {
-	        var idElt = $(this).attr('data-id');
-	        $('.'+ idElt).addClass('active');
+	    var idElt = $(this).attr('data-id');
+	    $('.'+ idElt).addClass('active');
 		});
 
 		$('#instagram-area').on('mouseleave', '.instagram-elt', function() {
-			    $('.instagram-elt.active').removeClass('active');
+	    $('.instagram-elt.active').removeClass('active');
 		});
 	}
 };
