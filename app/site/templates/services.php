@@ -8,7 +8,6 @@
 			<div class="wrapper">
 				<h1 class="img-in"><?php echo $page->title() ?></h1>
 			</div>
-      <img src="<?php echo $page->image('landing.jpg')->url() ?>" alt="<?php echo $page->title() ?>" />
 
 			<div class="scrolldown"> scroll down </div>
     </div>

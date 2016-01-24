@@ -9,7 +9,6 @@
 				<h1 class="img-in"><?php echo $page->landingTitle1() ?><br/>
 				    <?php echo $page->landingTitle2() ?></h1>
 			</div>
-      <img src="<?php echo $page->image('landing.jpg')->url() ?>" alt="<?php echo $page->landingTitle1() ?> <?php echo $page->landingTitle2() ?>" />
       <div class="scrolldown">
         scroll down
       </div>

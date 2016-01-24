@@ -23,8 +23,6 @@
 					</span>
 				</a>
 			</div>
-			<img src="<?php echo $page->image('landing-desktop.jpg')->url() ?>" alt="Korokia Pensione" class="hide-mobile"/>
-			<img src="<?php echo $page->image('landing-mobile.jpg')->url() ?>" alt="Korokia Pensione" class="hide-desktop"/>
     </div>
 	</div> <!-- / #content  -->
 
