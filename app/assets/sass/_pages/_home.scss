@@ -8,6 +8,85 @@
         @include shift(1);
       }
     }
+    // home slider :
+    .img-wrap {
+      max-height: 100vh;
+      overflow: hidden;
+      z-index: -1;
+      img {
+        // width: auto;
+        min-width: 0 !important;
+        // max-width: 200% !important;
+        min-height: 100vh;
+        @include media($mobile) {
+          width: auto !important;
+          max-width: none !important;
+          min-height: 100vh;
+        }
+      }
+      .arrow {
+        @include size(1rem 2.1rem);
+        display: block;
+
+        position: absolute;
+        z-index: 99;
+        top: 20rem;
+
+        cursor: pointer;
+        border-radius: 100%;
+
+        &.arrow-left {
+          background: url('../images/asset-caret-left.svg') no-repeat center center;
+          background-size: 1rem;
+          left: 48%;
+        }
+
+        &.arrow-right {
+          background: url('../images/asset-caret-right.svg') no-repeat center center;
+          background-size: 1rem;
+          right: 48%;
+        }
+
+      }
+      // .slick-dots {
+      //   display: block;
+      //   position: absolute;
+      //   top: 16rem; left: 50%;
+      //   @include transform(translateX(-50%));
+      //   z-index: 95;
+      //   list-style-type: none;
+      //   padding: 0; margin: 0;
+      //
+      //   li {
+      //     display: block; float: left;
+      //     margin-right: 1rem;
+      //
+      //     &:last-child {
+      //       margin-right: 0;
+      //     }
+      //     &.slick-active {
+      //       button {
+      //         background: white !important;
+      //       }
+      //     }
+      //   }
+      //
+      //   button {
+      //     @include appearance(none);
+      //     @include size(1.1rem);
+      //     border-radius: 100%;
+      //     border: 1px solid white;
+      //     text-indent: -99999px;
+      //     background: transparent;
+      //     padding: 0;
+      //     outline: none;
+      //
+      //     &:hover {
+      //       background: white;
+      //     }
+      //   }
+      // }
+    }
   }
   .main {
     padding-top: 15rem;
@@ -24,7 +103,7 @@
           margin-top: 0;
         }
         p {
-          @include font(1.4, 1.9);
+          @include font(1.6, 2);
         }
       }
       &.types-of-room {

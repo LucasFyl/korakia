@@ -3,11 +3,6 @@
   position: relative;
   z-index: 5;
   overflow: hidden;
-  // > img {
-  //   max-width: none;
-  //   min-height: 100vh;
-  //   width: 100vw;
-  // }
   body.about & {
     background: white url('../images/landing/about-landing.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -56,63 +51,7 @@
       background-size: cover;
     }
   }
-
-
-  // home slider :
-  .img-wrap {
-    max-height: 100vh;
-    overflow: hidden;
-    z-index: -1;
-    img {
-      // width: auto;
-      min-width: 0 !important;
-      // max-width: 200% !important;
-      min-height: 100vh;
-      @include media($mobile) {
-        width: auto !important;
-        max-width: none !important;
-        min-height: 100vh;
-      }
-    }
-    .slick-dots {
-      display: block;
-      position: absolute;
-      top: 16rem; left: 50%;
-      @include transform(translateX(-50%));
-      z-index: 95;
-      list-style-type: none;
-      padding: 0; margin: 0;
-
-      li {
-        display: block; float: left;
-        margin-right: 1rem;
-
-        &:last-child {
-          margin-right: 0;
-        }
-        &.slick-active {
-          button {
-            background: white !important;
-          }
-        }
-      }
-
-      button {
-        @include appearance(none);
-        @include size(1.1rem);
-        border-radius: 100%;
-        border: 1px solid white;
-        text-indent: -99999px;
-        background: transparent;
-        padding: 0;
-        outline: none;
-
-        &:hover {
-          background: white;
-        }
-      }
-    }
-  }
+  
   .wrapper {
     position: $position;
     z-index: 9;

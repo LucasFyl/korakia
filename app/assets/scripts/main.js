@@ -54,13 +54,15 @@ function initHomeSlider() {
 	var slider = $('.landing .img-wrap');
 	slider.slick({
 		infinite:true,
-		dots: true,
-		arrows: false,
+		dots: false,
+		arrows: true,
 		autoplay:true,
 		autoplaySpeed: 4000,
 		fade: true,
 		speed: 750,
-  	cssEase: 'ease-in-out'
+  	cssEase: 'ease-in-out',
+    prevArrow: "<a href='#' class='arrow arrow-left'></a>",
+    nextArrow: "<a href='#' class='arrow arrow-right'></a>"
 	});
 	if ( isMobile === true ) {
 		slider.slick('unslick');
