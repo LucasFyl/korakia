@@ -9,8 +9,8 @@ role: admin
 firstname: Lucas
 lastname: Fayolle
 history:
+  - special-occasions
   - press
   - home
   - social-feed
   - about
-  - special-offers

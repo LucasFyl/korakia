@@ -1,4 +1,4 @@
-Title: Special offers
+Title: Special Occasions
 
 ----
 
@@ -30,20 +30,8 @@ Eventstitle: Events & Retreats
 
 ----
 
-Photostitle: Photoshoots
-
-----
-
 Eventstext: 
 
 Whether you need to host an executive retreat, a corporate think-tank getaway, or a reunion with good friends, Korakia is an inspirational location for small gatherings. We have indoor meeting space for up to 30 people conference-style, in addition to ample outdoor event space for up to 130 guests. We can assist you with planning itineraries, excursions and entertainment.
 
 For more information on how we can help inspire your event planning, please contact us by telephone at 760-864-6411 or email us.
-
-----
-
-Photostext: 
-
-Korakia offers a beautiful setting for some of the top photographers in the world. Whether it's gracing the pages of leading publications such as Architectural Digest, Elle, Vogue, or making your own memories with a wedding or engagement shoot, Korakia is sure to bring character and a dramatic backdrop to any picture moment.
-
-To inquire about photo shoots please call (link: phone:760-864-6411 text: 760-864-6411.)
