@@ -548,6 +548,7 @@ html {
 
 body {
   position: relative;
+  background-color: white;
 }
 
 img {
@@ -1147,6 +1148,11 @@ body.about .landing {
     background-size: cover;
   }
 }
+@media screen and (max-width: 480px) {
+  body.about .landing {
+    background: white url("../images/landing/about-landing-mobile.jpg") no-repeat center center fixed;
+  }
+}
 body.villas .landing {
   background: white url("../images/landing/villas-landing-desktop.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -1172,6 +1178,11 @@ body.services .landing {
     background-size: cover;
   }
 }
+@media screen and (max-width: 480px) {
+  body.services .landing {
+    background: white url("../images/landing/services-landing-mobile.jpg") no-repeat center center fixed;
+  }
+}
 body.special-occasions .landing {
   background: white url("../images/landing/special-occasions-landing.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -1182,6 +1193,11 @@ body.special-occasions .landing {
     background-size: cover;
   }
 }
+@media screen and (max-width: 480px) {
+  body.special-occasions .landing {
+    background: white url("../images/landing/special-occasions-landing-mobile.jpg") no-repeat center center fixed;
+  }
+}
 body.press .landing {
   background: white url("../images/landing/news-landing.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -1190,6 +1206,11 @@ body.press .landing {
   body.press .landing {
     background: white url("../images/landing/news-landing@2x.jpg") no-repeat center center fixed;
     background-size: cover;
+  }
+}
+@media screen and (max-width: 480px) {
+  body.press .landing {
+    background: white url("../images/landing/news-landing-mobile.jpg") no-repeat center center fixed;
   }
 }
 .landing .wrapper {
@@ -1221,6 +1242,11 @@ body.press .landing {
     margin: 0;
   }
 }
+@media screen and (max-width: 480px) {
+  .landing .wrapper {
+    transform: translateZ(0);
+  }
+}
 .landing .scrolldown {
   font-size: 14px;
   line-height: 100px;
@@ -1236,7 +1262,19 @@ body.press .landing {
   bottom: 0;
   z-index: 9;
 }
+@media screen and (max-width: 480px) {
+  .landing .scrolldown {
+    transform: translateZ(0);
+  }
+}
 
+@media screen and (max-width: 480px) {
+  .villas:not(.feed) .landing {
+    margin-top: 11.1rem;
+    height: calc(100vh - 11.1rem);
+    background-position: center 11.1rem;
+  }
+}
 .villas:not(.feed) .landing > img {
   max-width: 100%;
   min-height: 100vh;
@@ -1270,13 +1308,8 @@ body.press .landing {
 }
 @media screen and (max-width: 480px) {
   .villas:not(.feed) .landing .half .wrapper {
-    top: 50%;
+    top: 30%;
     width: 100%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .villas:not(.feed) .landing .half:first-child .wrapper {
-    top: 70%;
   }
 }
 .villas:not(.feed) .landing .half img {
@@ -1307,8 +1340,8 @@ body.press .landing {
 }
 @media screen and (max-width: 480px) {
   .villas:not(.feed) .landing .half {
-    min-height: 50vh;
-    height: 50vh;
+    min-height: 50%;
+    height: 50%;
     width: 100vw;
   }
   .villas:not(.feed) .landing .half h2, .villas:not(.feed) .landing .half p {

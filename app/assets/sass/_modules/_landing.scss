@@ -11,6 +11,9 @@
       background: white url('../images/landing/about-landing@2x.jpg') no-repeat center center fixed;
       background-size: cover;
     }
+    @include media($mobile) {
+      background: white url('../images/landing/about-landing-mobile.jpg') no-repeat center center fixed;
+    }
   }
   body.villas & {
     background: white url('../images/landing/villas-landing-desktop.jpg') no-repeat center center fixed;
@@ -32,6 +35,9 @@
       background: white url('../images/landing/services-landing@2x.jpg') no-repeat center center fixed;
       background-size: cover;
     }
+    @include media($mobile) {
+      background: white url('../images/landing/services-landing-mobile.jpg') no-repeat center center fixed;
+    }
   }
   body.special-occasions & {
     background: white url('../images/landing/special-occasions-landing.jpg') no-repeat center center fixed;
@@ -41,6 +47,9 @@
       background: white url('../images/landing/special-occasions-landing@2x.jpg') no-repeat center center fixed;
       background-size: cover;
     }
+    @include media($mobile) {
+      background: white url('../images/landing/special-occasions-landing-mobile.jpg') no-repeat center center fixed;
+    }
   }
   body.press & {
     background: white url('../images/landing/news-landing.jpg') no-repeat center center fixed;
@@ -49,6 +58,9 @@
     (min-resolution: 192dpi) {
       background: white url('../images/landing/news-landing@2x.jpg') no-repeat center center fixed;
       background-size: cover;
+    }
+    @include media($mobile) {
+      background: white url('../images/landing/news-landing-mobile.jpg') no-repeat center center fixed;
     }
   }
 
@@ -74,6 +86,9 @@
         margin: 0;
       }
     }
+    @include media($mobile) {
+      @include transform(translateZ(0));
+    }
   }
   .scrolldown {
     @include font(1.4, 10);
@@ -87,9 +102,17 @@
     position: $position;
     bottom:0;
     z-index: 9;
+    @include media($mobile) {
+      @include transform(translateZ(0));
+    }
   }
 }
 .villas:not(.feed) .landing {
+  @include media($mobile) {
+    margin-top: 11.1rem;
+    height: calc(100vh - 11.1rem);
+    background-position: center 11.1rem;
+  }
   > img {
     max-width: 100%;
     min-height: 100vh;
@@ -119,17 +142,17 @@
     .wrapper {
       width: 100%;
       @include media($mobile) {
-        top: 50%;
+        top: 30%;
         width: 100%;
       }
     }
-    &:first-child {
-      .wrapper {
-        @include media($mobile) {
-          top: 70%;
-        }
-      }
-    }
+    // &:first-child {
+    //   .wrapper {
+    //     @include media($mobile) {
+    //       top: 70%;
+    //     }
+    //   }
+    // }
     img {
       width: 50%;
       position: fixed;
@@ -156,8 +179,8 @@
     }
 
     @include media($mobile) {
-      min-height: 50vh;
-      height: 50vh;
+      min-height: 50%;
+      height: 50%;
       width: 100vw;
       h2, p {
         opacity: 1 !important;
