@@ -64,11 +64,15 @@ function initPhotoshootSlider() {
 		speed: 750,
   	cssEase: 'ease-in-out',
     prevArrow: '<a href=\'#\' class=\'arrow arrow-left\'></a>',
-    nextArrow: '<a href=\'#\' class=\'arrow arrow-right\'></a>'
+    nextArrow: '<a href=\'#\' class=\'arrow arrow-right\'></a>',
+	  variableHeight: true
 	});
 	if ( isMobile === true ) {
 		slider.slick('unslick');
 	}
+	$( window ).resize(function(){
+		slider.slick('setPosition');
+	});
 }
 function initHomeSlider() {
 	'use strict';
