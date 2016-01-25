@@ -1727,15 +1727,33 @@ body.press .landing {
   cursor: pointer;
   border-radius: 100%;
 }
+@media screen and (max-width: 480px) {
+  #content.home .landing .img-wrap .arrow {
+    height: 4rem;
+    width: 4rem;
+  }
+}
 #content.home .landing .img-wrap .arrow.arrow-left {
   background: url("../images/asset-caret-left.svg") no-repeat center center;
   background-size: 1rem;
   left: 48%;
 }
+@media screen and (max-width: 480px) {
+  #content.home .landing .img-wrap .arrow.arrow-left {
+    background-size: 2rem;
+    left: 40%;
+  }
+}
 #content.home .landing .img-wrap .arrow.arrow-right {
   background: url("../images/asset-caret-right.svg") no-repeat center center;
   background-size: 1rem;
   right: 48%;
+}
+@media screen and (max-width: 480px) {
+  #content.home .landing .img-wrap .arrow.arrow-right {
+    background-size: 2rem;
+    right: 40%;
+  }
 }
 #content.home .main {
   padding-top: 15rem;

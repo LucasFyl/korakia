@@ -38,12 +38,12 @@ function initPage(){
 		Instagram.init();
 	}
 	if ( $('.isMobile:visible') ) {
-		$('body').on('touchstart', 'header .hamburger', function(e){
+		$('body').on('touchstart click', 'header .hamburger', function(e){
 			e.preventDefault();
 			var menu = $('.menu.hide-desktop');
 			TweenMax.to(menu, 0.5, {top:'11.1rem',ease:Expo.easeOut});
 		});
-		$('body').on('touchstart', '.menu .close', function(e){
+		$('body').on('touchstart click', '.menu .close', function(e){
 			e.preventDefault();
 			var menu = $('.menu.hide-desktop');
 			TweenMax.to(menu, 0.5, {top:'-100%',ease:Expo.easeIn});
@@ -85,8 +85,11 @@ function initHomeSlider() {
     prevArrow: '<a href=\'#\' class=\'arrow arrow-left\'></a>',
     nextArrow: '<a href=\'#\' class=\'arrow arrow-right\'></a>'
 	});
+
 	if ( isMobile === true ) {
-		slider.slick('unslick');
+		slider.slick({
+			swipe: true
+		});
 	}
 }
 function backToTop() {

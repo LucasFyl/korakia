@@ -42,8 +42,13 @@
 			<div class="scrolldown">
         scroll down
       </div>
-			<div class="img-wrap">
+			<div class="img-wrap hide-mobile">
 				<?php foreach ($pages->find('home/slider')->images() as $image): ?>
+					<img src="<?php echo $image->url() ?>" alt="Korakia Pensione" draggable="false" />
+				<?php endforeach; ?>
+			</div>
+			<div class="img-wrap hide-desktop">
+				<?php foreach ($pages->find('home/slider-mobile')->images() as $image): ?>
 					<img src="<?php echo $image->url() ?>" alt="Korakia Pensione" draggable="false" />
 				<?php endforeach; ?>
 			</div>

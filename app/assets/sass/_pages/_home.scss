@@ -34,58 +34,30 @@
 
         cursor: pointer;
         border-radius: 100%;
+        @include media($mobile) {
+          @include size(4rem);
+        }
 
         &.arrow-left {
           background: url('../images/asset-caret-left.svg') no-repeat center center;
           background-size: 1rem;
           left: 48%;
+          @include media($mobile) {
+            background-size:2rem;
+            left: 40%;
+          }
         }
 
         &.arrow-right {
           background: url('../images/asset-caret-right.svg') no-repeat center center;
           background-size: 1rem;
           right: 48%;
+          @include media($mobile) {
+            background-size:2rem;
+            right: 40%;
+          }
         }
-
       }
-      // .slick-dots {
-      //   display: block;
-      //   position: absolute;
-      //   top: 16rem; left: 50%;
-      //   @include transform(translateX(-50%));
-      //   z-index: 95;
-      //   list-style-type: none;
-      //   padding: 0; margin: 0;
-      //
-      //   li {
-      //     display: block; float: left;
-      //     margin-right: 1rem;
-      //
-      //     &:last-child {
-      //       margin-right: 0;
-      //     }
-      //     &.slick-active {
-      //       button {
-      //         background: white !important;
-      //       }
-      //     }
-      //   }
-      //
-      //   button {
-      //     @include appearance(none);
-      //     @include size(1.1rem);
-      //     border-radius: 100%;
-      //     border: 1px solid white;
-      //     text-indent: -99999px;
-      //     background: transparent;
-      //     padding: 0;
-      //     outline: none;
-      //
-      //     &:hover {
-      //       background: white;
-      //     }
-      //   }
-      // }
     }
   }
   .main {
