@@ -19,11 +19,7 @@ function initPage(){
 	detectMobile();
 	hideLoader();
 
-	if ( $('#content.feed').length ) {
-		initSlickSliders();
-		$('header').addClass('white');
-		backToTop();
-	} else if ( $('#content.home').length ) {
+	if ( $('#content.home').length ) {
 		datePickerSetup();
 		displayCalendar();
 		initHomeSlider();
@@ -36,6 +32,12 @@ function initPage(){
 		resizeInstagramElt();
 		wrapHashtagInstagram();
 		Instagram.init();
+	} else if ( $('#content.feed').length ) {
+		initSlickSliders();
+		$('header').addClass('white');
+		backToTop();
+	} else if ( $('#content.contact').length ) {
+		$('header').addClass('white');
 	}
 	if ( $('.isMobile:visible') ) {
 		$('body').on('touchstart click', 'header .hamburger', function(e){
