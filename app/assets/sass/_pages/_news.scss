@@ -68,8 +68,8 @@ article.press {
   padding: 7.5rem 0;
   border-bottom: 1px solid rgba(0,0,0,0.1);
 
-  &:first-child {
-    padding-top: 0;
+  &:first-of-type {
+    border-top: 1px solid rgba(0,0,0,0.1);
   }
   .image {
     @include media($desktop) {
