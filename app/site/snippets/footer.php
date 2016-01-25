@@ -1,6 +1,6 @@
         <footer>
           <div class="container">
-            <p class="left three">Copyright © 2015 - Korokia Pensione</p>
+            <p class="left six">Copyright © 2015 - Korokia Pensione - Powered by <a href="http://ouiwill.com" target="_blank">ouiwill</a></p>
 
             <ul class="social">
               <li class="f"><a href="#" target="_blank"><img src="assets/images/asset-icon-facebook.svg" alt="facebook" /></a></li>
