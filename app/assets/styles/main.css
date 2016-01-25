@@ -988,6 +988,10 @@ header nav ul li a {
   color: white;
   text-decoration: none;
 }
+header nav ul li:last-child {
+  margin-right: 0;
+  opacity: .6;
+}
 header.white {
   position: fixed;
   top: -11.1rem;

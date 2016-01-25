@@ -35,6 +35,10 @@ header {
           color:white;
           text-decoration: none;
         }
+        &:last-child {
+          margin-right: 0;
+          opacity: .6;
+        }
       }
     }
   }
