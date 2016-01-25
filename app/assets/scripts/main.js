@@ -39,6 +39,8 @@ function initPage(){
 	} else if ( $('#content.contact').length ) {
 		$('header').addClass('white');
 	}
+
+
 	if ( $('.isMobile:visible') ) {
 		$('body').on('touchstart click', 'header .hamburger', function(e){
 			e.preventDefault();
@@ -51,6 +53,8 @@ function initPage(){
 			TweenMax.to(menu, 0.5, {top:'-100%',ease:Expo.easeIn});
 		});
 	}
+
+
 	MagicStuff.init();
 }
 function initPhotoshootSlider() {
