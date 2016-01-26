@@ -2778,6 +2778,7 @@ article.press .date {
   font-size: 40px;
   color: #000000;
   text-align: center;
+  font-family: "Playfair Display";
 }
 .social-feed .instagram-elt.explore img {
   min-width: 1px;
@@ -2843,9 +2844,10 @@ article.press .date {
 .social-feed .instagram-elt.text .inner .like .nb-like {
   float: left;
   color: #000000;
-  font-size: 29px;
+  font-size: 33px;
   margin-left: 15px;
-  line-height: 25px;
+  line-height: 20px;
+  font-family: "Playfair Display";
 }
 .social-feed .instagram-elt.text .inner .liseret {
   display: block;
@@ -2858,6 +2860,7 @@ article.press .date {
 .social-feed .instagram-elt.text .inner .caption {
   font-size: 15px;
   color: #b5b5b5;
+  font-family: "Lato";
 }
 .social-feed .instagram-elt.text .inner .caption .hashtag {
   color: #000000;
@@ -2996,9 +2999,9 @@ article.press .date {
   .social-feed .instagram-elt.text .inner .like .nb-like {
     float: left;
     color: #000000;
-    font-size: 22px;
+    font-size: 25px;
     margin-left: 11px;
-    line-height: 19px;
+    line-height: 17px;
   }
   .social-feed .instagram-elt.text .inner .liseret {
     margin-top: 18px;
@@ -3028,9 +3031,9 @@ article.press .date {
   .social-feed .instagram-elt.text .inner .like .nb-like {
     float: left;
     color: #000000;
-    font-size: 19px;
+    font-size: 22px;
     margin-left: 9px;
-    line-height: 17px;
+    line-height: 14px;
   }
   .social-feed .instagram-elt.text .inner .liseret {
     margin-top: 14px;

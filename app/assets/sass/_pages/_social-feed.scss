@@ -12,6 +12,7 @@
 			font-size: 40px;
 			color: #000000;
 			text-align: center;
+			font-family: "Playfair Display";
 
 			img {
 				min-width: 1px;
@@ -90,9 +91,10 @@
 					.nb-like {
 						float: left;
 						color: #000000;
-						font-size: 29px;
+						font-size: 33px;
 						margin-left: 15px;
-						line-height: 25px;
+						line-height: 20px;
+						font-family: "Playfair Display";
 					}
 				}
 
@@ -108,6 +110,7 @@
 				.caption {
 					font-size: 15px;
 					color: #b5b5b5;
+					font-family: "Lato";
 
 					.hashtag {
 						color: #000000;
@@ -294,9 +297,9 @@
 						.nb-like {
 							float: left;
 							color: #000000;
-							font-size: 22px;
+							font-size: 25px;
 							margin-left: 11px;
-							line-height: 19px;
+							line-height: 17px;
 						}
 					}
 
@@ -342,9 +345,9 @@
 						.nb-like {
 							float: left;
 							color: #000000;
-							font-size: 19px;
+							font-size: 22px;
 							margin-left: 9px;
-							line-height: 17px;
+							line-height: 14px;
 						}
 					}
 
