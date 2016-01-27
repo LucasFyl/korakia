@@ -2776,6 +2776,12 @@ article.press .date {
   color: #293442;
   margin: 5rem 0;
 }
+#content.contact .contact-info a {
+  text-decoration: none;
+}
+#content.contact .contact-info a:hover {
+  text-decoration: underline;
+}
 #content.contact .btn {
   display: block;
   margin: .5rem 0;

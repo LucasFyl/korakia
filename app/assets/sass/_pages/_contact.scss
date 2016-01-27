@@ -23,6 +23,12 @@
   .contact-info {
     color: #293442;
     margin: 5rem 0;
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
   .btn {
     display: block;
