@@ -879,6 +879,56 @@ small {
   line-height: inherit;
 }
 
+/* DEMO 1 */
+.dropdown-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.dropdown-wrap .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  list-style: none;
+  font-weight: normal;
+  height: 0;
+  pointer-events: none;
+  transition: all 0.25s ease-in-out;
+}
+.dropdown-wrap .dropdown li a {
+  display: block;
+  text-decoration: none;
+  color: #9e9e9e;
+  padding: 10px 20px;
+  text-align: left;
+  font-size: 2.5rem;
+  font-family: "Playfair Display", garamond, serif;
+}
+.dropdown-wrap .dropdown li:hover {
+  background: #f3f8f8;
+}
+.dropdown-wrap .dropdown li:hover a {
+  color: #293443;
+}
+.dropdown-wrap.active {
+  overflow: visible;
+}
+.dropdown-wrap.active .dropdown {
+  height: auto;
+  transition: all 0.25s ease-in-out;
+  pointer-events: auto;
+}
+
 .main {
   position: relative;
   z-index: 999;
@@ -1356,7 +1406,7 @@ body.press .landing {
 .date-picker {
   height: 10rem;
   width: 65rem;
-  margin: 14rem auto 0;
+  margin: 12rem auto 0;
 }
 @media screen and (min-width: 480px) {
   .date-picker {
@@ -1430,29 +1480,6 @@ body.press .landing {
 .date-picker .checkout:after {
   right: 2rem;
 }
-.date-picker .guests select {
-  height: 100%;
-  width: 46%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  border: none;
-  outline: none;
-  border-radius: 0;
-  background: transparent;
-  color: #293443;
-  font-family: "Playfair Display", garamond, serif;
-  padding-left: 8rem;
-  font-size: 4.8rem;
-}
-.date-picker .guests select option:not(:checked) {
-  font-size: 1.2rem;
-}
-.date-picker .guests select:focus {
-  outline: none;
-}
 .date-picker .guests:before {
   content: "Guests";
 }
@@ -1514,7 +1541,7 @@ body.press .landing {
   transition: all 0.35s ease;
 }
 .calendar-wrap.open {
-  margin-top: -11.5rem;
+  margin-top: -13.5rem;
   opacity: 1;
   visibility: visible;
 }

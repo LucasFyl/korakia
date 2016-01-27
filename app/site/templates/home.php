@@ -27,12 +27,14 @@
 						<p class="datepicker-month datepicker-month-2"></p>
 					</div>
 					<div class="guests">
-						<select class="custom-select" name="guests">
-							<option value="" selected="selected"></option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-						</select>
+						<p class="datepicker-date-selected"></p>
+						<div class="dropdown-wrap" tabindex="1">
+					    <ul class="dropdown" tabindex="1">
+					        <li><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+					    </ul>
+						</div>
 					</div>
 					<div class="submit">
 						<a href="#">Check availability</a>

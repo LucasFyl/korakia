@@ -23,6 +23,7 @@ function initPage(){
 		datePickerSetup();
 		displayCalendar();
 		initHomeSlider();
+		initDropDown();
 	} else if ( $('#content.special-offers').length ) {
 		Modal.init();
 	} else if ( $('#content.news').length ) {
@@ -56,6 +57,26 @@ function initPage(){
 
 
 	MagicStuff.init();
+}
+function initDropDown() {
+	'use strict';
+	$('.dropdown-wrap').removeClass('active');
+	$(document).on('click', '.dropdown-wrap', function(e){
+		e.preventDefault();
+		$(this).addClass('active');
+		$(this).on('click', 'ul > li', function(e){
+			e.preventDefault();
+			var _this = $(this),
+					data = _this.find('a').text();
+			$('.guests > p').html(data);
+			setTimeout(function() {
+			  $('.dropdown-wrap').removeClass('active');
+			}, 100);
+		});
+		$('.landing').on('click', '*:not(\'.dropdown\')', function(){
+			$('.dropdown-wrap').removeClass('active');
+		});
+	});
 }
 function initPhotoshootSlider() {
 	'use strict';
