@@ -38,7 +38,7 @@
 					<article class="room img-in">
 						<div class="images">
 							<ul class="slider-for">
-								<?php $images = $room->images(); ?>
+								<?php $images = $room->images()->sortBy('title', 'asc'); ?>
 								<?php foreach ($images as $image): ?>
 							    <?php  if(substr($image, -7) === '@2x.jpg'): ?>
 							      <?php unset($image); ?>
@@ -55,7 +55,7 @@
 								<?php echo $room->priceRange() ?>
 							</div> -->
 							<ul class="slider-nav">
-								<?php $images = $room->images(); ?>
+								<?php $images = $room->images()->sortBy('title', 'asc'); ?>
 								<?php foreach ($images as $image): ?>
 							    <?php  if(substr($image, -7) === '@2x.jpg'): ?>
 							      <?php unset($image); ?>
