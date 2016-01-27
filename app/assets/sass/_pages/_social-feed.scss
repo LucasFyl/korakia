@@ -12,6 +12,7 @@
 			font-size: 40px;
 			color: #000000;
 			text-align: center;
+			font-family: "Playfair Display";
 
 			img {
 				min-width: 1px;
@@ -25,14 +26,17 @@
 
 		&.image {
 			z-index: 3;
+			overflow: hidden;
 
 			.instagram-image {
 				display: block;
 				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
+				top: -30%;
+				left: -30%;
+				min-width: 1px;
+				max-width: 200%;
+				width: 160%;
+				height: auto;
 				z-index: 2;
 			}
 
@@ -87,9 +91,10 @@
 					.nb-like {
 						float: left;
 						color: #000000;
-						font-size: 29px;
+						font-size: 33px;
 						margin-left: 15px;
-						line-height: 25px;
+						line-height: 20px;
+						font-family: "Playfair Display";
 					}
 				}
 
@@ -105,6 +110,7 @@
 				.caption {
 					font-size: 15px;
 					color: #b5b5b5;
+					font-family: "Lato";
 
 					.hashtag {
 						color: #000000;
@@ -291,9 +297,9 @@
 						.nb-like {
 							float: left;
 							color: #000000;
-							font-size: 22px;
+							font-size: 25px;
 							margin-left: 11px;
-							line-height: 19px;
+							line-height: 17px;
 						}
 					}
 
@@ -339,9 +345,9 @@
 						.nb-like {
 							float: left;
 							color: #000000;
-							font-size: 19px;
+							font-size: 22px;
 							margin-left: 9px;
-							line-height: 17px;
+							line-height: 14px;
 						}
 					}
 
