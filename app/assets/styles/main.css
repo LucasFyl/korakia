@@ -1089,7 +1089,7 @@ header.hide-desktop nav a {
 .hide-desktop.menu {
   position: fixed;
   width: 100vw;
-  height: calc(100vh - 11.1rem);
+  height: calc(100% - 11.1rem);
   display: block;
   z-index: 9998;
   background: white;
@@ -1108,6 +1108,10 @@ header.hide-desktop nav a {
   color: white;
   letter-spacing: .2rem;
   text-transform: capitalize;
+}
+.hide-desktop.menu nav {
+  height: 100%;
+  overflow: scroll;
 }
 .hide-desktop.menu nav ul {
   padding: 0;
@@ -1710,6 +1714,9 @@ body.press .landing {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+#content.home .landing {
+  /* home slider : */
+}
 #content.home .landing h1 {
   float: left;
   display: block;
@@ -1733,6 +1740,8 @@ body.press .landing {
   }
 }
 #content.home .landing .img-wrap {
+  height: 100vh;
+  min-height: 100vh;
   max-height: 100vh;
   overflow: hidden;
   z-index: -1;
@@ -1740,13 +1749,6 @@ body.press .landing {
 #content.home .landing .img-wrap img {
   min-width: 0 !important;
   min-height: 100vh;
-}
-@media screen and (max-width: 480px) {
-  #content.home .landing .img-wrap img {
-    width: auto !important;
-    max-width: none !important;
-    min-height: 100vh;
-  }
 }
 #content.home .landing .img-wrap .arrow {
   height: 2.1rem;

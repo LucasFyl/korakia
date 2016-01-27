@@ -8,8 +8,10 @@
         @include shift(1);
       }
     }
-    // home slider :
+    /* home slider : */
     .img-wrap {
+      height: 100vh;
+      min-height: 100vh;
       max-height: 100vh;
       overflow: hidden;
       z-index: -1;
@@ -18,11 +20,11 @@
         min-width: 0 !important;
         // max-width: 200% !important;
         min-height: 100vh;
-        @include media($mobile) {
-          width: auto !important;
-          max-width: none !important;
-          min-height: 100vh;
-        }
+        // @include media($mobile) {
+        //   width: auto !important;
+        //   max-width: none !important;
+        //   min-height: 100vh;
+        // }
       }
       .arrow {
         @include size(1rem 2.1rem);
@@ -59,7 +61,8 @@
         }
       }
     }
-  }
+  } // /landing
+
   .main {
     padding-top: 15rem;
     @include media($mobile) {

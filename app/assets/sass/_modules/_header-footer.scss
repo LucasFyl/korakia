@@ -86,7 +86,7 @@ header {
 .hide-desktop.menu {
   position: fixed;
   width: 100vw;
-  height: calc(100vh - 11.1rem);
+  height: calc(100% - 11.1rem);
   display: block;
   z-index: 9998;
   background: white;
@@ -111,6 +111,8 @@ header {
 
   }
   nav {
+    height: 100%;
+    overflow: scroll;
     ul {
       padding: 0;margin: 0;
       li {

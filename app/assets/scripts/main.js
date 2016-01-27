@@ -103,7 +103,13 @@ function initPhotoshootSlider() {
 }
 function initHomeSlider() {
 	'use strict';
-	var slider = $('.landing .img-wrap');
+	var slider;
+	if ( isMobile === true ) {
+		slider = $('.landing .img-wrap.hide-desktop');
+	} else {
+		slider = $('.landing .img-wrap.hide-mobile');
+	}
+
 	slider.slick({
 		infinite:true,
 		dots: false,
@@ -116,12 +122,6 @@ function initHomeSlider() {
     prevArrow: '<a href=\'#\' class=\'arrow arrow-left\'></a>',
     nextArrow: '<a href=\'#\' class=\'arrow arrow-right\'></a>'
 	});
-
-	if ( isMobile === true ) {
-		slider.slick({
-			swipe: true
-		});
-	}
 }
 function backToTop() {
 	'use strict';
