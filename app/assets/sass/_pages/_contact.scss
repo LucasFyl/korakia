@@ -4,15 +4,24 @@
   @include clearfix;
   overflow: hidden;
 
-  .four {
-    // @include shift(2);
-    margin-left: 20rem;
+  .block {
     display: inline-block;
     margin-top: 12rem;
     background: white;
     float:none;
     overflow: auto;
-    font-size:1.4rem;
+    font-size: 1.4rem;
+
+    @include media($desktop) {
+      @include span-columns(4);
+      margin-left: 20rem;
+    }
+    @include media($mobile) {
+      margin-top: 15rem;
+      @include span-columns(10);
+      @include shift(1);
+    }
+
     h3 {
       font-size: 4.5rem;
     }
@@ -33,9 +42,16 @@
   .btn {
     display: block;
     margin: .5rem 0;
+    @include media($mobile) {
+      margin: 3rem 0;
+    }
   }
   .phone {
     margin-top: 5rem;
+
+    @include media($mobile) {
+      text-decoration: underline;
+    }
   }
   img {
     display: block;

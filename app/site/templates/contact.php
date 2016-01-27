@@ -4,7 +4,7 @@
 
 	<div id="content" class="contact">
     <!-- <div class="container"> -->
-      <div class="four">
+      <div class="block">
         <h3><?php echo $page->title() ?></h3>
         <?php echo $page->text()->kirbytext() ?>
         <div class="contact-info">

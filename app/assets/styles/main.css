@@ -2757,8 +2757,7 @@ article.press .date {
   content: "";
   display: table;
 }
-#content.contact .four {
-  margin-left: 20rem;
+#content.contact .block {
   display: inline-block;
   margin-top: 12rem;
   background: white;
@@ -2766,10 +2765,35 @@ article.press .date {
   overflow: auto;
   font-size: 1.4rem;
 }
-#content.contact .four h3 {
+@media screen and (min-width: 480px) {
+  #content.contact .block {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 31.7615656014%;
+    margin-left: 20rem;
+  }
+  #content.contact .block:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #content.contact .block {
+    margin-top: 15rem;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 82.9403914003%;
+    margin-left: 8.5298042998%;
+  }
+  #content.contact .block:last-child {
+    margin-right: 0;
+  }
+}
+#content.contact .block h3 {
   font-size: 4.5rem;
 }
-#content.contact .four > p:first-of-type {
+#content.contact .block > p:first-of-type {
   margin-top: 5rem;
 }
 #content.contact .contact-info {
@@ -2786,8 +2810,18 @@ article.press .date {
   display: block;
   margin: .5rem 0;
 }
+@media screen and (max-width: 480px) {
+  #content.contact .btn {
+    margin: 3rem 0;
+  }
+}
 #content.contact .phone {
   margin-top: 5rem;
+}
+@media screen and (max-width: 480px) {
+  #content.contact .phone {
+    text-decoration: underline;
+  }
 }
 #content.contact img {
   display: block;
