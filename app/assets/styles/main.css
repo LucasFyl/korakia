@@ -1029,6 +1029,8 @@ header nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
 }
 header nav ul li {
   display: inline-block;
@@ -1043,6 +1045,9 @@ header nav ul li a {
   color: white;
   text-decoration: none;
   transition: opacity 0.25s ease-in-out;
+}
+header nav ul li:last-child {
+  margin-right: 0;
 }
 header nav ul li:hover a {
   opacity: .6;
@@ -1062,7 +1067,19 @@ header.white a.logo {
 header.white nav a {
   color: #293443;
 }
-header.hide-desktop {
+header.desktop {
+  display: none;
+  opacity: 0;
+}
+@media screen and (min-width: 900px) {
+  header.desktop {
+    display: block;
+    opacity: 1;
+  }
+}
+header.mobile {
+  display: none;
+  opacity: 0;
   position: fixed;
   top: 0;
   z-index: 9999;
@@ -1072,14 +1089,20 @@ header.hide-desktop {
   line-height: 11.1rem;
   padding: 0 3rem;
 }
-header.hide-desktop a.logo {
+@media screen and (max-width: 900px) {
+  header.mobile {
+    display: block;
+    opacity: 1;
+  }
+}
+header.mobile a.logo {
   font-size: 2.6rem;
   color: #293443;
   height: 100%;
   line-height: 11rem;
   letter-spacing: .2rem;
 }
-header.hide-desktop .hamburger {
+header.mobile .hamburger {
   height: 4rem;
   width: 4rem;
   display: block;
@@ -1088,11 +1111,11 @@ header.hide-desktop .hamburger {
   margin-top: 3.5rem;
   float: right;
 }
-header.hide-desktop nav a {
+header.mobile nav a {
   color: #293443;
 }
 
-.hide-desktop.menu {
+.mobile.menu {
   position: fixed;
   width: 100vw;
   height: calc(100% - 11.1rem);
@@ -1101,13 +1124,13 @@ header.hide-desktop nav a {
   background: white;
   top: -100%;
 }
-.hide-desktop.menu .wrap {
+.mobile.menu .wrap {
   overflow: scroll;
   height: 100%;
   width: 100%;
   max-height: 79vh;
 }
-.hide-desktop.menu .close {
+.mobile.menu .close {
   width: 100%;
   text-align: center;
   background: #d2bb71;
@@ -1121,25 +1144,25 @@ header.hide-desktop nav a {
   letter-spacing: .2rem;
   text-transform: capitalize;
 }
-.hide-desktop.menu nav {
+.mobile.menu nav {
   height: 100%;
   overflow: scroll;
 }
-.hide-desktop.menu nav ul {
+.mobile.menu nav ul {
   padding: 0;
   margin: 0;
 }
-.hide-desktop.menu nav ul li {
+.mobile.menu nav ul li {
   width: 100%;
   text-align: center;
 }
-.hide-desktop.menu nav ul li.active {
+.mobile.menu nav ul li.active {
   background: #000;
 }
-.hide-desktop.menu nav ul li.active a {
+.mobile.menu nav ul li.active a {
   color: white;
 }
-.hide-desktop.menu nav ul li a {
+.mobile.menu nav ul li a {
   height: 100%;
   width: 100%;
   display: block;
