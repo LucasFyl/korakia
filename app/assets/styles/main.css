@@ -1037,10 +1037,11 @@ header nav ul li a {
   line-height: 1.4rem;
   color: white;
   text-decoration: none;
+  transition: opacity 0.25s ease-in-out;
 }
-header nav ul li:last-child {
-  margin-right: 0;
+header nav ul li:hover a {
   opacity: .6;
+  transition: opacity 0.25s ease-in-out;
 }
 header.white {
   position: fixed;
