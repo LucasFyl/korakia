@@ -45,11 +45,13 @@ function initPage(){
 	if ( $('.isMobile:visible') ) {
 		$('body').on('touchstart click', 'header .hamburger', function(e){
 			e.preventDefault();
+			$('body').addClass('locked');
 			var menu = $('.menu.hide-desktop');
 			TweenMax.to(menu, 0.5, {top:'11.1rem',ease:Expo.easeOut});
 		});
 		$('body').on('touchstart click', '.menu .close', function(e){
 			e.preventDefault();
+			$('body').removeClass('locked');
 			var menu = $('.menu.hide-desktop');
 			TweenMax.to(menu, 0.5, {top:'-100%',ease:Expo.easeIn});
 		});

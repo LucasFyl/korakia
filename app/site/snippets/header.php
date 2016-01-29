@@ -17,6 +17,8 @@
 
 </header>
 <div class="menu hide-desktop">
-  <?php snippet('menu'); ?>
-  <a href="#" class="close">Close</a>
+  <div class="wrap">
+    <?php snippet('menu'); ?>
+    <a href="#" class="close">Close</a>
+  </div>
 </div>

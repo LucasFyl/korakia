@@ -96,6 +96,13 @@ header {
   top: -100%;
 
 
+  .wrap {
+    overflow: scroll;
+    height: 100%;
+    width: 100%;
+    max-height: 79vh;
+  }
+
   .close {
     width: 100%;
     text-align: center;

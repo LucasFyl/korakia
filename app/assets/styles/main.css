@@ -929,6 +929,11 @@ small {
   pointer-events: auto;
 }
 
+body.locked {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .main {
   position: relative;
   z-index: 999;
@@ -1095,6 +1100,12 @@ header.hide-desktop nav a {
   z-index: 9998;
   background: white;
   top: -100%;
+}
+.hide-desktop.menu .wrap {
+  overflow: scroll;
+  height: 100%;
+  width: 100%;
+  max-height: 79vh;
 }
 .hide-desktop.menu .close {
   width: 100%;
