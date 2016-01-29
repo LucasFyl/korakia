@@ -113,9 +113,17 @@
     }
     @include media($mobile) {
       float: none;
-      margin-left: 22%;
       width: 29rem;
+      display: block;
+      margin: 0 auto;
+      @include transform(translateX(-12%));
       box-shadow: 0px 5px 50px rgba(0,0,0,0.25);
+    }
+    @include media(max-width 320px) {
+      @include transform(translateX(-27%) !important);
+    }
+    @include media(min-width 414px) {
+      @include transform(translateX(-2%) !important);
     }
   }
 

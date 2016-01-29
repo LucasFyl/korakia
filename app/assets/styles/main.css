@@ -1209,78 +1209,83 @@ footer div ul li a img {
   overflow: hidden;
 }
 body.about .landing {
-  background: white url("../images/landing/about-landing.jpg") no-repeat center center fixed;
+  background: url("../images/landing/about-landing.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-width: 1440px) {
   body.about .landing {
-    background: white url("../images/landing/about-landing@2x.jpg") no-repeat center center fixed;
+    background: url("../images/landing/about-landing@2x.jpg") no-repeat center center fixed;
     background-size: cover;
   }
 }
 @media screen and (max-width: 480px) {
   body.about .landing {
-    background: white url("../images/landing/about-landing-mobile.jpg") no-repeat center center fixed;
+    background: url("../images/landing/about-landing-mobile.jpg") no-repeat center top;
+    background-size: cover;
   }
 }
 body.villas .landing {
-  background: white url("../images/landing/villas-landing-desktop.jpg") no-repeat center center fixed;
+  background: url("../images/landing/villas-landing-desktop.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-width: 1440px) {
   body.villas .landing {
-    background: white url("../images/landing/villas-landing-desktop@2x.jpg") no-repeat center center fixed;
+    background: url("../images/landing/villas-landing-desktop@2x.jpg") no-repeat center center fixed;
     background-size: cover;
   }
 }
 @media screen and (max-width: 480px) {
   body.villas .landing {
-    background: white url("../images/landing/villas-landing-mobile.jpg") no-repeat center center fixed;
+    background: url("../images/landing/villas-landing-mobile.jpg") no-repeat center top;
+    background-size: cover;
   }
 }
 body.services .landing {
-  background: white url("../images/landing/services-landing.jpg") no-repeat center center fixed;
+  background: url("../images/landing/services-landing.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-width: 1440px) {
   body.services .landing {
-    background: white url("../images/landing/services-landing@2x.jpg") no-repeat center center fixed;
+    background: url("../images/landing/services-landing@2x.jpg") no-repeat center center fixed;
     background-size: cover;
   }
 }
 @media screen and (max-width: 480px) {
   body.services .landing {
-    background: white url("../images/landing/services-landing-mobile.jpg") no-repeat center center fixed;
+    background: url("../images/landing/services-landing-mobile.jpg") no-repeat center top;
+    background-size: cover;
   }
 }
 body.special-occasions .landing {
-  background: white url("../images/landing/special-occasions-landing.jpg") no-repeat center center fixed;
+  background: url("../images/landing/special-occasions-landing.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-width: 1440px) {
   body.special-occasions .landing {
-    background: white url("../images/landing/special-occasions-landing@2x.jpg") no-repeat center center fixed;
+    background: url("../images/landing/special-occasions-landing@2x.jpg") no-repeat center center fixed;
     background-size: cover;
   }
 }
 @media screen and (max-width: 480px) {
   body.special-occasions .landing {
-    background: white url("../images/landing/special-occasions-landing-mobile.jpg") no-repeat center center fixed;
+    background: url("../images/landing/special-occasions-landing-mobile.jpg") no-repeat center top;
+    background-size: cover;
   }
 }
 body.press .landing {
-  background: white url("../images/landing/news-landing.jpg") no-repeat center center fixed;
+  background: url("../images/landing/news-landing.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-width: 1440px) {
   body.press .landing {
-    background: white url("../images/landing/news-landing@2x.jpg") no-repeat center center fixed;
+    background: url("../images/landing/news-landing@2x.jpg") no-repeat center center fixed;
     background-size: cover;
   }
 }
 @media screen and (max-width: 480px) {
   body.press .landing {
-    background: white url("../images/landing/news-landing-mobile.jpg") no-repeat center center fixed;
+    background: url("../images/landing/news-landing-mobile.jpg") no-repeat center top;
+    background-size: cover;
   }
 }
 .landing .wrapper {
@@ -1334,7 +1339,7 @@ body.press .landing {
 }
 @media screen and (max-width: 480px) {
   .landing .scrolldown {
-    transform: translateZ(0);
+    display: none;
   }
 }
 
@@ -1523,9 +1528,21 @@ body.press .landing {
 @media screen and (max-width: 480px) {
   .date-picker .submit {
     float: none;
-    margin-left: 22%;
     width: 29rem;
+    display: block;
+    margin: 0 auto;
+    transform: translateX(-12%);
     box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.25);
+  }
+}
+@media screen and (max-width: 320px) {
+  .date-picker .submit {
+    transform: translateX(-27%) !important;
+  }
+}
+@media screen and (min-width: 414px) {
+  .date-picker .submit {
+    transform: translateX(-2%) !important;
   }
 }
 @media screen and (max-width: 480px) {
