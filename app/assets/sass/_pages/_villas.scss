@@ -5,6 +5,8 @@
     margin-bottom: 5rem;
     @include media($mobile) {
       top:11.1rem;
+      position: fixed;
+      @include transform(translateZ(0));
     }
     .half {
       width: 50%;
@@ -88,8 +90,8 @@
   }
   @include media($mobile) {
     .main {
-      padding-top: 15rem;
-      z-index: -1;
+      padding-top: 27rem;
+      z-index: 1;
     }
   }
   article.room {

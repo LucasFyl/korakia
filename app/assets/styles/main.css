@@ -2369,6 +2369,8 @@ body.press .landing {
 @media screen and (max-width: 480px) {
   #content.villas.feed .landing {
     top: 11.1rem;
+    position: fixed;
+    transform: translateZ(0);
   }
 }
 #content.villas.feed .landing .half {
@@ -2463,8 +2465,8 @@ body.press .landing {
 }
 @media screen and (max-width: 480px) {
   #content.villas.feed .main {
-    padding-top: 15rem;
-    z-index: -1;
+    padding-top: 27rem;
+    z-index: 1;
   }
 }
 #content.villas.feed article.room {
