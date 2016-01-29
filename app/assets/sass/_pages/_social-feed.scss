@@ -5,6 +5,9 @@
 		width: 33.3333%;
 		color: grey;
 		font-size: 35px;
+		@include media($mobile) {
+			width: 100%;
+		}
 
 		&.explore {
 			//display: inline;
@@ -120,18 +123,30 @@
 
 			.arrow-text {
 				position: absolute;
+				@include media($mobile) {
+					display: none !important;
+				}
 			}
 
 			.arrow-bg {
 				position: absolute;
+				@include media($mobile) {
+					display: none !important;
+				}
 			}
 
 			.arrow-text-normal {
 				display: block;
+				@include media($mobile) {
+					display: none !important;
+				}
 			}
 
 			.arrow-text-hover {
 				display: none;
+				@include media($mobile) {
+					display: none !important;
+				}
 			}
 
 			&.first {
@@ -249,7 +264,7 @@
 					display: block;
 				}
 			}
-		}		
+		}
 	}
 }
 

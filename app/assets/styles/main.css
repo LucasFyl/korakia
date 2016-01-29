@@ -2845,6 +2845,11 @@ article.press .date {
   color: grey;
   font-size: 35px;
 }
+@media screen and (max-width: 480px) {
+  .social-feed .instagram-elt {
+    width: 100%;
+  }
+}
 .social-feed .instagram-elt.explore {
   background-color: #fff;
   font-size: 40px;
@@ -2940,14 +2945,34 @@ article.press .date {
 .social-feed .instagram-elt.text .arrow-text {
   position: absolute;
 }
+@media screen and (max-width: 480px) {
+  .social-feed .instagram-elt.text .arrow-text {
+    display: none !important;
+  }
+}
 .social-feed .instagram-elt.text .arrow-bg {
   position: absolute;
+}
+@media screen and (max-width: 480px) {
+  .social-feed .instagram-elt.text .arrow-bg {
+    display: none !important;
+  }
 }
 .social-feed .instagram-elt.text .arrow-text-normal {
   display: block;
 }
+@media screen and (max-width: 480px) {
+  .social-feed .instagram-elt.text .arrow-text-normal {
+    display: none !important;
+  }
+}
 .social-feed .instagram-elt.text .arrow-text-hover {
   display: none;
+}
+@media screen and (max-width: 480px) {
+  .social-feed .instagram-elt.text .arrow-text-hover {
+    display: none !important;
+  }
 }
 .social-feed .instagram-elt.text.first .arrow-text {
   left: -12px;
