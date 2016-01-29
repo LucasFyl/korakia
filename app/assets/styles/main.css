@@ -1200,7 +1200,7 @@ body.about .landing {
   background: white url("../images/landing/about-landing.jpg") no-repeat center center fixed;
   background-size: cover;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-width: 1440px) {
   body.about .landing {
     background: white url("../images/landing/about-landing@2x.jpg") no-repeat center center fixed;
     background-size: cover;
@@ -1215,7 +1215,7 @@ body.villas .landing {
   background: white url("../images/landing/villas-landing-desktop.jpg") no-repeat center center fixed;
   background-size: cover;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-width: 1440px) {
   body.villas .landing {
     background: white url("../images/landing/villas-landing-desktop@2x.jpg") no-repeat center center fixed;
     background-size: cover;
@@ -1230,7 +1230,7 @@ body.services .landing {
   background: white url("../images/landing/services-landing.jpg") no-repeat center center fixed;
   background-size: cover;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-width: 1440px) {
   body.services .landing {
     background: white url("../images/landing/services-landing@2x.jpg") no-repeat center center fixed;
     background-size: cover;
@@ -1245,7 +1245,7 @@ body.special-occasions .landing {
   background: white url("../images/landing/special-occasions-landing.jpg") no-repeat center center fixed;
   background-size: cover;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-width: 1440px) {
   body.special-occasions .landing {
     background: white url("../images/landing/special-occasions-landing@2x.jpg") no-repeat center center fixed;
     background-size: cover;
@@ -1260,7 +1260,7 @@ body.press .landing {
   background: white url("../images/landing/news-landing.jpg") no-repeat center center fixed;
   background-size: cover;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-width: 1440px) {
   body.press .landing {
     background: white url("../images/landing/news-landing@2x.jpg") no-repeat center center fixed;
     background-size: cover;
