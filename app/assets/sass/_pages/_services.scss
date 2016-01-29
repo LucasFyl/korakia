@@ -12,6 +12,9 @@
         @include media($mobile) {
           padding: 5rem;
         }
+        h3 {
+          margin-bottom: 7rem;
+        }
       }
       .infos, .image {
         @include media($desktop) {

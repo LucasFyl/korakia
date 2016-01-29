@@ -9,8 +9,8 @@ role: admin
 firstname: Lucas
 lastname: Fayolle
 history:
-  - villas/mediterranean/kalymnos-room
-  - villas/mediterranean/syros-room
-  - villas/mediterranean/acropolis-suite
-  - villas/mediterranean/apollonia-studio
-  - villas/mediterranean/aegean-bungalow
+  - services/candles
+  - services/maroccan-tea
+  - services/lunch
+  - services/other
+  - services/massage
