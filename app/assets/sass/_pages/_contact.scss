@@ -69,5 +69,9 @@
     min-height: calc(100vh - 7rem);
     max-height: 100vh;
     top: 7rem;
+
+    @include media(max-width 900px) {
+      display: none;
+    }
   }
 }

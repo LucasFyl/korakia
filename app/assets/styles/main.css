@@ -2295,7 +2295,7 @@ body.press .landing {
   }
 }
 #content.services .main article .infos h3 {
-  margin-bottom: 7rem;
+  margin-bottom: 3.5rem;
 }
 @media screen and (min-width: 480px) {
   #content.services .main article .infos, #content.services .main article .image {
@@ -2887,6 +2887,11 @@ article.press .date {
   min-height: calc(100vh - 7rem);
   max-height: 100vh;
   top: 7rem;
+}
+@media screen and (max-width: 900px) {
+  #content.contact img {
+    display: none;
+  }
 }
 
 .social-feed .instagram-elt {
