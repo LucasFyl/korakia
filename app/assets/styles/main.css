@@ -1009,7 +1009,14 @@ header {
   width: 100%;
   top: 0;
 }
+@media screen and (min-width: 900px) {
+  header > .container {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
 header a.logo {
+  flex-grow: 0;
   display: inline-block;
   float: left;
   color: white;
@@ -1022,8 +1029,10 @@ header a.logo {
   text-decoration: none;
 }
 header nav {
-  display: inline-block;
+  display: block;
   float: right;
+  flex-grow: 1;
+  padding-left: 4rem;
 }
 header nav ul {
   list-style: none;
@@ -1031,10 +1040,10 @@ header nav ul {
   margin: 0;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-around;
 }
 header nav ul li {
   display: inline-block;
-  margin-right: 4rem;
 }
 header nav ul li a {
   display: block;
