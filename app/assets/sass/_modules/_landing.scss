@@ -110,6 +110,13 @@
     @include media($mobile) {
       display: none;
     }
+    @include media(max-width 1280px) {
+      position: fixed;
+      bottom:0;
+      height: 5rem;
+      line-height: 5rem;
+      font-size: 1.1rem;
+    }
   }
 }
 .villas:not(.feed) .landing {
