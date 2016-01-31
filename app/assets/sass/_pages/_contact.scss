@@ -4,23 +4,29 @@
   @include clearfix;
   overflow: hidden;
 
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+
   .block {
     display: inline-block;
     margin-top: 12rem;
     background: white;
-    float:none;
+    // float:none;
     overflow: auto;
     font-size: 1.4rem;
+    min-width: 50rem;
+    padding: 0 5rem;
 
-    @include media($desktop) {
-      @include span-columns(4);
-      margin-left: 20rem;
-    }
-    @include media($mobile) {
-      margin-top: 15rem;
-      @include span-columns(10);
-      @include shift(1);
-    }
+    // @include media($desktop) {
+    //   @include span-columns(4);
+    //   margin-left: 20rem;
+    // }
+    // @include media($mobile) {
+    //   margin-top: 15rem;
+    //   @include span-columns(10);
+    //   @include shift(1);
+    // }
 
     h3 {
       font-size: 4.5rem;
@@ -28,38 +34,40 @@
     > p:first-of-type {
       margin-top: 5rem;
     }
-  }
-  .contact-info {
-    color: #293442;
-    margin: 5rem 0;
-    a {
-      text-decoration: none;
-      &:hover {
+    .contact-info {
+      color: #293442;
+      margin: 5rem 0;
+      a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .btn {
+      display: block;
+      margin: .5rem 0;
+      @include media($mobile) {
+        margin: 3rem 0;
+      }
+    }
+    .phone {
+      margin-top: 5rem;
+
+      @include media($mobile) {
         text-decoration: underline;
       }
     }
   }
-  .btn {
-    display: block;
-    margin: .5rem 0;
-    @include media($mobile) {
-      margin: 3rem 0;
-    }
-  }
-  .phone {
-    margin-top: 5rem;
 
-    @include media($mobile) {
-      text-decoration: underline;
-    }
-  }
   img {
     display: block;
     float: right;
-    margin-top: 7rem;
-    right: 0;
-    min-width: 0;
-    z-index: -1;
-    min-height: calc(100vh - 7rem)
+    position: relative;
+    min-width: none;
+    max-width: none;
+    min-height: calc(100vh - 7rem);
+    max-height: 100vh;
+    top: 7rem;
   }
 }
