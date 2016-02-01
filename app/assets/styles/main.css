@@ -2832,12 +2832,12 @@ article.press .date {
 }
 
 #content.contact {
-  min-height: 100vh;
+  min-height: calc(100vh - 7rem);
   max-width: 100vw;
   overflow: hidden;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
+  justify-content: center;
 }
 #content.contact::after {
   clear: both;
@@ -2845,7 +2845,9 @@ article.press .date {
   display: table;
 }
 #content.contact .block {
-  display: inline-block;
+  width: 50%;
+  height: 100%;
+  display: block;
   margin-top: 12rem;
   background: white;
   overflow: auto;
@@ -2853,11 +2855,23 @@ article.press .date {
   min-width: 50rem;
   padding: 0 5rem;
 }
+#content.contact .block .container {
+  margin-right: 0;
+  max-width: 80%;
+}
+@media screen and (max-width: 480px) {
+  #content.contact .block .container {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 5rem;
+  }
+}
 #content.contact .block h3 {
   font-size: 4.5rem;
 }
-#content.contact .block > p:first-of-type {
+#content.contact .block p:first-of-type {
   margin-top: 5rem;
+  max-width: 50rem;
 }
 #content.contact .block .contact-info {
   color: #293442;
@@ -2887,13 +2901,13 @@ article.press .date {
   }
 }
 #content.contact img {
+  width: 50vw;
+  height: 100%;
   display: block;
   float: right;
   position: relative;
-  min-width: none;
-  max-width: none;
-  min-height: calc(100vh - 7rem);
-  max-height: 100vh;
+  min-width: 0;
+  max-width: 50%;
   top: 7rem;
 }
 @media screen and (max-width: 900px) {
