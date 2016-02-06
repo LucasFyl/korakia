@@ -26,6 +26,7 @@ function initPage(){
 		initDropDown();
 	} else if ( $('#content.special-offers').length ) {
 		Modal.init();
+		initEngagementsSlider();
 	} else if ( $('#content.news').length ) {
 		initPhotoshootSlider();
 	} else if ( $('#content.social-feed').length ) {
@@ -106,6 +107,7 @@ function initPhotoshootSlider() {
 function initHomeSlider() {
 	'use strict';
 	var slider;
+
 	if ( isMobile === true ) {
 		slider = $('.landing .img-wrap.hide-desktop');
 	} else {
@@ -171,6 +173,24 @@ function initSlickSliders() {
 		});
 	});
 }
+function initEngagementsSlider(){
+	'use strict';
+	var slider = $('.engagements .assets');
+
+	slider.slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		infinite: true,
+		dots: false,
+		arrows: true,
+		autoplay:true,
+		autoplaySpeed: 4000,
+		speed: 750,
+	  	cssEase: 'ease-in-out',
+	    prevArrow: '<a href=\'#\' class=\'arrow arrow-left\'></a>',
+	    nextArrow: '<a href=\'#\' class=\'arrow arrow-right\'></a>'
+	});
+}
 function detectMobile(){
 	'use strict';
 
@@ -199,12 +219,12 @@ function resize() {
 	// Resize instagram elts
 	resizeInstagramElt();
 }
-function initSlider() {
-	'use strict';
-}
-function landingAnimHome() {
-	'use strict';
-}
+// function initSlider() {
+// 	'use strict';
+// }
+// function landingAnimHome() {
+// 	'use strict';
+// }
 function datePickerSetup () {
   'use strict';
 	//todays date

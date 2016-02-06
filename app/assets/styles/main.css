@@ -2401,6 +2401,7 @@ body.press .landing {
   overflow: auto;
   padding: 10rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: visible;
 }
 #content.special-offers section.events-retreat {
   position: relative;
@@ -2682,6 +2683,32 @@ body.press .landing {
   min-height: 100%;
 }
 
+.arrow {
+  height: 5rem;
+  width: 5rem;
+  background-color: #d2bb71;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 0.8rem 1.75rem;
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  margin-top: -2.5rem;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.arrow:hover {
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: translateY(-2px);
+}
+.arrow.arrow-right {
+  background-image: url("../images/asset-caret-right.svg");
+  right: -2.5rem;
+}
+.arrow.arrow-left {
+  background-image: url("../images/asset-caret-left.svg");
+  left: -2.5rem;
+}
+
 section.photoshoots {
   width: 100%;
   position: relative;
@@ -2717,31 +2744,6 @@ section.photoshoots::after {
 }
 section.photoshoots img {
   min-width: 0 !important;
-}
-section.photoshoots .arrow {
-  height: 5rem;
-  width: 5rem;
-  background-color: #d2bb71;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 0.8rem 1.75rem;
-  position: absolute;
-  z-index: 999;
-  top: 50%;
-  margin-top: -2.5rem;
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-section.photoshoots .arrow:hover {
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transform: translateY(-2px);
-}
-section.photoshoots .arrow.arrow-right {
-  background-image: url("../images/asset-caret-right.svg");
-  right: -2.5rem;
-}
-section.photoshoots .arrow.arrow-left {
-  background-image: url("../images/asset-caret-left.svg");
-  left: -2.5rem;
 }
 section.photoshoots .infos {
   text-align: right;
