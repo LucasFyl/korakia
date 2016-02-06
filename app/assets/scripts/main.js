@@ -178,7 +178,7 @@ function initEngagementsSlider(){
 	var slider = $('.engagements .assets');
 
 	slider.slick({
-		slidesToShow: 3,
+		slidesToShow: 4,
 		slidesToScroll: 1,
 		infinite: true,
 		dots: false,
