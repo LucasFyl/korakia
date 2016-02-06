@@ -1736,6 +1736,14 @@ body.press .landing {
   background-color: white;
   box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
 }
+.overlay .modal .video-modal {
+  height: 45rem;
+  width: 80rem;
+}
+.overlay .modal .video-modal iframe {
+  height: 100%;
+  width: 100%;
+}
 .overlay .modal .closeModal {
   height: 5rem;
   width: 5rem;

@@ -82,7 +82,10 @@
 	<div class="overlay">
 		<div class="modal">
 			<div class="closeModal">Close</div>
-			<h1>Hello World</h1>
+      <div class="video-modal <?php echo video1 ?>" >
+        <iframe src="https://vimeo.com/39868874?api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+			
 		</div>
 	</div>
 
