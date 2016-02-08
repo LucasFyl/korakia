@@ -185,8 +185,8 @@ function initEngagementsSlider(){
 		arrows: true,
 		autoplay:true,
 		autoplaySpeed: 4000,
-		speed: 750,
-	  	cssEase: 'ease-in-out',
+		speed: 350,
+	  	cssEase: 'ease-in-out-sine',
 	    prevArrow: '<a href=\'#\' class=\'arrow arrow-left\'></a>',
 	    nextArrow: '<a href=\'#\' class=\'arrow arrow-right\'></a>'
 	});
