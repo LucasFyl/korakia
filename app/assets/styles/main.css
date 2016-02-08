@@ -2406,6 +2406,9 @@ body.press .landing {
   overflow: visible;
   clear: both;
 }
+#content.special-offers section.engagements .assets .three {
+  margin-right: 1.5rem;
+}
 #content.special-offers section.events-retreat {
   position: relative;
   padding: 10rem 0;

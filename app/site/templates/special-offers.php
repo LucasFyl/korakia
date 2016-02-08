@@ -48,6 +48,21 @@
             <div class="three">
               <img class="img-in" src="<?php echo $page->image('asset-engagements-4.jpg')->url() ?>" alt="<?php echo $page->engagementsTitle() ?>" />
             </div>
+            <div class="three">
+              <img class="img-in" src="<?php echo $page->image('asset-engagements-5.jpg')->url() ?>" alt="<?php echo $page->engagementsTitle() ?>" />
+            </div>
+            <div class="three">
+              <img class="img-in" src="<?php echo $page->image('asset-engagements-6.jpg')->url() ?>" alt="<?php echo $page->engagementsTitle() ?>" />
+            </div>
+            <div class="three">
+              <img class="img-in" src="<?php echo $page->image('asset-engagements-7.jpg')->url() ?>" alt="<?php echo $page->engagementsTitle() ?>" />
+            </div>
+            <div class="three">
+              <img class="img-in" src="<?php echo $page->image('asset-engagements-8.jpg')->url() ?>" alt="<?php echo $page->engagementsTitle() ?>" />
+            </div>
+            <div class="three">
+              <img class="img-in" src="<?php echo $page->image('asset-engagements-9.jpg')->url() ?>" alt="<?php echo $page->engagementsTitle() ?>" />
+            </div>
           </div>
         </section>
       </section>
