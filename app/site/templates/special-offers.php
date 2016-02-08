@@ -98,7 +98,7 @@
 		<div class="modal">
 			<div class="closeModal">Close</div>
       <div class="video-modal <?php echo video1 ?>" >
-        <iframe src="https://vimeo.com/39868874?api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/39868874?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
 			
 		</div>
