@@ -8,10 +8,8 @@ Secondtitle: Expanding your horizons
 
 Firsttext: 
 
-Lorem ipsum dolor sit amet, consectetur 
-adipisicing elit, sed do eiusmod tempor 
-incididunt ut -labore et doloreipsum dolor
-consectetur adipisicing elit.
+A mélange of eclectic Moorish design elements that offer a truly authentic experience and transports you to another time and place.
+Every room has its own unique personality that makes every stay at Korakia unforgettable.
 
 ----
 
@@ -19,7 +17,7 @@ Secondtext: Korakia Pensione offers a unique and relaxing getaway from day to da
 
 ----
 
-Firsttitle: Different types of rooms
+Firsttitle: Discover our peaceful heaven
 
 ----
 
