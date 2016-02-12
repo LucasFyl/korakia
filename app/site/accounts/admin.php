@@ -9,8 +9,8 @@ role: admin
 firstname: Lucas
 lastname: Fayolle
 history:
+  - services/movies
   - services/maroccan-tea
   - about
-  - services/movies
   - home
   - services/candles
