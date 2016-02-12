@@ -775,7 +775,7 @@ ul.no-bullet {
  * Base styles ~ Type
  */
 body {
-  color: #c5c6c9;
+  color: #9e9fa4;
 }
 
 a {
@@ -947,7 +947,7 @@ body.locked {
   font-size: 1.4rem;
   text-align: center;
   text-decoration: none;
-  background-color: #c5c6c9;
+  background-color: #9e9fa4;
   color: #293443;
 }
 .btn.cta {
@@ -2636,7 +2636,7 @@ body.press .landing {
   position: absolute;
   width: 2rem;
   height: 1px;
-  background: #c5c6c9;
+  background: #9e9fa4;
   top: 6.3rem;
   left: 0;
 }
